@@ -8,7 +8,8 @@
 	from the M2GL025 manual. 
 
 
-	After regenerating the smart design for either RISCV projects for the M2GL025 add the 		following line to each of the signals below:
+	After regenerating the smart design for either RISCV projects for the M2GL025 
+	add the	following line to each of the signals below:
 
 	/* synthesis syn_ramstyle = "registers" */
 
