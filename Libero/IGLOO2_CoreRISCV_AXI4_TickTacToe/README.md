@@ -6,7 +6,7 @@ Software and design files for running RISC-V on the Creative Board include:
 
 - SoftConsole IDE release notes and Linux installation file 
 - Programming release notes and Linux installation file 
-- M2S025 Creative Board sample RISC-V Libero Project 
+- M2GL025 Creative Board sample RISC-V Libero Project 
 - RISC-V Hardware Abstraction Layer (HAL) 
 - RISC-V Boot Loader 
 
@@ -16,7 +16,7 @@ The LCD touch screen is available at https://www.adafruit.com/products/1651
 Find the programming *.stp file on the Github site under the Creative Board directory or you can generate the *.stp by 
 downloading Libero SOC software and running the Libero project to access the programming file.  
 Use the Microsemi flashpro tool to download the *.stp file to the Creative board
-Plug in the display to the Arduino connectors and reset the board.  The tick-tack-toe game will begin.
+Plug in the display to the Arduino connectors and reset the board.  Import the TickTackToe example workspace into SoftConsole, build and run a debug session. The TickTackToe example should run.
 
 
 SoftConsole v5.0 IDE is supported on Linux only at this time. 
