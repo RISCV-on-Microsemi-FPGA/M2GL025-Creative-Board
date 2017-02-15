@@ -1,0 +1,11 @@
+10:11:37 **** Build of configuration Debug for project Ciaran-Test ****
+make all 
+Invoking: RISC-V GCC/Newlib Print Size
+riscv32-unknown-elf-size --format=berkeley "Ciaran-Test.elf"
+   text	   data	    bss	    dec	    hex	filename
+   9610	   1088	   4260	  14958	   3a6e	Ciaran-Test.elf
+Finished building: Ciaran-Test.siz
+ 
+
+10:11:37 Build Finished (took 398ms)
+

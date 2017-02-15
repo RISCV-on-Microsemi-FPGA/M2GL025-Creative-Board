@@ -1,0 +1,9 @@
+riscv_hal/syscall.d: ../riscv_hal/syscall.c ../riscv_hal/encoding.h \
+ C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples.bak\TickTackToe\drivers\CoreUARTapb/core_uart_apb.h \
+ C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples.bak\TickTackToe\hal/cpu_types.h
+
+../riscv_hal/encoding.h:
+
+C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples.bak\TickTackToe\drivers\CoreUARTapb/core_uart_apb.h:
+
+C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples.bak\TickTackToe\hal/cpu_types.h:

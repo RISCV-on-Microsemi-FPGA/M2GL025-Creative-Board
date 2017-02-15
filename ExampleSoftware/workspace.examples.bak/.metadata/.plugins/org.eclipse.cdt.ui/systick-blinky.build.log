@@ -1,0 +1,83 @@
+12:54:39 **** Incremental Build of configuration Debug for project systick-blinky ****
+make all 
+Building file: ../riscv_hal/entry.S
+Invoking: RISC-V GCC/Newlib Assembler
+riscv32-unknown-elf-gcc -g3 -gdwarf-2 -x assembler-with-cpp -Wall -c -MMD -MP -MF"riscv_hal/entry.d" -MT"riscv_hal/entry.d" -march=rv32im -o "riscv_hal/entry.o" "../riscv_hal/entry.S"
+Finished building: ../riscv_hal/entry.S
+ 
+Building file: ../riscv_hal/init.c
+Invoking: RISC-V GCC/Newlib C Compiler
+riscv32-unknown-elf-gcc -g3 -gdwarf-2 -DUSE_PLIC -I"C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples\systick-blinky" -I"C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples\systick-blinky\drivers\CoreGPIO" -I"C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples\systick-blinky\drivers\CoreUARTapb" -I"C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples\systick-blinky\hal" -I"C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples\systick-blinky\riscv_hal" -O0 -Wall -c -MMD -MP -MF"riscv_hal/init.d" -MT"riscv_hal/init.d" -march=rv32im -o "riscv_hal/init.o" "../riscv_hal/init.c"
+Finished building: ../riscv_hal/init.c
+ 
+Building file: ../riscv_hal/riscv_hal.c
+Invoking: RISC-V GCC/Newlib C Compiler
+riscv32-unknown-elf-gcc -g3 -gdwarf-2 -DUSE_PLIC -I"C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples\systick-blinky" -I"C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples\systick-blinky\drivers\CoreGPIO" -I"C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples\systick-blinky\drivers\CoreUARTapb" -I"C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples\systick-blinky\hal" -I"C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples\systick-blinky\riscv_hal" -O0 -Wall -c -MMD -MP -MF"riscv_hal/riscv_hal.d" -MT"riscv_hal/riscv_hal.d" -march=rv32im -o "riscv_hal/riscv_hal.o" "../riscv_hal/riscv_hal.c"
+Finished building: ../riscv_hal/riscv_hal.c
+ 
+Building file: ../riscv_hal/riscv_hal_stubs.c
+Invoking: RISC-V GCC/Newlib C Compiler
+riscv32-unknown-elf-gcc -g3 -gdwarf-2 -DUSE_PLIC -I"C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples\systick-blinky" -I"C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples\systick-blinky\drivers\CoreGPIO" -I"C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples\systick-blinky\drivers\CoreUARTapb" -I"C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples\systick-blinky\hal" -I"C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples\systick-blinky\riscv_hal" -O0 -Wall -c -MMD -MP -MF"riscv_hal/riscv_hal_stubs.d" -MT"riscv_hal/riscv_hal_stubs.d" -march=rv32im -o "riscv_hal/riscv_hal_stubs.o" "../riscv_hal/riscv_hal_stubs.c"
+Finished building: ../riscv_hal/riscv_hal_stubs.c
+ 
+Building file: ../riscv_hal/syscall.c
+Invoking: RISC-V GCC/Newlib C Compiler
+riscv32-unknown-elf-gcc -g3 -gdwarf-2 -DUSE_PLIC -I"C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples\systick-blinky" -I"C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples\systick-blinky\drivers\CoreGPIO" -I"C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples\systick-blinky\drivers\CoreUARTapb" -I"C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples\systick-blinky\hal" -I"C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples\systick-blinky\riscv_hal" -O0 -Wall -c -MMD -MP -MF"riscv_hal/syscall.d" -MT"riscv_hal/syscall.d" -march=rv32im -o "riscv_hal/syscall.o" "../riscv_hal/syscall.c"
+../riscv_hal/syscall.c: In function 'write':
+../riscv_hal/syscall.c:177:29: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+   const uint8_t * current = (const char*) ptr;
+                             ^
+../riscv_hal/syscall.c:185:28: warning: pointer targets in passing argument 2 of 'UART_send' differ in signedness [-Wpointer-sign]
+         UART_send(&g_uart, "\r", 1);
+                            ^~~~
+In file included from ../riscv_hal/syscall.c:14:0:
+C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples\systick-blinky\drivers\CoreUARTapb/core_uart_apb.h:214:1: note: expected 'const uint8_t * {aka const unsigned char *}' but argument is of type 'char *'
+ UART_send
+ ^~~~~~~~~
+Finished building: ../riscv_hal/syscall.c
+ 
+Building file: ../hal/hal_irq.c
+Invoking: RISC-V GCC/Newlib C Compiler
+riscv32-unknown-elf-gcc -g3 -gdwarf-2 -DUSE_PLIC -I"C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples\systick-blinky" -I"C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples\systick-blinky\drivers\CoreGPIO" -I"C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples\systick-blinky\drivers\CoreUARTapb" -I"C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples\systick-blinky\hal" -I"C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples\systick-blinky\riscv_hal" -O0 -Wall -c -MMD -MP -MF"hal/hal_irq.d" -MT"hal/hal_irq.d" -march=rv32im -o "hal/hal_irq.o" "../hal/hal_irq.c"
+Finished building: ../hal/hal_irq.c
+ 
+Building file: ../hal/hw_reg_access.c
+Invoking: RISC-V GCC/Newlib C Compiler
+riscv32-unknown-elf-gcc -g3 -gdwarf-2 -DUSE_PLIC -I"C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples\systick-blinky" -I"C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples\systick-blinky\drivers\CoreGPIO" -I"C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples\systick-blinky\drivers\CoreUARTapb" -I"C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples\systick-blinky\hal" -I"C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples\systick-blinky\riscv_hal" -O0 -Wall -c -MMD -MP -MF"hal/hw_reg_access.d" -MT"hal/hw_reg_access.d" -march=rv32im -o "hal/hw_reg_access.o" "../hal/hw_reg_access.c"
+Finished building: ../hal/hw_reg_access.c
+ 
+Building file: ../drivers/CoreUARTapb/core_uart_apb.c
+Invoking: RISC-V GCC/Newlib C Compiler
+riscv32-unknown-elf-gcc -g3 -gdwarf-2 -DUSE_PLIC -I"C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples\systick-blinky" -I"C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples\systick-blinky\drivers\CoreGPIO" -I"C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples\systick-blinky\drivers\CoreUARTapb" -I"C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples\systick-blinky\hal" -I"C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples\systick-blinky\riscv_hal" -O0 -Wall -c -MMD -MP -MF"drivers/CoreUARTapb/core_uart_apb.d" -MT"drivers/CoreUARTapb/core_uart_apb.d" -march=rv32im -o "drivers/CoreUARTapb/core_uart_apb.o" "../drivers/CoreUARTapb/core_uart_apb.c"
+../drivers/CoreUARTapb/core_uart_apb.c: In function 'UART_init':
+../drivers/CoreUARTapb/core_uart_apb.c:97:30: warning: variable 'rx_byte' set but not used [-Wunused-but-set-variable]
+             volatile uint8_t rx_byte;
+                              ^~~~~~~
+Finished building: ../drivers/CoreUARTapb/core_uart_apb.c
+ 
+Building file: ../drivers/CoreGPIO/core_gpio.c
+Invoking: RISC-V GCC/Newlib C Compiler
+riscv32-unknown-elf-gcc -g3 -gdwarf-2 -DUSE_PLIC -I"C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples\systick-blinky" -I"C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples\systick-blinky\drivers\CoreGPIO" -I"C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples\systick-blinky\drivers\CoreUARTapb" -I"C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples\systick-blinky\hal" -I"C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples\systick-blinky\riscv_hal" -O0 -Wall -c -MMD -MP -MF"drivers/CoreGPIO/core_gpio.d" -MT"drivers/CoreGPIO/core_gpio.d" -march=rv32im -o "drivers/CoreGPIO/core_gpio.o" "../drivers/CoreGPIO/core_gpio.c"
+Finished building: ../drivers/CoreGPIO/core_gpio.c
+ 
+Building file: ../main.c
+Invoking: RISC-V GCC/Newlib C Compiler
+riscv32-unknown-elf-gcc -g3 -gdwarf-2 -DUSE_PLIC -I"C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples\systick-blinky" -I"C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples\systick-blinky\drivers\CoreGPIO" -I"C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples\systick-blinky\drivers\CoreUARTapb" -I"C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples\systick-blinky\hal" -I"C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples\systick-blinky\riscv_hal" -O0 -Wall -c -MMD -MP -MF"main.d" -MT"main.d" -march=rv32im -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: systick-blinky.elf
+Invoking: RISC-V GCC/Newlib C Linker
+riscv32-unknown-elf-gcc -g3 -gdwarf-2 -T"../all-ram.lds" -nostartfiles -Wl,-Map,systick-blinky.map -march=rv32im -o "systick-blinky.elf"  ./riscv_hal/entry.o ./riscv_hal/init.o ./riscv_hal/riscv_hal.o ./riscv_hal/riscv_hal_stubs.o ./riscv_hal/syscall.o  ./hal/hal_irq.o ./hal/hw_reg_access.o  ./drivers/CoreUARTapb/core_uart_apb.o  ./drivers/CoreGPIO/core_gpio.o  ./main.o   
+Finished building target: systick-blinky.elf
+ 
+Invoking: RISC-V GCC/Newlib GNU Create Flash Image
+riscv32-unknown-elf-objcopy -O ihex systick-blinky.elf  "systick-blinky.hex"
+Finished building: systick-blinky.hex
+ 
+Invoking: RISC-V GCC/Newlib Create Listing
+riscv32-unknown-elf-objdump -h -S systick-blinky.elf > "systick-blinky.lst"
+Finished building: systick-blinky.lst
+ 
+
+12:54:46 Build Finished (took 7s.1ms)
+

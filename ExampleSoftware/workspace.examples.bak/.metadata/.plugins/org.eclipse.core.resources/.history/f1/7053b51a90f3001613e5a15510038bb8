@@ -1,0 +1,16 @@
+Info : only one transport option; autoselect 'jtag'
+adapter speed: 6000 kHz
+microsemi_flashpro tunnel_jtag_via_ujtag off
+trst_only separate trst_push_pull
+do_board_reset_init
+Started by GNU ARM Eclipse
+Info : FlashPro ports available: E20010YOAP
+Info : FlashPro port used: E20010YOAP
+Info : clock speed 6000 kHz
+Info : JTAG tap: FPGA.tap tap/device found: 0x2f8041cf (mfg: 0x0e7 (GateField), part: 0xf804, ver: 0x2)
+microsemi_flashpro tunnel_jtag_via_ujtag on
+Info : JTAG tap: FPGA.tap disabled
+Info : JTAG tap: FPGA.dap enabled
+Info : RISC-V IDCODE = 0x10e31913
+Info : Examined RISCV core; XLEN=32, misa=0x40902223
+halted at 0x1010 due to debug interrupt

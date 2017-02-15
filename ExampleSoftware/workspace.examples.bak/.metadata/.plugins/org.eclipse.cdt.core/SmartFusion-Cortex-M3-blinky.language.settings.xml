@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project>
+	<configuration id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.971641709" name="Debug">
+		<extension point="org.eclipse.cdt.core.LanguageSettingsProvider">
+			<provider id="ilg.gnuarmeclipse.managedbuild.cross.GCCBuiltinSpecsDetector"/>
+		</extension>
+	</configuration>
+	<configuration id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.release.1473438869" name="Release">
+		<extension point="org.eclipse.cdt.core.LanguageSettingsProvider">
+			<provider id="ilg.gnuarmeclipse.managedbuild.cross.GCCBuiltinSpecsDetector"/>
+		</extension>
+	</configuration>
+</project>

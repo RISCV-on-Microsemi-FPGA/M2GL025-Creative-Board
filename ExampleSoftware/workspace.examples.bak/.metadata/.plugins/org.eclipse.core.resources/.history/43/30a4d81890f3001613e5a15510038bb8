@@ -1,0 +1,19 @@
+TicTacToe/tictactoe.d: ../TicTacToe/tictactoe.c \
+ C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples.bak\TickTackToe/TicTacToe/tictactoe.h \
+ C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples.bak\TickTackToe/drivers/CoreSPI/core_spi.h \
+ C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples.bak\TickTackToe\hal/cpu_types.h \
+ C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples.bak\TickTackToe/drivers/CoreGPIO/core_gpio.h \
+ C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples.bak\TickTackToe/MicrosemiTFTDriver/Microsemi_Adafruit_ILI9341.h \
+ C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples.bak\TickTackToe/MicrosemiTSDriver/Microsemi_Adafruit_STMPE610.h
+
+C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples.bak\TickTackToe/TicTacToe/tictactoe.h:
+
+C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples.bak\TickTackToe/drivers/CoreSPI/core_spi.h:
+
+C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples.bak\TickTackToe\hal/cpu_types.h:
+
+C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples.bak\TickTackToe/drivers/CoreGPIO/core_gpio.h:
+
+C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples.bak\TickTackToe/MicrosemiTFTDriver/Microsemi_Adafruit_ILI9341.h:
+
+C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples.bak\TickTackToe/MicrosemiTSDriver/Microsemi_Adafruit_STMPE610.h:

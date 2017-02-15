@@ -1,0 +1,103 @@
+22:37:03 **** Build of configuration Debug for project riscv-loop-no-irq ****
+make all 
+Building file: ../riscv_hal/entry.S
+Invoking: RISC-V GCC/Newlib Assembler
+riscv32-unknown-elf-gcc -g3 -gdwarf-2 -x assembler-with-cpp -Wall -c -MMD -MP -MF"riscv_hal/entry.d" -MT"riscv_hal/entry.d" -march=rv32im -o "riscv_hal/entry.o" "../riscv_hal/entry.S"
+Finished building: ../riscv_hal/entry.S
+ 
+Building file: ../riscv_hal/init.c
+Invoking: RISC-V GCC/Newlib C Compiler
+riscv32-unknown-elf-gcc -g3 -gdwarf-2 -DUSE_PLIC -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq" -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\drivers\CoreGPIO" -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\drivers\CoreTimer" -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\drivers\CoreUARTapb" -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\drivers_sifive" -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\hal" -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\riscv_hal" -O0 -ffunction-sections -fdata-sections -Wall -c -MMD -MP -MF"riscv_hal/init.d" -MT"riscv_hal/init.d" -march=rv32im -o "riscv_hal/init.o" "../riscv_hal/init.c"
+Finished building: ../riscv_hal/init.c
+ 
+Building file: ../riscv_hal/riscv_hal.c
+Invoking: RISC-V GCC/Newlib C Compiler
+riscv32-unknown-elf-gcc -g3 -gdwarf-2 -DUSE_PLIC -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq" -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\drivers\CoreGPIO" -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\drivers\CoreTimer" -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\drivers\CoreUARTapb" -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\drivers_sifive" -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\hal" -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\riscv_hal" -O0 -ffunction-sections -fdata-sections -Wall -c -MMD -MP -MF"riscv_hal/riscv_hal.d" -MT"riscv_hal/riscv_hal.d" -march=rv32im -o "riscv_hal/riscv_hal.o" "../riscv_hal/riscv_hal.c"
+Finished building: ../riscv_hal/riscv_hal.c
+ 
+Building file: ../riscv_hal/riscv_hal_stubs.c
+Invoking: RISC-V GCC/Newlib C Compiler
+riscv32-unknown-elf-gcc -g3 -gdwarf-2 -DUSE_PLIC -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq" -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\drivers\CoreGPIO" -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\drivers\CoreTimer" -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\drivers\CoreUARTapb" -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\drivers_sifive" -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\hal" -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\riscv_hal" -O0 -ffunction-sections -fdata-sections -Wall -c -MMD -MP -MF"riscv_hal/riscv_hal_stubs.d" -MT"riscv_hal/riscv_hal_stubs.d" -march=rv32im -o "riscv_hal/riscv_hal_stubs.o" "../riscv_hal/riscv_hal_stubs.c"
+Finished building: ../riscv_hal/riscv_hal_stubs.c
+ 
+Building file: ../riscv_hal/syscall.c
+Invoking: RISC-V GCC/Newlib C Compiler
+riscv32-unknown-elf-gcc -g3 -gdwarf-2 -DUSE_PLIC -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq" -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\drivers\CoreGPIO" -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\drivers\CoreTimer" -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\drivers\CoreUARTapb" -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\drivers_sifive" -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\hal" -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\riscv_hal" -O0 -ffunction-sections -fdata-sections -Wall -c -MMD -MP -MF"riscv_hal/syscall.d" -MT"riscv_hal/syscall.d" -march=rv32im -o "riscv_hal/syscall.o" "../riscv_hal/syscall.c"
+../riscv_hal/syscall.c: In function 'write':
+../riscv_hal/syscall.c:177:29: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+   const uint8_t * current = (const char*) ptr;
+                             ^
+../riscv_hal/syscall.c:185:28: warning: pointer targets in passing argument 2 of 'UART_send' differ in signedness [-Wpointer-sign]
+         UART_send(&g_uart, "\r", 1);
+                            ^~~~
+In file included from ../riscv_hal/syscall.c:14:0:
+C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\drivers\CoreUARTapb/core_uart_apb.h:214:1: note: expected 'const uint8_t * {aka const unsigned char *}' but argument is of type 'char *'
+ UART_send
+ ^~~~~~~~~
+Finished building: ../riscv_hal/syscall.c
+ 
+Building file: ../hal/hw_reg_access.c
+Invoking: RISC-V GCC/Newlib C Compiler
+riscv32-unknown-elf-gcc -g3 -gdwarf-2 -DUSE_PLIC -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq" -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\drivers\CoreGPIO" -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\drivers\CoreTimer" -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\drivers\CoreUARTapb" -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\drivers_sifive" -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\hal" -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\riscv_hal" -O0 -ffunction-sections -fdata-sections -Wall -c -MMD -MP -MF"hal/hw_reg_access.d" -MT"hal/hw_reg_access.d" -march=rv32im -o "hal/hw_reg_access.o" "../hal/hw_reg_access.c"
+Finished building: ../hal/hw_reg_access.c
+ 
+Building file: ../drivers_sifive/plic.c
+Invoking: RISC-V GCC/Newlib C Compiler
+riscv32-unknown-elf-gcc -g3 -gdwarf-2 -DUSE_PLIC -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq" -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\drivers\CoreGPIO" -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\drivers\CoreTimer" -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\drivers\CoreUARTapb" -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\drivers_sifive" -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\hal" -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\riscv_hal" -O0 -ffunction-sections -fdata-sections -Wall -c -MMD -MP -MF"drivers_sifive/plic.d" -MT"drivers_sifive/plic.d" -march=rv32im -o "drivers_sifive/plic.o" "../drivers_sifive/plic.c"
+Finished building: ../drivers_sifive/plic.c
+ 
+Building file: ../drivers/CoreUARTapb/core_uart_apb.c
+Invoking: RISC-V GCC/Newlib C Compiler
+riscv32-unknown-elf-gcc -g3 -gdwarf-2 -DUSE_PLIC -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq" -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\drivers\CoreGPIO" -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\drivers\CoreTimer" -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\drivers\CoreUARTapb" -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\drivers_sifive" -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\hal" -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\riscv_hal" -O0 -ffunction-sections -fdata-sections -Wall -c -MMD -MP -MF"drivers/CoreUARTapb/core_uart_apb.d" -MT"drivers/CoreUARTapb/core_uart_apb.d" -march=rv32im -o "drivers/CoreUARTapb/core_uart_apb.o" "../drivers/CoreUARTapb/core_uart_apb.c"
+../drivers/CoreUARTapb/core_uart_apb.c: In function 'UART_init':
+../drivers/CoreUARTapb/core_uart_apb.c:97:30: warning: variable 'rx_byte' set but not used [-Wunused-but-set-variable]
+             volatile uint8_t rx_byte;
+                              ^~~~~~~
+Finished building: ../drivers/CoreUARTapb/core_uart_apb.c
+ 
+Building file: ../drivers/CoreTimer/core_timer.c
+Invoking: RISC-V GCC/Newlib C Compiler
+riscv32-unknown-elf-gcc -g3 -gdwarf-2 -DUSE_PLIC -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq" -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\drivers\CoreGPIO" -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\drivers\CoreTimer" -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\drivers\CoreUARTapb" -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\drivers_sifive" -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\hal" -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\riscv_hal" -O0 -ffunction-sections -fdata-sections -Wall -c -MMD -MP -MF"drivers/CoreTimer/core_timer.d" -MT"drivers/CoreTimer/core_timer.d" -march=rv32im -o "drivers/CoreTimer/core_timer.o" "../drivers/CoreTimer/core_timer.c"
+Finished building: ../drivers/CoreTimer/core_timer.c
+ 
+Building file: ../drivers/CoreGPIO/core_gpio.c
+Invoking: RISC-V GCC/Newlib C Compiler
+riscv32-unknown-elf-gcc -g3 -gdwarf-2 -DUSE_PLIC -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq" -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\drivers\CoreGPIO" -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\drivers\CoreTimer" -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\drivers\CoreUARTapb" -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\drivers_sifive" -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\hal" -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\riscv_hal" -O0 -ffunction-sections -fdata-sections -Wall -c -MMD -MP -MF"drivers/CoreGPIO/core_gpio.d" -MT"drivers/CoreGPIO/core_gpio.d" -march=rv32im -o "drivers/CoreGPIO/core_gpio.o" "../drivers/CoreGPIO/core_gpio.c"
+Finished building: ../drivers/CoreGPIO/core_gpio.c
+ 
+Building file: ../loop_no_irq.c
+Invoking: RISC-V GCC/Newlib C Compiler
+riscv32-unknown-elf-gcc -g3 -gdwarf-2 -DUSE_PLIC -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq" -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\drivers\CoreGPIO" -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\drivers\CoreTimer" -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\drivers\CoreUARTapb" -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\drivers_sifive" -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\hal" -I"C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\riscv_hal" -O0 -ffunction-sections -fdata-sections -Wall -c -MMD -MP -MF"loop_no_irq.d" -MT"loop_no_irq.d" -march=rv32im -o "loop_no_irq.o" "../loop_no_irq.c"
+../loop_no_irq.c: In function 'main':
+../loop_no_irq.c:106:34: warning: pointer targets in passing argument 2 of 'UART_polled_tx_string' differ in signedness [-Wpointer-sign]
+   UART_polled_tx_string(&g_uart, g_hello_msg);
+                                  ^~~~~~~~~~~
+In file included from ../shared.h:7:0,
+                 from ../loop_no_irq.c:8:
+C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\riscv-loop-no-irq\drivers\CoreUARTapb/core_uart_apb.h:346:1: note: expected 'const uint8_t * {aka const unsigned char *}' but argument is of type 'const char *'
+ UART_polled_tx_string
+ ^~~~~~~~~~~~~~~~~~~~~
+Finished building: ../loop_no_irq.c
+ 
+Building target: riscv-loop-no-irq.elf
+Invoking: RISC-V GCC/Newlib C Linker
+riscv32-unknown-elf-gcc -g3 -gdwarf-2 -T"../all-ram.lds" -nostartfiles -Wl,-Map,riscv-loop-no-irq.map -gc-sections -march=rv32im -o "riscv-loop-no-irq.elf"  ./riscv_hal/entry.o ./riscv_hal/init.o ./riscv_hal/riscv_hal.o ./riscv_hal/riscv_hal_stubs.o ./riscv_hal/syscall.o  ./hal/hw_reg_access.o  ./drivers_sifive/plic.o  ./drivers/CoreUARTapb/core_uart_apb.o  ./drivers/CoreTimer/core_timer.o  ./drivers/CoreGPIO/core_gpio.o  ./loop_no_irq.o   
+Finished building target: riscv-loop-no-irq.elf
+ 
+Invoking: RISC-V GCC/Newlib GNU Create Flash Image
+riscv32-unknown-elf-objcopy -O ihex riscv-loop-no-irq.elf  "riscv-loop-no-irq.hex"
+Finished building: riscv-loop-no-irq.hex
+ 
+Invoking: RISC-V GCC/Newlib Create Listing
+riscv32-unknown-elf-objdump -h -S riscv-loop-no-irq.elf > "riscv-loop-no-irq.lst"
+Finished building: riscv-loop-no-irq.lst
+ 
+Invoking: RISC-V GCC/Newlib Print Size
+riscv32-unknown-elf-size --format=berkeley "riscv-loop-no-irq.elf"
+   text	   data	    bss	    dec	    hex	filename
+  11927	   1216	   4288	  17431	   4417	riscv-loop-no-irq.elf
+Finished building: riscv-loop-no-irq.siz
+ 
+
+22:37:48 Build Finished (took 45s.442ms)
+

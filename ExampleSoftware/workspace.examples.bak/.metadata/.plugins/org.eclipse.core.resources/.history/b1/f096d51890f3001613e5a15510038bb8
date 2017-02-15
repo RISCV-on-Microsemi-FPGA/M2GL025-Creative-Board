@@ -1,0 +1,14 @@
+MicrosemiTFTDriver/Microsemi_Adafruit_ILI9341.d: \
+ ../MicrosemiTFTDriver/Microsemi_Adafruit_ILI9341.c \
+ ../MicrosemiTFTDriver/Microsemi_Adafruit_ILI9341.h \
+ C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples.bak\TickTackToe/drivers/CoreSPI/core_spi.h \
+ C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples.bak\TickTackToe\hal/cpu_types.h \
+ C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples.bak\TickTackToe/drivers/CoreGPIO/core_gpio.h
+
+../MicrosemiTFTDriver/Microsemi_Adafruit_ILI9341.h:
+
+C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples.bak\TickTackToe/drivers/CoreSPI/core_spi.h:
+
+C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples.bak\TickTackToe\hal/cpu_types.h:
+
+C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples.bak\TickTackToe/drivers/CoreGPIO/core_gpio.h:

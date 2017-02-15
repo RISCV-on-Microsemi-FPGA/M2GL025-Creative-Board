@@ -1,0 +1,24 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../TicTacToe/tictactoe.c 
+
+OBJS += \
+./TicTacToe/tictactoe.o 
+
+C_DEPS += \
+./TicTacToe/tictactoe.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+TicTacToe/%.o: ../TicTacToe/%.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: RISC-V GCC/Newlib C Compiler'
+	riscv32-unknown-elf-gcc -g3 -gdwarf-2 -DUSE_PLIC -I"C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples.bak\TickTackToe" -I"C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples.bak\TickTackToe\drivers\CoreSPI" -I"C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples.bak\TickTackToe\drivers\CoreTimer" -I"C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples.bak\TickTackToe\MicrosemiTFTDriver" -I"C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples.bak\TickTackToe\MicrosemiTSDriver" -I"C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples.bak\TickTackToe\TicTacToe" -I"C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples.bak\TickTackToe\drivers\CoreGPIO" -I"C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples.bak\TickTackToe\drivers\CoreUARTapb" -I"C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples.bak\TickTackToe\hal" -I"C:\Microsemi\SoftConsole_v5.1\extras\workspace.examples.bak\TickTackToe\riscv_hal" -O0 -ffunction-sections -fdata-sections -Wall -c -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -march=rv32im -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+
