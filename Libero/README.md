@@ -2,10 +2,13 @@
 
 ### Overview
 	IGLOO2 M2GL025 Creative Development Board
-	Both of these projects use the DDR and an CoreAHBLSRAM. When setting up the DDR of the HPMS for a similar project, select "2T" as the timing mode in the Memory Initialization tab. Then continue to use the DDR configurations from the M2GL025 manual. 
+	Both of these projects use the DDR and an CoreAHBLSRAM.
+	When setting up the DDR of the HPMS for a similar project, select "2T" as the timing 
+	mode in the Memory Initialization tab. Then continue to use the DDR configurations 
+	from the M2GL025 manual. 
 
 
-	After regenerating the smart design for either RISCV projects for the M2GL025 add the following line to each of the signals below:
+	After regenerating the smart design for either RISCV projects for the M2GL025 add the 		following line to each of the signals below:
 
 	/* synthesis syn_ramstyle = "registers" */
 
@@ -21,10 +24,11 @@
 	ram_id [0:1]; 
 	ram_strb [0:1];
 
-	Files -> Component -> Actel -> DirectCore -> COREAXITOAHBL -> 3.0.101 -> rtl -> vlog -> core -> CoreAXItoAHB_RAM_syncWrAsyncRd.v
+	Files -> Component -> Actel -> DirectCore -> COREAXITOAHBL -> 3.0.101 -> rtl -> vlog 
+	-> core -> CoreAXItoAHB_RAM_syncWrAsyncRd.v
 
 	reg [63:0] mem [15:0];
 
 	e.g. ram_id [0:1] /* synthesis syn_ramstyle = "registers" */;
 
-### Creating your own project
+
