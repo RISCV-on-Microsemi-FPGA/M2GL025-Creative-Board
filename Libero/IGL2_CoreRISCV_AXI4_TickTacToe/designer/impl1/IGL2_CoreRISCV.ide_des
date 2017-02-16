@@ -1,0 +1,12 @@
+KEY IDE_DES_TOOL "Ide"
+KEY IDE_DES_ADB_PATH "C:\Users\ciaran.lappin\Documents\Boards\M2GL025_Future\Projects\MASTER\IGLOO2_CoreRISCV_AXI4_TickTacToe\designer\impl1\IGL2_CoreRISCV.adb"
+LIST SOURCE_FILES
+VALUE "C:\Users\ciaran.lappin\Documents\Boards\M2GL025_Future\Projects\MASTER\IGLOO2_CoreRISCV_AXI4_TickTacToe\constraint\IGL2_CoreRISCV_derived_constraints.sdc;sdc"
+VALUE "C:\Users\ciaran.lappin\Documents\Boards\M2GL025_Future\Projects\MASTER\IGLOO2_CoreRISCV_AXI4_TickTacToe\constraint\fp\IGL2_CoreRISCV_derived_constraints.pdc;pdc"
+VALUE "C:\Users\ciaran.lappin\Documents\Boards\M2GL025_Future\Projects\MASTER\IGLOO2_CoreRISCV_AXI4_TickTacToe\constraint\user.sdc;sdc"
+VALUE "C:\Users\ciaran.lappin\Documents\Boards\M2GL025_Future\Projects\MASTER\IGLOO2_CoreRISCV_AXI4_TickTacToe\constraint\io\user.pdc;pdc"
+ENDLIST
+LIST OPTIONAL_FILES
+ENDLIST
+LIST VCD_FILES
+ENDLIST
