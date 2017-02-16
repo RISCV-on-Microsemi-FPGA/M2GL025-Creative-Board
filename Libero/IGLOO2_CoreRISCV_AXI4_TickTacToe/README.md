@@ -33,3 +33,7 @@ Libero SoC can be downloaded at http://www.microsemi.com/products/fpga-soc/desig
 
 
 Further details on the Future Creative board www.FutureElectronics.com/CreativeDevelopmentBoard 
+
+NOTE: If UserCore is missing from the projects, they can be found at the link below in the IP-Packages folder.
+
+https://github.com/RISCV-on-Microsemi-FPGA/riscv-junk-drawer
