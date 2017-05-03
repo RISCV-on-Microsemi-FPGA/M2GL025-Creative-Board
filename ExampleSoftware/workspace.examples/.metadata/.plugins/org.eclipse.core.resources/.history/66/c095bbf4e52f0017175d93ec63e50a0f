@@ -1,0 +1,12 @@
+riscv_hal/init.d: ../riscv_hal/init.c ../riscv_hal/encoding.h \
+ /home/user2/Microsemi_SoftConsole_v5.0/extras/workspace.examples/TickTackToe/hw_platform.h \
+ /home/user2/Microsemi_SoftConsole_v5.0/extras/workspace.examples/TickTackToe/drivers/CoreUARTapb/core_uart_apb.h \
+ /home/user2/Microsemi_SoftConsole_v5.0/extras/workspace.examples/TickTackToe/hal/cpu_types.h
+
+../riscv_hal/encoding.h:
+
+/home/user2/Microsemi_SoftConsole_v5.0/extras/workspace.examples/TickTackToe/hw_platform.h:
+
+/home/user2/Microsemi_SoftConsole_v5.0/extras/workspace.examples/TickTackToe/drivers/CoreUARTapb/core_uart_apb.h:
+
+/home/user2/Microsemi_SoftConsole_v5.0/extras/workspace.examples/TickTackToe/hal/cpu_types.h:

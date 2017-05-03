@@ -1,0 +1,78 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+-include ../makefile.init
+
+RM := rm -rf
+
+# All of the sources participating in the build are defined here
+-include sources.mk
+-include riscv_hal/subdir.mk
+-include hal/subdir.mk
+-include drivers/CoreUARTapb/subdir.mk
+-include drivers/CoreTimer/subdir.mk
+-include drivers/CoreSPI/subdir.mk
+-include drivers/CoreGPIO/subdir.mk
+-include TicTacToe/subdir.mk
+-include MicrosemiTSDriver/subdir.mk
+-include MicrosemiTFTDriver/subdir.mk
+-include subdir.mk
+-include objects.mk
+
+ifneq ($(MAKECMDGOALS),clean)
+ifneq ($(strip $(ASM_DEPS)),)
+-include $(ASM_DEPS)
+endif
+ifneq ($(strip $(S_UPPER_DEPS)),)
+-include $(S_UPPER_DEPS)
+endif
+ifneq ($(strip $(C_DEPS)),)
+-include $(C_DEPS)
+endif
+endif
+
+-include ../makefile.defs
+
+# Add inputs and outputs from these tool invocations to the build variables 
+SECONDARY_FLASH += \
+TickTackToe.hex \
+
+SECONDARY_LIST += \
+TickTackToe.lst \
+
+
+# All Target
+all: TickTackToe.elf secondary-outputs
+
+# Tool invocations
+TickTackToe.elf: $(OBJS) $(USER_OBJS)
+	@echo 'Building target: $@'
+	@echo 'Invoking: RISC-V GCC/Newlib C Linker'
+	riscv64-unknown-elf-gcc -g3 -gdwarf-2 -m32 -T"../all-ram.lds" -nostartfiles -nostdlib -Wl,-Map,TickTackToe.map -march=RV32IM -mmuldiv -mfloat-abi=soft -o "TickTackToe.elf" $(OBJS) $(USER_OBJS) $(LIBS)
+	@echo 'Finished building target: $@'
+	@echo ' '
+
+TickTackToe.hex: TickTackToe.elf
+	@echo 'Invoking: RISC-V GCC/Newlib GNU Create Flash Image'
+	riscv64-unknown-elf-objcopy -O ihex TickTackToe.elf  "TickTackToe.hex"
+	@echo 'Finished building: $@'
+	@echo ' '
+
+TickTackToe.lst: TickTackToe.elf
+	@echo 'Invoking: RISC-V GCC/Newlib Create Listing'
+	riscv64-unknown-elf-objdump -h -S TickTackToe.elf > "TickTackToe.lst"
+	@echo 'Finished building: $@'
+	@echo ' '
+
+# Other Targets
+clean:
+	-$(RM) $(EXECUTABLES)$(SECONDARY_VHEX)$(OBJS)$(SECONDARY_FLASH)$(SECONDARY_LIST)$(ASM_DEPS)$(S_UPPER_DEPS)$(C_DEPS) TickTackToe.elf
+	-@echo ' '
+
+secondary-outputs: $(SECONDARY_FLASH) $(SECONDARY_LIST) $(SECONDARY_VHEX)
+
+.PHONY: all clean dependents
+.SECONDARY:
+
+-include ../makefile.targets

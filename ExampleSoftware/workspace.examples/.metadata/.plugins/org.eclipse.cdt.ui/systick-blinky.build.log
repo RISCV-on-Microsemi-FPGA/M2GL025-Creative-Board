@@ -1,0 +1,6 @@
+10:48:41 **** Incremental Build of configuration Debug for project systick-blinky ****
+make all 
+make: Nothing to be done for `all'.
+
+10:48:41 Build Finished (took 59ms)
+

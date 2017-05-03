@@ -1,0 +1,14 @@
+MicrosemiTSDriver/Microsemi_Adafruit_STMPE610.d: \
+ ../MicrosemiTSDriver/Microsemi_Adafruit_STMPE610.c \
+ ../MicrosemiTSDriver/Microsemi_Adafruit_STMPE610.h \
+ /home/user2/Microsemi_SoftConsole_v5.0/extras/workspace.examples/TickTackToe/drivers/CoreGPIO/core_gpio.h \
+ /home/user2/Microsemi_SoftConsole_v5.0/extras/workspace.examples/TickTackToe/hal/cpu_types.h \
+ /home/user2/Microsemi_SoftConsole_v5.0/extras/workspace.examples/TickTackToe/drivers/CoreSPI/core_spi.h
+
+../MicrosemiTSDriver/Microsemi_Adafruit_STMPE610.h:
+
+/home/user2/Microsemi_SoftConsole_v5.0/extras/workspace.examples/TickTackToe/drivers/CoreGPIO/core_gpio.h:
+
+/home/user2/Microsemi_SoftConsole_v5.0/extras/workspace.examples/TickTackToe/hal/cpu_types.h:
+
+/home/user2/Microsemi_SoftConsole_v5.0/extras/workspace.examples/TickTackToe/drivers/CoreSPI/core_spi.h:
