@@ -1,2 +1,0 @@
-eclipse.preferences.version=1
-org.eclipse.core.variables.valueVariables=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<valueVariables>\r\n<valueVariable description\="Name of the OpenOCD executable" name\="openocd_executable" readOnly\="false" value\="openocd.exe"/>\r\n<valueVariable description\="Path to the OpenOCD installation folder" name\="openocd_path" readOnly\="false" value\="${eclipse_home}/../openocd/bin"/>\r\n</valueVariables>\r\n

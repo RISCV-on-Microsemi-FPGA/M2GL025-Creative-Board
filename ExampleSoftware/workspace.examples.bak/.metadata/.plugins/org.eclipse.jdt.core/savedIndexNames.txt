@@ -1,1 +1,0 @@
-INDEX VERSION 1.127+C:\dev\tools\softconsole\SoftConsole_v5.1\extras\workspace.examples\.metadata\.plugins\org.eclipse.jdt.core

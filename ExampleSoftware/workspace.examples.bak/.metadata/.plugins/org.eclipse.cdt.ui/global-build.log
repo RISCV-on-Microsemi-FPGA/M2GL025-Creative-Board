@@ -1,8 +1,0 @@
-14:56:24 **** Build of configuration Debug for project TickTackToe ****
-make all 
-Invoking: RISC-V GCC/Newlib Print Size
-riscv32-unknown-elf-size --format=berkeley "TickTackToe.elf"
-   text	   data	    bss	    dec	    hex	filename
-  37390	   1084	   4337	  42811	   a73b	TickTackToe.elf
-Finished building: TickTackToe.siz
- 
