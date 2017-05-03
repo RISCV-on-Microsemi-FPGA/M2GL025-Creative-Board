@@ -1,5 +1,5 @@
 # Tick Tack Toe Game
-#Version 2 update
+# Version 2 update
 Fix for running on SoftConsole v5 smoothly.
 
 Once downloaded, open SoftConsole v5.0 and select this workspace "workspace.examples.bak"
