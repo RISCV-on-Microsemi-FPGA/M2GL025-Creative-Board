@@ -9,7 +9,7 @@ The FPGA Designs include the following features
 * RISC-V debug block allowing on-target debug using openocd/GDB
 * On-chip NVM used as boot/execution memory
 * DDR2 memory for code/data
-* User preipherals such as GPIO, Timers, UART
+* User peripherals such as GPIO, Timers, UART
 
 The memory map for each design is available within each Libero project.
 
