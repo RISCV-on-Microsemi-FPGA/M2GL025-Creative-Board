@@ -1,40 +1,48 @@
-### M2GL025-Creative-Board
-
+================================================================================
+        RISCV_BaseDesign for the IGLOOO2 Creative Development Kit
+================================================================================
+ 
+This design is targeted at the IGLOO2 Creative Development Kit. It uses
+the CoreRISCV_AXI4 as its soft processor.
+ 
 ### Overview
-	IGLOO2 M2GL025 Creative Development Board
-	Both of these projects use the DDR and an CoreAHBLSRAM.
+   IGLOO2 M2GL025 Creative Development Board
+   These projects use the DDR and eNVM.
+   When setting up the DDR of the HPMS for a similar project, select "2T" as the timing
+   mode in the Memory Initialization tab. Then continue to use the DDR configurations
+   from the M2GL025 [manual](http://www.futureelectronics.com/en/Technologies/Product.aspx?ProductID=FUTUREM2SFEVBMICROSEMI8075272&IM=0) and request the manuals via the "Microsemi Click Here" button.
+ 
+ 
+   After regenerating the smart design for the M2GL025/M2S025 RISCV Base Designs
+   the following step must be taken before synthesis.
+   Go to File-Component-Work-"SmartDesign-Name"-CoreRISCV_AXI-rtl-vlog-core-coreriscv_axi4_defines.v
+   and uncomment " `define USE_REGISTERS"
+
 	When setting up the DDR of the HPMS for a similar project, select "2T" as the timing 
 	mode in the Memory Initialization tab. Then continue to use the DDR configurations 
 	from the M2GL025 manual. 
-
-
-	After regenerating the smart design for either RISCV projects for the M2GL025 
-	add the	following line to each of the signals below:
-
-	/* synthesis syn_ramstyle = "registers" */
-
-	If this is not added the design will fail synthesis with a ram error.
-
-### Signals 
-
-	CoreRISCV_AXI4 -> Top.v 
-	ram_payload_addr_beat [0:1]; 
-	ram_payload_addr_block [0:1]; 
-	ram_payload_data [0:1];
-	ram_data [0:1]; 
-	ram_id [0:1]; 
-	ram_strb [0:1];
-
-	Files -> Component -> Actel -> DirectCore -> COREAXITOAHBL -> 3.0.101 -> rtl -> vlog 
-	-> core -> CoreAXItoAHB_RAM_syncWrAsyncRd.v
-
-	reg [63:0] mem [15:0];
-
-	e.g. ram_id [0:1] /* synthesis syn_ramstyle = "registers" */;
+ 
+--------------------------------------------------------------------------------
+    Memory map
+--------------------------------------------------------------------------------
+ 
+0x60000000: NVM Flash memory containing the RISC-V processor reset vector and
+            application code.
+ 
+0x70001000: CoreUART
+0x70002000: CoreGPIO inputs
+0x70003000: CoreTimer0
+0x70004000: CoreTimer1
+0x70005000: CoreGPIO outputs
+ 
+0x80000000: DDR memory.
+ 
+--------------------------------------------------------------------------------
+    Mirror Slave to Mirror Master AHB Bridge
+--------------------------------------------------------------------------------
+The Mirror Slave to Mirror Master AHB Bridge core is available from [IP-packages](https://github.com/RISCV-on-Microsemi-FPGA/riscv-junk-drawer/tree/master/IP-packages). This core allows for the connection of eNVM to the MMIO interface at 0x60000000.
 
 ### Notes
-If UserCore is missing from the projects, they can be found at the link below in the IP-Packages folder.
-
-https://github.com/RISCV-on-Microsemi-FPGA/riscv-junk-drawer
+If UserCore is missing from the projects, they can be found at the link below in the IP-Packages [folder](https://github.com/RISCV-on-Microsemi-FPGA/riscv-junk-drawer) .
 
 
