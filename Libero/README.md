@@ -1,6 +1,5 @@
-================================================================================
-        RISCV_BaseDesign for the IGLOOO2 Creative Development Kit
-================================================================================
+### RISCV_BaseDesign for the IGLOOO2 Creative Development Kit
+
  
 This design is targeted at the IGLOO2 Creative Development Kit. It uses
 the CoreRISCV_AXI4 as its soft processor.
