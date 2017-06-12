@@ -1,0 +1,24 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../TicTacToe/tictactoe.c 
+
+OBJS += \
+./TicTacToe/tictactoe.o 
+
+C_DEPS += \
+./TicTacToe/tictactoe.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+TicTacToe/%.o: ../TicTacToe/%.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: RISC-V GCC/Newlib C Compiler'
+	riscv64-unknown-elf-gcc -g3 -gdwarf-2 -m32 -I"/home/user/Desktop/Untitled Folder/workspace.examples/TickTackToe/drivers" -I"/home/user/Desktop/Untitled Folder/workspace.examples/TickTackToe" -I"/home/user/Desktop/Untitled Folder/workspace.examples/TickTackToe/drivers/CoreGPIO" -I"/home/user/Desktop/Untitled Folder/workspace.examples/TickTackToe/drivers/CoreSPI" -I"/home/user/Desktop/Untitled Folder/workspace.examples/TickTackToe/drivers/CoreTimer" -I"/home/user/Desktop/Untitled Folder/workspace.examples/TickTackToe/drivers/CoreUARTapb" -I"/home/user/Desktop/Untitled Folder/workspace.examples/TickTackToe/hal" -I"/home/user/Desktop/Untitled Folder/workspace.examples/TickTackToe/MicrosemiTFTDriver" -I"/home/user/Desktop/Untitled Folder/workspace.examples/TickTackToe/MicrosemiTSDriver" -I"/home/user/Desktop/Untitled Folder/workspace.examples/TickTackToe/riscv_hal" -I"/home/user/Desktop/Untitled Folder/workspace.examples/TickTackToe/TicTacToe" -O0 -Wall -c -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -march=RV32IM -mmuldiv -mfloat-abi=soft -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

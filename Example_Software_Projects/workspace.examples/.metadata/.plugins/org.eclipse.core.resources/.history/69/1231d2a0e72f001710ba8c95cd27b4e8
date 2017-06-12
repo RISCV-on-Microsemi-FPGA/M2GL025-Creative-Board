@@ -1,0 +1,36 @@
+main.d: ../main.c ../hw_platform.h ../drivers/CoreGPIO/core_gpio.h \
+ /home/user/Desktop/Untitled\ Folder/workspace.examples/TickTackToe/hal/cpu_types.h \
+ ../drivers/CoreUARTapb/core_uart_apb.h ../drivers/CoreSPI/core_spi.h \
+ ../drivers/CoreTimer/core_timer.h ../riscv_hal/riscv_CoreplexE31.h \
+ ../riscv_hal/encoding.h \
+ ../MicrosemiTFTDriver/Microsemi_Adafruit_ILI9341.h \
+ /home/user/Desktop/Untitled\ Folder/workspace.examples/TickTackToe/drivers/CoreSPI/core_spi.h \
+ /home/user/Desktop/Untitled\ Folder/workspace.examples/TickTackToe/drivers/CoreGPIO/core_gpio.h \
+ ../MicrosemiTSDriver/Microsemi_Adafruit_STMPE610.h \
+ ../TicTacToe/tictactoe.h
+
+../hw_platform.h:
+
+../drivers/CoreGPIO/core_gpio.h:
+
+/home/user/Desktop/Untitled\ Folder/workspace.examples/TickTackToe/hal/cpu_types.h:
+
+../drivers/CoreUARTapb/core_uart_apb.h:
+
+../drivers/CoreSPI/core_spi.h:
+
+../drivers/CoreTimer/core_timer.h:
+
+../riscv_hal/riscv_CoreplexE31.h:
+
+../riscv_hal/encoding.h:
+
+../MicrosemiTFTDriver/Microsemi_Adafruit_ILI9341.h:
+
+/home/user/Desktop/Untitled\ Folder/workspace.examples/TickTackToe/drivers/CoreSPI/core_spi.h:
+
+/home/user/Desktop/Untitled\ Folder/workspace.examples/TickTackToe/drivers/CoreGPIO/core_gpio.h:
+
+../MicrosemiTSDriver/Microsemi_Adafruit_STMPE610.h:
+
+../TicTacToe/tictactoe.h:

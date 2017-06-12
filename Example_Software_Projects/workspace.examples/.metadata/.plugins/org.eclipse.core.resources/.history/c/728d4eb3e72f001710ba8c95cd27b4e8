@@ -1,0 +1,9 @@
+riscv_hal/syscall.d: ../riscv_hal/syscall.c ../riscv_hal/encoding.h \
+ /home/user/Desktop/Untitled\ Folder/workspace.examples/TickTackToe/drivers/CoreUARTapb/core_uart_apb.h \
+ /home/user/Desktop/Untitled\ Folder/workspace.examples/TickTackToe/hal/cpu_types.h
+
+../riscv_hal/encoding.h:
+
+/home/user/Desktop/Untitled\ Folder/workspace.examples/TickTackToe/drivers/CoreUARTapb/core_uart_apb.h:
+
+/home/user/Desktop/Untitled\ Folder/workspace.examples/TickTackToe/hal/cpu_types.h:
