@@ -1,0 +1,23 @@
+drivers/CoreUARTapb/core_uart_apb.d: \
+ ../drivers/CoreUARTapb/core_uart_apb.c \
+ /home/user/Microsemi-SoftConsole-v5.1.0.19/extras/workspace.examples/TickTackToe/hal/hal.h \
+ /home/user/Microsemi-SoftConsole-v5.1.0.19/extras/workspace.examples/TickTackToe/hal/cpu_types.h \
+ /home/user/Microsemi-SoftConsole-v5.1.0.19/extras/workspace.examples/TickTackToe/hal/hw_reg_access.h \
+ ../drivers/CoreUARTapb/coreuartapb_regs.h \
+ ../drivers/CoreUARTapb/core_uart_apb.h \
+ /home/user/Microsemi-SoftConsole-v5.1.0.19/extras/workspace.examples/TickTackToe/hal/cpu_types.h \
+ /home/user/Microsemi-SoftConsole-v5.1.0.19/extras/workspace.examples/TickTackToe/hal/hal_assert.h
+
+/home/user/Microsemi-SoftConsole-v5.1.0.19/extras/workspace.examples/TickTackToe/hal/hal.h:
+
+/home/user/Microsemi-SoftConsole-v5.1.0.19/extras/workspace.examples/TickTackToe/hal/cpu_types.h:
+
+/home/user/Microsemi-SoftConsole-v5.1.0.19/extras/workspace.examples/TickTackToe/hal/hw_reg_access.h:
+
+../drivers/CoreUARTapb/coreuartapb_regs.h:
+
+../drivers/CoreUARTapb/core_uart_apb.h:
+
+/home/user/Microsemi-SoftConsole-v5.1.0.19/extras/workspace.examples/TickTackToe/hal/cpu_types.h:
+
+/home/user/Microsemi-SoftConsole-v5.1.0.19/extras/workspace.examples/TickTackToe/hal/hal_assert.h:

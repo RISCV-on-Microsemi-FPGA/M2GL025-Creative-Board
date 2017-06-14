@@ -1,0 +1,22 @@
+drivers/CoreGPIO/core_gpio.d: ../drivers/CoreGPIO/core_gpio.c \
+ ../drivers/CoreGPIO/core_gpio.h \
+ /home/user/Microsemi-SoftConsole-v5.1.0.19/extras/workspace.examples/TickTackToe/hal/cpu_types.h \
+ /home/user/Microsemi-SoftConsole-v5.1.0.19/extras/workspace.examples/TickTackToe/hal/hal.h \
+ /home/user/Microsemi-SoftConsole-v5.1.0.19/extras/workspace.examples/TickTackToe/hal/cpu_types.h \
+ /home/user/Microsemi-SoftConsole-v5.1.0.19/extras/workspace.examples/TickTackToe/hal/hw_reg_access.h \
+ /home/user/Microsemi-SoftConsole-v5.1.0.19/extras/workspace.examples/TickTackToe/hal/hal_assert.h \
+ ../drivers/CoreGPIO/coregpio_regs.h
+
+../drivers/CoreGPIO/core_gpio.h:
+
+/home/user/Microsemi-SoftConsole-v5.1.0.19/extras/workspace.examples/TickTackToe/hal/cpu_types.h:
+
+/home/user/Microsemi-SoftConsole-v5.1.0.19/extras/workspace.examples/TickTackToe/hal/hal.h:
+
+/home/user/Microsemi-SoftConsole-v5.1.0.19/extras/workspace.examples/TickTackToe/hal/cpu_types.h:
+
+/home/user/Microsemi-SoftConsole-v5.1.0.19/extras/workspace.examples/TickTackToe/hal/hw_reg_access.h:
+
+/home/user/Microsemi-SoftConsole-v5.1.0.19/extras/workspace.examples/TickTackToe/hal/hal_assert.h:
+
+../drivers/CoreGPIO/coregpio_regs.h:
