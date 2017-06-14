@@ -25,5 +25,5 @@ This project includes FlashPro Express projects that can be used to program the 
 ### Modify_The_FPGA_Design 
 Libero is Microsemi's FPGA design tool. You will need this tool if you wish to modify the example FPGA designs. Libero is available from [here](https://www.microsemi.com/products/fpga-soc/design-resources/design-software/libero-soc#downloads).
 
-### Example Software Projects
+### Example_Software_Projects
 A set of self-contained example software projects are available for these designs from the SoftConsole [page](https://github.com/RISCV-on-Microsemi-FPGA/SoftConsole).
