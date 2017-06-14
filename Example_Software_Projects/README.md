@@ -11,5 +11,5 @@ Once the GitHub repository is on your local machine.
 * Select menu items: "File" -> "Switch Workspace" -> "Other..."
 * In the Workspace Launcher dialog box click "Browse"
 * Select the SoftConsole/ExampleWorkspace folder of the SoftConsole GitHub repository you cloned or downloaded.
-* You will now TickTackToe project in the "Project Explorer" pane.
+* You will now see TickTackToe project in the "Project Explorer" pane.
 
