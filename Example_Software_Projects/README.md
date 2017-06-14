@@ -1,5 +1,5 @@
 # SoftConsole Example Workspace
-This folder contains a SoftConsole example workspace containing various RISC-V example software projects.
+This folder contains the TickTackToe SoftConsole workspace.
 
 ### Using this Workspace in SoftConsole
 You must first clone or download the entire SoftConsole GitHub repository. The easiest approach is to click the green "Clone or download" button on this [page](https://github.com/RISCV-on-Microsemi-FPGA/SoftConsole) then click "Download ZIP".
