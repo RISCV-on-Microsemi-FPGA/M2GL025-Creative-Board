@@ -1,4 +1,4 @@
-# IGLOO2 Creative Development Board RISC-V Sample Designs 
+# IGLOO2 Creative Development Board RISC-V Sample FPGA Designs 
 Sample RISC-V Libero projects for the IGLOO2 (M2GL025) Creative Development Board.
 
 This project contains Libero projects containing FPGA designs including a RISC-V RV32IM soft processor. Programming bitstreams are also included so you don't have to run through the full FPGA design flow in order to start developing software for RISC-V.
@@ -22,4 +22,8 @@ This folder contains CoreRISCV_AXI4 Libero V11.8 projects.
 * CoreRISCV_AXI4_BaseDesign, contains a simple RISCV design which allows users to use basic peripherals such as GPIO, UART and Timers. 
 * IGL2_CoreRISCV_AXI4_TickTackToe, contains the design used along side of the TickTackToe example software found [here](https://github.com/RISCV-on-Microsemi-FPGA/M2GL025-Creative-Board/tree/master/ExampleSoftware). To use this deisgn a daughter board is needed from Adafruit, more information on this can be found [here](https://www.adafruit.com/product/1651)
 
+### Modifying the Libero projects
+Some of the Libero projects use IP packages not directly available from the Microsemi IP Catalog. These IP packages were created to speed up design creation by wrapping simple logic into reusable user IP packages.
+These user IP packages are available [here](https://github.com/RISCV-on-Microsemi-FPGA/riscv-junk-drawer/tree/master/IP-packages).
 
+Please note that you may need to uncomment "`define USE_REGISTERS" in file coreriscv_axi4_defines.v in order to reduce RAM blocks usage. You will need to do this anytime you regenerate the top level SmartDesign in Libero.
