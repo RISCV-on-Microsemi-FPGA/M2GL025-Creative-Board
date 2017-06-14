@@ -19,7 +19,7 @@ The IGLOO2 Creative Development Board includes a IGLOO2 M2GL025 FPGA. Details of
 ### Libero Projects
 This folder contains CoreRISCV_AXI4 Libero V11.8 projects.
 
-* The first project, CoreRISCV_AXI4_BaseDesign, contains a simple RISCV design which allows users to use basic peripherals such as GPIO, UART and Timers. 
-* The second project, IGL2_CoreRISCV_AXI4_TickTackToe, contains the design used along side of the TickTackToe example software found [here](https://github.com/RISCV-on-Microsemi-FPGA/M2GL025-Creative-Board/tree/master/ExampleSoftware) . To use this deisgn a daughter board is needed from Adafruit, more information on this can be found [here](https://www.adafruit.com/product/1651)
+* CoreRISCV_AXI4_BaseDesign, contains a simple RISCV design which allows users to use basic peripherals such as GPIO, UART and Timers. 
+* IGL2_CoreRISCV_AXI4_TickTackToe, contains the design used along side of the TickTackToe example software found [here](https://github.com/RISCV-on-Microsemi-FPGA/M2GL025-Creative-Board/tree/master/ExampleSoftware) . To use this deisgn a daughter board is needed from Adafruit, more information on this can be found [here](https://www.adafruit.com/product/1651)
 
 
