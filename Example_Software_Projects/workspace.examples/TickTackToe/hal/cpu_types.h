@@ -1,8 +1,8 @@
 /*******************************************************************************
- * (c) Copyright 2007-2013 Microsemi SoC Products Group. All rights reserved.
+ * (c) Copyright 2007-2017 Microsemi SoC Products Group. All rights reserved.
  * 
- * SVN $Revision: 5258 $
- * SVN $Date: 2013-03-21 18:11:02 +0530 (Thu, 21 Mar 2013) $
+ * SVN $Revision: 9085 $
+ * SVN $Date: 2017-04-28 14:29:14 +0530 (Fri, 28 Apr 2017) $
  */
 #ifndef __CPU_TYPES_H
 #define __CPU_TYPES_H   1
@@ -28,3 +28,4 @@ typedef unsigned int addr_t;
 typedef unsigned int psr_t;
 
 #endif  /* __CPU_TYPES_H */
+

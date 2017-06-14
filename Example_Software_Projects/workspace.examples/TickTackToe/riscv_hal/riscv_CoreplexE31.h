@@ -1,10 +1,24 @@
-
+/*******************************************************************************
+ * (c) Copyright 2016-2017 Microsemi SoC Products Group.  All rights reserved.
+ *
+ * @file riscv_CoreplexE31.h
+ * @author Microsemi SoC Products Group
+ * @brief RISC-V soft processor CoreRISCV_AXI4 PLIC and PRCI access data
+ *        structures and functions.
+ *
+ * SVN $Revision: 9187 $
+ * SVN $Date: 2017-05-13 13:31:28 +0530 (Sat, 13 May 2017) $
+ */
 #ifndef RISCV_COREPLEXE31_H
 #define RISCV_COREPLEXE31_H
 
 #include <stdint.h>
 
 #include "encoding.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 #define PLIC_NUM_SOURCES 31
 #define PLIC_NUM_PRIORITIES 0
@@ -48,6 +62,7 @@ typedef enum
     External_31_IRQn = 31
 } IRQn_Type;
 
+
 /*==============================================================================
  * PLIC: Platform Level Interrupt Controller
  */
@@ -77,13 +92,15 @@ typedef struct
     volatile uint32_t RESERVED1[992];
     
     /*-------------------- Target enables --------------------*/
-    volatile Target_Enables_Type TARGET_ENABLES[15872];
-    volatile uint32_t RESERVED2[32768];
+    volatile Target_Enables_Type TARGET_ENABLES[15808];
+
+    volatile uint32_t RESERVED2[16384];
     
-    /*-------------------- Target enables --------------------*/
+    /*--- Target Priority threshold and claim/complete---------*/
     IRQ_Target_Type TARGET[15872];
     
 } PLIC_Type;
+
 
 #define PLIC    ((PLIC_Type *)PLIC_BASE_ADDR)
 
@@ -95,6 +112,7 @@ typedef struct
 typedef struct
 {
     volatile uint32_t MSIP[4095];
+    volatile uint32_t reserved;
     volatile uint64_t MTIMECMP[4095];
     volatile const uint64_t MTIME;
 } PRCI_Type;
@@ -102,31 +120,39 @@ typedef struct
 #define PRCI    ((PRCI_Type *)PRCI_BASE) 
 
 /*==============================================================================
- * Move the following to appropriate header.
+ * The function PLIC_init() initializes the PLIC controller and enables the 
+ * global external interrupt bit.
  */
 static inline void PLIC_init(void)
 {
-	uint32_t inc;
-	unsigned long hart_id = read_csr(mhartid);
+    uint32_t inc;
+    unsigned long hart_id = read_csr(mhartid);
 
-	/* Disable all interrupts for the current hart. */
-	for(inc = 0; inc < ((PLIC_NUM_SOURCES + 32u) / 32u); ++inc)
-	{
-		PLIC->TARGET_ENABLES[hart_id].ENABLES[inc] = 0;
-	}
+    /* Disable all interrupts for the current hart. */
+    for(inc = 0; inc < ((PLIC_NUM_SOURCES + 32u) / 32u); ++inc)
+    {
+        PLIC->TARGET_ENABLES[hart_id].ENABLES[inc] = 0;
+    }
 
-	/* Set priorities to zero. */
-	/* Should this really be done??? Calling PLIC_init() on one hart will cause
-	 * the priorities previously set by other harts to be messed up. */
-	for(inc = 0; inc < PLIC_NUM_SOURCES; ++inc)
-	{
+    /* Set priorities to zero. */
+    /* Should this really be done??? Calling PLIC_init() on one hart will cause
+    * the priorities previously set by other harts to be messed up. */
+    for(inc = 0; inc < PLIC_NUM_SOURCES; ++inc)
+    {
         PLIC->SOURCE_PRIORITY[inc] = 0;
     }
 
-	/* Set the threshold to zero. */
-	PLIC->TARGET[hart_id].PRIORITY_THRESHOLD = 0;
+    /* Set the threshold to zero. */
+    PLIC->TARGET[hart_id].PRIORITY_THRESHOLD = 0;
+
+    /* Enable machine external interrupts. */
+    set_csr(mie, MIP_MEIP);
 }
 
+/*==============================================================================
+ * The function PLIC_EnableIRQ() enables the external interrupt for the interrupt
+ * number indicated by the parameter IRQn.
+ */
 static inline void PLIC_EnableIRQ(IRQn_Type IRQn)
 {
     unsigned long hart_id = read_csr(mhartid);
@@ -135,42 +161,92 @@ static inline void PLIC_EnableIRQ(IRQn_Type IRQn)
     PLIC->TARGET_ENABLES[hart_id].ENABLES[IRQn / 32] = current;
 }
 
+/*==============================================================================
+ * The function PLIC_DisableIRQ() disables the external interrupt for the interrupt
+ * number indicated by the parameter IRQn.
 
+ * NOTE:
+ * 	This function can be used to disable the external interrupt from outside
+ * 	external interrupt handler function.
+ * 	This function MUST NOT be used from within the External Interrupt handler.
+ * 	If you wish to disable the external interrupt while the interrupt handler
+ * 	for that external interrupt is executing then you must use the return value
+ * 	EXT_IRQ_DISABLE to return from the extern interrupt handler.
+ */
 static inline void PLIC_DisableIRQ(IRQn_Type IRQn)
 {
     unsigned long hart_id = read_csr(mhartid);
     uint32_t current = PLIC->TARGET_ENABLES[hart_id].ENABLES[IRQn / 32];
+
     current &= ~((uint32_t)1 << (IRQn % 32));
+
     PLIC->TARGET_ENABLES[hart_id].ENABLES[IRQn / 32] = current;
 }
 
-
+/*==============================================================================
+ * The function PLIC_SetPriority() sets the priority for the external interrupt 
+ * for the interrupt number indicated by the parameter IRQn.
+ */
 static inline void PLIC_SetPriority(IRQn_Type IRQn, uint32_t priority) 
 {
     PLIC->SOURCE_PRIORITY[IRQn] = priority;
 }
 
-
+/*==============================================================================
+ * The function PLIC_GetPriority() returns the priority for the external interrupt 
+ * for the interrupt number indicated by the parameter IRQn.
+ */
 static inline uint32_t PLIC_GetPriority(IRQn_Type IRQn)
 {
     return PLIC->SOURCE_PRIORITY[IRQn];
 }
 
-
+/*==============================================================================
+ * The function PLIC_ClaimIRQ() claims the interrupt from the PLIC controller.
+ */
 static inline uint32_t PLIC_ClaimIRQ(void)
 {
-	unsigned long hart_id = read_csr(mhartid);
+    unsigned long hart_id = read_csr(mhartid);
 
-	return PLIC->TARGET[hart_id].CLAIM_COMPLETE;
+    return PLIC->TARGET[hart_id].CLAIM_COMPLETE;
 }
 
-
+/*==============================================================================
+ * The function PLIC_CompleteIRQ() indicates to the PLIC controller the interrupt
+ * is processed and claim is complete.
+ */
 static inline void PLIC_CompleteIRQ(uint32_t source)
 {
-	unsigned long hart_id = read_csr(mhartid);
+    unsigned long hart_id = read_csr(mhartid);
 
-	PLIC->TARGET[hart_id].CLAIM_COMPLETE = source;
+    PLIC->TARGET[hart_id].CLAIM_COMPLETE = source;
 }
 
-#endif  /* RISCV_COREPLEXE31_H */
+/*==============================================================================
+ * The function raise_soft_interrupt() raises a synchronous software interrupt by
+ * writing into the MSIP register.
+ */
+static inline void raise_soft_interrupt()
+{
+    unsigned long hart_id = read_csr(mhartid);
 
+    /*You need to make sure that the global interrupt is enabled*/
+    set_csr(mie, MIP_MSIP);       /*Enable software interrupt bit */
+    PRCI->MSIP[hart_id] = 0x01;   /*raise soft interrupt for hart0*/
+}
+
+/*==============================================================================
+ * The function clear_soft_interrupt() clears a synchronous software interrupt by
+ * clearing the MSIP register.
+ */
+static inline void clear_soft_interrupt()
+{
+    unsigned long hart_id = read_csr(mhartid);
+    PRCI->MSIP[hart_id] = 0x00;   /*clear soft interrupt for hart0*/
+}
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif  /* RISCV_COREPLEXE31_H */

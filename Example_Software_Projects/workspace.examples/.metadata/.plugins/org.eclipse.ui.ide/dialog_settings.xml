@@ -3,8 +3,8 @@
 	<list key="installedFeatures">
 		<item value="gnu.io.rxtx.sdk:2.1.7.4_v20071016-417C7DP1Bh_eEaQJBrHBHg"/>
 		<item value="gnu.io.rxtx:2.1.7.4_v20071016-7B57e7UAXMAAqGAGf"/>
-		<item value="ilg.gnuarmeclipse.debug.gdbjtag.openocd:4.1.1.201606210758"/>
-		<item value="ilg.gnuarmeclipse.managedbuild.cross:2.2.1.201606210758"/>
+		<item value="ilg.gnuarmeclipse.debug.gdbjtag.openocd:4.1.4.201704251808"/>
+		<item value="ilg.gnuarmeclipse.managedbuild.cross:2.4.1.201704251808"/>
 		<item value="org.eclipse.cdt.build.crossgcc:8.6.0.201502131403"/>
 		<item value="org.eclipse.cdt.gdb:8.6.0.201502131403"/>
 		<item value="org.eclipse.cdt.launch.remote:8.6.0.201502131403"/>
@@ -47,15 +47,13 @@
 		<item value="org.eclipse.tm.terminal:3.7.0.201502160819"/>
 	</list>
 	<section name="ExternalProjectImportWizard">
-		<item value="false" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
-		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
-		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
-		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
-			<item value="/media/user2/CL_WORK/test22/TickTackToe"/>
-			<item value="/media/user2/CL_WORK/temp/TFT"/>
+	</section>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
 		</list>
-		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
-			<item value=""/>
-		</list>
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item value="202" key="DIALOG_X_ORIGIN"/>
+		<item value="197" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

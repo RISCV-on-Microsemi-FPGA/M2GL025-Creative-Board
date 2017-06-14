@@ -1,13 +1,13 @@
 /***************************************************************************//**
- * (c) Copyright 2007-2013 Microsemi SoC Products Group. All rights reserved.
+ * (c) Copyright 2007-2017 Microsemi SoC Products Group. All rights reserved.
  * 
  * Hardware registers access functions.
  * The implementation of these function is platform and toolchain specific.
  * The functions declared here are implemented using assembler as part of the 
  * processor/toolchain specific HAL.
  * 
- * SVN $Revision: 5258 $
- * SVN $Date: 2013-03-21 18:11:02 +0530 (Thu, 21 Mar 2013) $
+ * SVN $Revision: 9085 $
+ * SVN $Date: 2017-04-28 14:29:14 +0530 (Fri, 28 Apr 2017) $
  */
 #ifndef HW_REG_ACCESS
 #define HW_REG_ACCESS
@@ -24,8 +24,8 @@
 void
 HW_set_32bit_reg
 (
-	addr_t reg_addr,
-	uint32_t value
+    addr_t reg_addr,
+    uint32_t value
 );
 
 /***************************************************************************//**
@@ -39,7 +39,7 @@ HW_set_32bit_reg
 uint32_t
 HW_get_32bit_reg
 (
-	addr_t reg_addr
+    addr_t reg_addr
 );
 
 /***************************************************************************//**
@@ -96,8 +96,8 @@ HW_get_32bit_reg_field
 void
 HW_set_16bit_reg
 (
-	addr_t reg_addr,
-	uint_fast16_t value
+    addr_t reg_addr,
+    uint_fast16_t value
 );
 
 /***************************************************************************//**
@@ -111,7 +111,7 @@ HW_set_16bit_reg
 uint16_t
 HW_get_16bit_reg
 (
-	addr_t reg_addr
+    addr_t reg_addr
 );
 
 /***************************************************************************//**
@@ -166,8 +166,8 @@ uint16_t HW_get_16bit_reg_field
 void
 HW_set_8bit_reg
 (
-	addr_t reg_addr,
-	uint_fast8_t value
+    addr_t reg_addr,
+    uint_fast8_t value
 );
 
 /***************************************************************************//**
@@ -226,3 +226,4 @@ uint8_t HW_get_8bit_reg_field
 );
 
 #endif /* HW_REG_ACCESS */
+

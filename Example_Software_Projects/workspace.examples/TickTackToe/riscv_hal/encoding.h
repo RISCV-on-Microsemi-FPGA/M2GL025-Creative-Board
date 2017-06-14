@@ -1,7 +1,20 @@
-// See LICENSE for license details.
-
+/*******************************************************************************
+ * (c) Copyright 2016-2017 Microsemi SoC Products Group.  All rights reserved.
+ *
+ * @file encodings.h
+ * @author Microsemi SoC Products Group
+ * @brief RISC-V soft processor CoreRISCV_AXI4 register bit mask and shift
+ *        constants encodings.
+ *
+ * SVN $Revision: 9014 $
+ * SVN $Date: 2017-04-19 10:53:23 +0530 (Wed, 19 Apr 2017) $
+ */
 #ifndef RISCV_CSR_ENCODING_H
 #define RISCV_CSR_ENCODING_H
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 #define MSTATUS_UIE         0x00000001
 #define MSTATUS_SIE         0x00000002
@@ -49,46 +62,46 @@
 #define MIP_HEIP            (1 << IRQ_H_EXT)
 #define MIP_MEIP            (1 << IRQ_M_EXT)
 
-#define SIP_SSIP MIP_SSIP
-#define SIP_STIP MIP_STIP
+#define SIP_SSIP            MIP_SSIP
+#define SIP_STIP            MIP_STIP
 
-#define PRV_U 0
-#define PRV_S 1
-#define PRV_H 2
-#define PRV_M 3
+#define PRV_U               0
+#define PRV_S               1
+#define PRV_H               2
+#define PRV_M               3
 
-#define VM_MBARE 0
-#define VM_MBB   1
-#define VM_MBBID 2
-#define VM_SV32  8
-#define VM_SV39  9
-#define VM_SV48  10
+#define VM_MBARE            0
+#define VM_MBB              1
+#define VM_MBBID            2
+#define VM_SV32             8
+#define VM_SV39             9
+#define VM_SV48             10
 
-#define IRQ_S_SOFT   1
-#define IRQ_H_SOFT   2
-#define IRQ_M_SOFT   3
-#define IRQ_S_TIMER  5
-#define IRQ_H_TIMER  6
-#define IRQ_M_TIMER  7
-#define IRQ_S_EXT    9
-#define IRQ_H_EXT    10
-#define IRQ_M_EXT    11
-#define IRQ_COP      12
-#define IRQ_HOST     13
+#define IRQ_S_SOFT          1
+#define IRQ_H_SOFT          2
+#define IRQ_M_SOFT          3
+#define IRQ_S_TIMER         5
+#define IRQ_H_TIMER         6
+#define IRQ_M_TIMER         7
+#define IRQ_S_EXT           9
+#define IRQ_H_EXT           10
+#define IRQ_M_EXT           11
+#define IRQ_COP             12
+#define IRQ_HOST            13
 
-#define DEFAULT_RSTVEC     0x00001000
-#define DEFAULT_NMIVEC     0x00001004
-#define DEFAULT_MTVEC      0x00001010
-#define CONFIG_STRING_ADDR 0x0000100C
-#define EXT_IO_BASE        0x40000000
-#define DRAM_BASE          0x80000000
+#define DEFAULT_RSTVEC      0x00001000
+#define DEFAULT_NMIVEC      0x00001004
+#define DEFAULT_MTVEC       0x00001010
+#define CONFIG_STRING_ADDR  0x0000100C
+#define EXT_IO_BASE         0x40000000
+#define DRAM_BASE           0x80000000
 
 // page table entry (PTE) fields
-#define PTE_V     0x001 // Valid
-#define PTE_TYPE  0x01E // Type
-#define PTE_R     0x020 // Referenced
-#define PTE_D     0x040 // Dirty
-#define PTE_SOFT  0x380 // Reserved for Software
+#define PTE_V               0x001 // Valid
+#define PTE_TYPE            0x01E // Type
+#define PTE_R               0x020 // Referenced
+#define PTE_D               0x040 // Dirty
+#define PTE_SOFT            0x380 // Reserved for Software
 
 #define PTE_TYPE_TABLE        0x00
 #define PTE_TYPE_TABLE_GLOBAL 0x02
@@ -125,20 +138,21 @@
 #ifdef __riscv
 
 #ifdef __riscv64
-# define MSTATUS_SD MSTATUS64_SD
-# define SSTATUS_SD SSTATUS64_SD
-# define MCAUSE_INT MCAUSE64_INT
-# define MCAUSE_CAUSE MCAUSE64_CAUSE
-# define RISCV_PGLEVEL_BITS 9
+# define MSTATUS_SD             MSTATUS64_SD
+# define SSTATUS_SD             SSTATUS64_SD
+# define MCAUSE_INT             MCAUSE64_INT
+# define MCAUSE_CAUSE           MCAUSE64_CAUSE
+# define RISCV_PGLEVEL_BITS     9
 #else
-# define MSTATUS_SD MSTATUS32_SD
-# define SSTATUS_SD SSTATUS32_SD
-# define RISCV_PGLEVEL_BITS 10
-# define MCAUSE_INT MCAUSE32_INT
-# define MCAUSE_CAUSE MCAUSE32_CAUSE
+# define MSTATUS_SD             MSTATUS32_SD
+# define SSTATUS_SD             SSTATUS32_SD
+# define RISCV_PGLEVEL_BITS     10
+# define MCAUSE_INT             MCAUSE32_INT
+# define MCAUSE_CAUSE           MCAUSE32_CAUSE
 #endif
-#define RISCV_PGSHIFT 12
-#define RISCV_PGSIZE (1 << RISCV_PGSHIFT)
+
+#define RISCV_PGSHIFT           12
+#define RISCV_PGSIZE            (1 << RISCV_PGSHIFT)
 
 #ifndef __ASSEMBLER__
 
@@ -179,10 +193,15 @@
 #define rdcycle() read_csr(cycle)
 #define rdinstret() read_csr(instret)
 
+#endif  /*__GNUC__*/
+
+#endif  /*__ASSEMBLER__*/
+
+#endif  /*__riscv*/
+
+#ifdef __cplusplus
+}
 #endif
 
 #endif
 
-#endif
-
-#endif

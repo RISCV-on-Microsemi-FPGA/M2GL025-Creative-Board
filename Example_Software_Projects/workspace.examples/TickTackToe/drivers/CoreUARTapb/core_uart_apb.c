@@ -210,7 +210,7 @@ UART_get_rx
         (buff_size > 0u) )
     {
         rx_idx = 0u;
-        new_status = HAL_get_8bit_reg( this_uart->base_address, STATUS );
+       new_status = HAL_get_8bit_reg( this_uart->base_address, STATUS );
         this_uart->status |= new_status;
         rx_full = new_status & STATUS_RXFULL_MASK;
         while ( ( rx_full ) && ( rx_idx < buff_size ) )

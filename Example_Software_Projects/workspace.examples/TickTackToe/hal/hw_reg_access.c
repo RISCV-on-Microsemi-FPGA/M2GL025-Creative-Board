@@ -1,13 +1,13 @@
 /***************************************************************************//**
- * (c) Copyright 2007-2013 Microsemi SoC Products Group. All rights reserved.
+ * (c) Copyright 2007-2017 Microsemi SoC Products Group. All rights reserved.
  * 
  * Hardware registers access functions.
  * The implementation of these function is platform and toolchain specific.
  * The functions declared here are implemented using assembler as part of the 
  * processor/toolchain specific HAL.
  * 
- * SVN $Revision: 5258 $
- * SVN $Date: 2013-03-21 18:11:02 +0530 (Thu, 21 Mar 2013) $
+ * SVN $Revision: 9085 $
+ * SVN $Date: 2017-04-28 14:29:14 +0530 (Fri, 28 Apr 2017) $
  */
 #ifndef HW_REG_ACCESS
 #define HW_REG_ACCESS
@@ -25,14 +25,15 @@
 void
 HW_set_32bit_reg
 (
-	addr_t reg_addr,
-	uint32_t value
- ) {
+    addr_t reg_addr,
+    uint32_t value
+)
+{
 
-  volatile uint32_t * foo = (uint32_t * ) reg_addr;
-  *foo = value;
-
+    volatile uint32_t * foo = (uint32_t * ) reg_addr;
+    *foo = value;
 }
+
 /***************************************************************************//**
  * HW_get_32bit_reg is used to read the content of a 32 bits wide peripheral
  * register.
@@ -44,14 +45,12 @@ HW_set_32bit_reg
 uint32_t
 HW_get_32bit_reg
 (
-	addr_t reg_addr
- ) {
-
-  volatile uint32_t * foo = (uint32_t *) reg_addr;
-  return *foo;
-
+    addr_t reg_addr
+)
+{
+    volatile uint32_t * foo = (uint32_t *) reg_addr;
+    return *foo;
 }
-  
 
 /***************************************************************************//**
  * HW_set_32bit_reg_field is used to set the content of a field in a 32 bits 
@@ -72,15 +71,13 @@ HW_set_32bit_reg_field
     int_fast8_t shift,
     uint32_t mask,
     uint32_t value
- ) {
-
-  volatile uint32_t * foo = (uint32_t *) reg_addr;
-  uint32_t old_value = *foo;
-  uint32_t new_value = (value << shift);
-  *foo = (new_value & mask) | (old_value & ~mask);
-  
+)
+{
+    volatile uint32_t * foo = (uint32_t *) reg_addr;
+    uint32_t old_value = *foo;
+    uint32_t new_value = (value << shift);
+    *foo = (new_value & mask) | (old_value & ~mask);
 }
-    
 
 /***************************************************************************//**
  * HW_get_32bit_reg_field is used to read the content of a field out of a 
@@ -102,10 +99,11 @@ HW_get_32bit_reg_field
     addr_t reg_addr,
     int_fast8_t shift,
     uint32_t mask
- ){
-  volatile uint32_t * foo = (uint32_t * ) reg_addr;
-  uint32_t value = ((*foo) & mask) >> shift;
-  return (value);
+)
+{
+    volatile uint32_t * foo = (uint32_t * ) reg_addr;
+    uint32_t value = ((*foo) & mask) >> shift;
+    return (value);
 }
 
 /***************************************************************************//**
@@ -119,11 +117,12 @@ HW_get_32bit_reg_field
 void
 HW_set_16bit_reg
 (
-	addr_t reg_addr,
-	uint_fast16_t value
- ) {
-  volatile uint16_t * foo = (uint16_t * ) reg_addr;
-  *foo = value;
+    addr_t reg_addr,
+    uint_fast16_t value
+)
+{
+    volatile uint16_t * foo = (uint16_t * ) reg_addr;
+    *foo = value;
 }
 
 /***************************************************************************//**
@@ -137,10 +136,11 @@ HW_set_16bit_reg
 uint16_t
 HW_get_16bit_reg
 (
-	addr_t reg_addr
- ) {
-  volatile uint16_t * foo = (uint16_t*) reg_addr;
-  return *foo;
+    addr_t reg_addr
+)
+{
+    volatile uint16_t * foo = (uint16_t*) reg_addr;
+    return *foo;
 }
 
 /***************************************************************************//**
@@ -161,12 +161,12 @@ void HW_set_16bit_reg_field
     int_fast8_t shift,
     uint_fast16_t mask,
     uint_fast16_t value
- ) {
-
-  volatile uint16_t * foo = (uint16_t *) reg_addr;
-  uint16_t old_value = *foo;
-  uint16_t new_value = (value << shift);
-  *foo = (new_value & mask) | (old_value & ~mask);
+)
+{
+    volatile uint16_t * foo = (uint16_t *) reg_addr;
+    uint16_t old_value = *foo;
+    uint16_t new_value = (value << shift);
+    *foo = (new_value & mask) | (old_value & ~mask);
 }
 
 /***************************************************************************//**
@@ -188,10 +188,11 @@ uint16_t HW_get_16bit_reg_field
     addr_t reg_addr,
     int_fast8_t shift,
     uint_fast16_t mask
- ) {
-  volatile uint16_t * foo = (uint16_t * ) reg_addr;
-  uint16_t value = ((*foo) & mask) >> shift;
-  return (value);
+)
+{
+    volatile uint16_t * foo = (uint16_t * ) reg_addr;
+    uint16_t value = ((*foo) & mask) >> shift;
+    return (value);
 }
 
 /***************************************************************************//**
@@ -205,13 +206,12 @@ uint16_t HW_get_16bit_reg_field
 void
 HW_set_8bit_reg
 (
-	addr_t reg_addr,
-	uint_fast8_t value
- ) {
-
-  volatile uint8_t * foo = (uint8_t*) reg_addr;
-  *foo = value;
-  
+    addr_t reg_addr,
+    uint_fast8_t value
+)
+{
+    volatile uint8_t * foo = (uint8_t*) reg_addr;
+    *foo = value;
 }
 
 /***************************************************************************//**
@@ -226,9 +226,10 @@ uint8_t
 HW_get_8bit_reg
 (
     addr_t reg_addr
- ) {
-  volatile uint8_t * foo = (uint8_t*) reg_addr;
-  return *foo;
+)
+{
+    volatile uint8_t * foo = (uint8_t*) reg_addr;
+    return *foo;
 }
 
 /***************************************************************************//**
@@ -249,15 +250,12 @@ void HW_set_8bit_reg_field
     int_fast8_t shift,
     uint_fast8_t mask,
     uint_fast8_t value
- ) {
-
-  
-  volatile uint8_t * foo = (uint8_t *) reg_addr;
-  uint8_t old_value = *foo;
-  uint8_t new_value = (value << shift);
-  *foo = (new_value & mask) | (old_value & ~mask);
-
-  
+)
+{
+    volatile uint8_t * foo = (uint8_t *) reg_addr;
+    uint8_t old_value = *foo;
+    uint8_t new_value = (value << shift);
+    *foo = (new_value & mask) | (old_value & ~mask);
 }
 
 /***************************************************************************//**
@@ -274,17 +272,17 @@ void HW_set_8bit_reg_field
  * @return          8 bits value containing the register field value specified
  *                  as parameter.
  */
-uint8_t HW_get_8bit_reg_field
+uint8_t
+HW_get_8bit_reg_field
 (
     addr_t reg_addr,
     int_fast8_t shift,
     uint_fast8_t mask
- ) {
-
-  volatile uint8_t * foo = (uint8_t * ) reg_addr;
-  uint8_t value = ((*foo) & mask) >> shift;
-  return (value);
-
+)
+{
+    volatile uint8_t * foo = (uint8_t * ) reg_addr;
+    uint8_t value = ((*foo) & mask) >> shift;
+    return (value);
 }
 
 #endif /* HW_REG_ACCESS */

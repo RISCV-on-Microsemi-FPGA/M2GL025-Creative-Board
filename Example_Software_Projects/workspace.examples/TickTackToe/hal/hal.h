@@ -1,10 +1,10 @@
 /***************************************************************************//**
- * (c) Copyright 2007-2013 Microsemi SoC Products Group. All rights reserved.
+ * (c) Copyright 2007-2017 Microsemi SoC Products Group. All rights reserved.
  * 
  * Hardware abstraction layer functions.
  * 
- * SVN $Revision: 5258 $
- * SVN $Date: 2013-03-21 18:11:02 +0530 (Thu, 21 Mar 2013) $
+ * SVN $Revision: 9085 $
+ * SVN $Date: 2017-04-28 14:29:14 +0530 (Fri, 28 Apr 2017) $
  */
 #ifndef HAL_H_
 #define HAL_H_
@@ -57,7 +57,7 @@ void HAL_restore_interrupts( psr_t saved_psr );
  *              peripheral containing the register.
  * REG_NAME:    A string identifying the register to read. These strings are
  *              specified in a header file associated with the peripheral.
- * RETURN:		This function-like macro returns a uint32_t value.
+ * RETURN:      This function-like macro returns a uint32_t value.
  */
 #define HAL_get_32bit_reg(BASE_ADDR, REG_NAME) \
           (HW_get_32bit_reg( ((BASE_ADDR) + (REG_NAME##_REG_OFFSET)) ))
@@ -69,7 +69,7 @@ void HAL_restore_interrupts( psr_t saved_psr );
  * BASE_ADDR:   A variable of type addr_t specifying the base address of the
  *              peripheral containing the register.
  * FIELD_NAME:  A string identifying the register field to write. These strings
- * 				are specified in a header file associated with the peripheral.
+ *              are specified in a header file associated with the peripheral.
  * VALUE:       A variable of type uint32_t containing the field value to write.
  */
 #define HAL_set_32bit_reg_field(BASE_ADDR, FIELD_NAME, VALUE) \
@@ -86,8 +86,8 @@ void HAL_restore_interrupts( psr_t saved_psr );
  * BASE_ADDR:   A variable of type addr_t specifying the base address of the
  *              peripheral containing the register.
  * FIELD_NAME:  A string identifying the register field to write. These strings
- * 				are specified in a header file associated with the peripheral.
- * RETURN:		This function-like macro returns a uint32_t value.
+ *              are specified in a header file associated with the peripheral.
+ * RETURN:      This function-like macro returns a uint32_t value.
  */
 #define HAL_get_32bit_reg_field(BASE_ADDR, FIELD_NAME) \
             (HW_get_32bit_reg_field(\
@@ -115,7 +115,7 @@ void HAL_restore_interrupts( psr_t saved_psr );
  *              peripheral containing the register.
  * REG_NAME:    A string identifying the register to read. These strings are
  *              specified in a header file associated with the peripheral.
- * RETURN:		This function-like macro returns a uint16_t value.
+ * RETURN:      This function-like macro returns a uint16_t value.
  */
 #define HAL_get_16bit_reg(BASE_ADDR, REG_NAME) \
             (HW_get_16bit_reg( (BASE_ADDR) + (REG_NAME##_REG_OFFSET) ))
@@ -127,7 +127,7 @@ void HAL_restore_interrupts( psr_t saved_psr );
  * BASE_ADDR:   A variable of type addr_t specifying the base address of the
  *              peripheral containing the register.
  * FIELD_NAME:  A string identifying the register field to write. These strings
- * 				are specified in a header file associated with the peripheral.
+ *              are specified in a header file associated with the peripheral.
  * VALUE:       A variable of type uint16_t containing the field value to write.
  */
 #define HAL_set_16bit_reg_field(BASE_ADDR, FIELD_NAME, VALUE) \
@@ -144,8 +144,8 @@ void HAL_restore_interrupts( psr_t saved_psr );
  * BASE_ADDR:   A variable of type addr_t specifying the base address of the
  *              peripheral containing the register.
  * FIELD_NAME:  A string identifying the register field to write. These strings
- * 				are specified in a header file associated with the peripheral.
- * RETURN:		This function-like macro returns a uint16_t value.
+ *              are specified in a header file associated with the peripheral.
+ * RETURN:      This function-like macro returns a uint16_t value.
  */
 #define HAL_get_16bit_reg_field(BASE_ADDR, FIELD_NAME) \
             (HW_get_16bit_reg_field(\
@@ -173,7 +173,7 @@ void HAL_restore_interrupts( psr_t saved_psr );
  *              peripheral containing the register.
  * REG_NAME:    A string identifying the register to read. These strings are
  *              specified in a header file associated with the peripheral.
- * RETURN:		This function-like macro returns a uint8_t value.
+ * RETURN:      This function-like macro returns a uint8_t value.
  */
 #define HAL_get_8bit_reg(BASE_ADDR, REG_NAME) \
           (HW_get_8bit_reg( (BASE_ADDR) + (REG_NAME##_REG_OFFSET) ))
@@ -194,8 +194,8 @@ void HAL_restore_interrupts( psr_t saved_psr );
  * BASE_ADDR:   A variable of type addr_t specifying the base address of the
  *              peripheral containing the register.
  * FIELD_NAME:  A string identifying the register field to write. These strings
- * 				are specified in a header file associated with the peripheral.
- * RETURN:		This function-like macro returns a uint8_t value.
+ *              are specified in a header file associated with the peripheral.
+ * RETURN:      This function-like macro returns a uint8_t value.
  */
 #define HAL_get_8bit_reg_field(BASE_ADDR, FIELD_NAME) \
             (HW_get_8bit_reg_field(\
@@ -204,3 +204,4 @@ void HAL_restore_interrupts( psr_t saved_psr );
                 FIELD_MASK(FIELD_NAME)))
   
 #endif /*HAL_H_*/
+

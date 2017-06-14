@@ -15,7 +15,7 @@
 #include "drivers/CoreUARTapb/core_uart_apb.h"
 #include "drivers/CoreSPI/core_spi.h"
 #include "drivers/CoreTimer/core_timer.h"
-#include "riscv_hal/riscv_CoreplexE31.h"
+#include "riscv_hal.h"
 #include "MicrosemiTFTDriver/Microsemi_Adafruit_ILI9341.h"
 #include "MicrosemiTSDriver/Microsemi_Adafruit_STMPE610.h"
 #include "TicTacToe/tictactoe.h"
@@ -30,7 +30,10 @@ volatile uint32_t g_10ms_count;
 volatile uint32_t g_state;
 
 
-
+/*-----------------------------------------------------------------------------
+ * UART instance data.
+ */
+UART_instance_t g_uart;
 
 /******************************************************************************
  * PLIC instance data.
@@ -69,7 +72,7 @@ int main()
      *************************************************************************/
     GPIO_init( &g_gpio, COREGPIO_OUT_BASE_ADDR, GPIO_APB_32_BITS_BUS );
     GPIO_set_outputs(&g_gpio, 0);
-   
+
     /**************************************************************************
      * Configure the GPIOs.
      ************************************3*************************************/

@@ -1,17 +1,11 @@
 /*******************************************************************************
- * (c) Copyright 2008-2013 Microsemi SoC Products Group. All rights reserved.
+ * (c) Copyright 2008-2017 Microsemi SoC Products Group. All rights reserved.
  * 
- * SVN $Revision: 7375 $
- * SVN $Date: 2015-05-01 19:27:40 +0530 (Fri, 01 May 2015) $
+ * SVN $Revision: 9085 $
+ * SVN $Date: 2017-04-28 14:29:14 +0530 (Fri, 28 Apr 2017) $
  */
 #ifndef HAL_ASSERT_HEADER
 #define HAL_ASSERT_HEADER
-
-//#ifdef MSCC_NO_RELATIVE_PATHS
-//#include "mss_assert.h"
-//#else
-//#include "../CMSIS/mss_assert.h"
-//#endif
 
 #define NDEBUG 1
 
@@ -34,3 +28,4 @@
 #endif  /* NDEBUG */
 
 #endif  /* HAL_ASSERT_HEADER */
+

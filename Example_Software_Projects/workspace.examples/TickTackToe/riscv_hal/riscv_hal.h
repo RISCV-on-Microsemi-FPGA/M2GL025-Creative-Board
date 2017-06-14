@@ -1,9 +1,14 @@
 /*******************************************************************************
- * (c) Copyright 2016 Microsemi SoC Products Group. All rights reserved.
+ * (c) Copyright 2016-2017 Microsemi SoC Products Group. All rights reserved.
  * 
- * Hardware Abtraction Layer for RISC-V. This is mainly targeted at RV32IM but
- * should be usable with other variants.
- * 
+ * @file riscv_hal.h
+ * @author Microsemi SoC Products Group
+ * @brief Hardware Abstraction Layer functions for RISC-V soft processor
+ *        CoreRISCV_AXI4. This is mainly targeted at RV32IM but should be usable
+ *        with other variants.
+ *
+ * SVN $Revision: 9187 $
+ * SVN $Date: 2017-05-13 13:31:28 +0530 (Sat, 13 May 2017) $
  */
 
 #ifndef RISCV_HAL_H
@@ -11,10 +16,16 @@
 
 #include "riscv_CoreplexE31.h"
 
-/*------------------------------------------------------------------------------
- * System core clock frequency.
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+/*
+ *Return value from External IRQ handler. This will be used to disable the External
+ *interrupt.
  */
-extern uint32_t SystemCoreClock;
+#define EXT_IRQ_KEEP_ENABLED				0
+#define EXT_IRQ_DISABLE						1
 
 /*------------------------------------------------------------------------------
  * Interrupt enable/disable.
@@ -38,4 +49,9 @@ void SysTick_Handler(void);
  */
 uint32_t SysTick_Config(uint32_t ticks);
 
+#ifdef __cplusplus
+}
+#endif
+
 #endif  /* RISCV_HAL_H */
+

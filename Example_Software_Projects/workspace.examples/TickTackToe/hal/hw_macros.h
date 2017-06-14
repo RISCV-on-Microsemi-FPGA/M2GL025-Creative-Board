@@ -1,5 +1,5 @@
 /*******************************************************************************
- * (c) Copyright 2007-2013 Microsemi SoC Products Group. All rights reserved.
+ * (c) Copyright 2007-2017 Microsemi SoC Products Group. All rights reserved.
  * 
  *  Hardware registers access macros.
  * 
@@ -8,16 +8,16 @@
  *
  * These macros are used to access peripheral's registers. They allow access to
  * 8, 16 and 32 bit wide registers. All accesses to peripheral registers should
- * be done through these macros in order to ease porting accross different 
+ * be done through these macros in order to ease porting across different 
  * processors/bus architectures.
  * 
  * Some of these macros also allow to access a specific register field.
  * 
- * SVN $Revision: 5258 $
- * SVN $Date: 2013-03-21 18:11:02 +0530 (Thu, 21 Mar 2013) $
+ * SVN $Revision: 9085 $
+ * SVN $Date: 2017-04-28 14:29:14 +0530 (Fri, 28 Apr 2017) $
  */
 #ifndef __HW_REGISTER_MACROS_H
-#define __HW_REGISTER_MACROS_H	1
+#define __HW_REGISTER_MACROS_H 1
 
 /*------------------------------------------------------------------------------
  * 32 bits registers access:
@@ -94,3 +94,4 @@
 #define HW_set_uint8(BASE_ADDR, VALUE) (*((uint8_t volatile *)(BASE_ADDR)) = (VALUE))
  
 #endif  /* __HW_REGISTER_MACROS_H */
+
