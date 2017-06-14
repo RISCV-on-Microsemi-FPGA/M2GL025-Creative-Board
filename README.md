@@ -1,5 +1,7 @@
-# IGLOO2 Creative Development Board RISC-V
+# IGLOO2 Creative Development Board RISC-V Projects
 This project contains Libero projects containing FPGA designs including a RISC-V RV32IM soft processor. Programming bitstreams are also included so you don't have to run through the full FPGA design flow in order to start developing software for RISC-V.
+
+Documentation is available [here](https://github.com/RISCV-on-Microsemi-FPGA/Documentation) to help you get started with tools and IP.
 
 ### Target Hardware
 The IGLOO2 Creative Development Board includes a IGLOO2 M2GL025 FPGA. Details of the features available for this development board are available [here](https://www.microsemi.com/products/fpga-soc/design-resources/dev-kits/smartfusion2/future-creative-board).
