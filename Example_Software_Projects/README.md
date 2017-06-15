@@ -1,5 +1,6 @@
-# SoftConsole Example Workspace
-This folder contains a blinky program and the TickTackToe source files.
+# SoftConsole Example Projects
+This folder contains a example firmware projects for the CoreRISCV_AXI4.
+Projects included: riscv-systic-blinky and TickTackToe.
 
 ### Using this Workspace in SoftConsole
 You must first clone or download the entire SoftConsole GitHub repository. The easiest approach is to click the green "Clone or download" button on this [page](https://github.com/RISCV-on-Microsemi-FPGA/M2GL025-Creative-Board) then click "Download ZIP".
