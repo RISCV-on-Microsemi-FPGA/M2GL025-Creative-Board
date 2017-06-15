@@ -1,0 +1,16 @@
+Project Name: test_1_RISCV
+Location: C:\Users\ciaran.lappin\Documents\Boards\M2GL025_Future\Projects\test_1_RISCV
+Description: 
+Preferred HDL Type: Verilog
+
+#-----------------------------------------------------
+                  Device Details
+#-----------------------------------------------------
+
+Part Number    : M2GL025-VF256
+Family         : IGLOO2
+Die            : M2GL025
+Package        : 256 VF
+Speed          : STD
+Core Voltage   : 1.2
+Range          : COM

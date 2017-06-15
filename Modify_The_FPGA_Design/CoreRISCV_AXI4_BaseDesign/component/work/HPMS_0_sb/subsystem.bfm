@@ -1,0 +1,26 @@
+#===========================================================
+# Created by Microsemi SmartDesign Sun Feb 05 20:24:09 2017
+#
+# Syntax: 
+# ------- 
+#
+# memmap    resource_name base_address;
+#
+# write     width resource_name byte_offset data;
+# read      width resource_name byte_offset;
+# readcheck width resource_name byte_offset data;
+#
+#===========================================================
+
+#-----------------------------------------------------------
+# Memory Map
+# Define name and base address of each resource.
+#-----------------------------------------------------------
+
+memmap HPMS_0_sb_HPMS_0 0x40020800;
+
+
+#-----------------------------------------------------------
+# Secondary subsystems.  To test this subsystem, uncomment the following code.
+#-----------------------------------------------------------
+# memmap HPMS_0_sb_HPMS_0_FIC_0_AHB_SLAVE 0x00000000;

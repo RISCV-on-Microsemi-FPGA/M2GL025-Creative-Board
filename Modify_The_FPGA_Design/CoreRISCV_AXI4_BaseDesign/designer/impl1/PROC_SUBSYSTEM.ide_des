@@ -1,0 +1,13 @@
+KEY IDE_DES_TOOL "Ide"
+KEY IDE_DES_ADB_PATH "C:\Users\ciaran.lappin\Desktop\RISCV_UPDATE\M2GL025\11_8\Libero\CoreRISCV_AXI4_BaseDesign\designer\impl1\PROC_SUBSYSTEM.adb"
+LIST SOURCE_FILES
+VALUE "C:\Users\ciaran.lappin\Desktop\RISCV_UPDATE\M2GL025\11_8\Libero\CoreRISCV_AXI4_BaseDesign\constraint\io\user.pdc;pdc"
+VALUE "C:\Users\ciaran.lappin\Desktop\RISCV_UPDATE\M2GL025\11_8\Libero\CoreRISCV_AXI4_BaseDesign\constraint\PROC_SUBSYSTEM_derived_constraints.sdc;sdc"
+VALUE "C:\Users\ciaran.lappin\Desktop\RISCV_UPDATE\M2GL025\11_8\Libero\CoreRISCV_AXI4_BaseDesign\constraint\fp\PROC_SUBSYSTEM_derived_constraints.pdc;pdc"
+VALUE "C:\Users\ciaran.lappin\Desktop\RISCV_UPDATE\M2GL025\11_8\Libero\CoreRISCV_AXI4_BaseDesign\constraint\user.sdc;sdc"
+ENDLIST
+LIST OPTIONAL_FILES
+VALUE "C:\Users\ciaran.lappin\Desktop\RISCV_UPDATE\M2GL025\11_8\Libero\CoreRISCV_AXI4_BaseDesign\synthesis\PROC_SUBSYSTEM_sdc.sdc;Skipped"
+ENDLIST
+LIST VCD_FILES
+ENDLIST
