@@ -5,6 +5,7 @@ Documentation is available [here](https://github.com/RISCV-on-Microsemi-FPGA/Doc
 
 ### Target Hardware
 The IGLOO2 Creative Development Board includes a IGLOO2 M2GL025 FPGA. Details of the features available for this development board are available [here](https://www.microsemi.com/products/fpga-soc/design-resources/dev-kits/smartfusion2/future-creative-board).
+
 The TickTackToe example uses a [TFT Touch Shield for Arduino, with Resistive Touch Screen](https://www.adafruit.com/product/1651)
 
 ### Programming The Target Device
