@@ -15,5 +15,5 @@ The Programming_The_Target_Device folder includes programming files that can be 
 The Modify_The_FPGA_Design folder contains Libero example designs. Libero is Microsemi's FPGA design tool. You will need this tool if you wish to modify the example FPGA designs. Libero is available [here](https://www.microsemi.com/products/fpga-soc/design-resources/design-software/libero-soc#downloads).
 
 ### Example Software Projects
-The Example_Software_Projects folder contains example software projects specifically targeted at the IGLOO2 Creative Development Board. The TickTackToe example workspace can be found in this directory.
+The Example_Software_Projects folder contains example software projects specifically targeted at the IGLOO2 Creative Development Board. The TickTackToe and riscv-systic-blinky example firmware  can be found in this directory.
 A set of more generic RISC-V example software projects are also available for these designs from the SoftConsole [page](https://github.com/RISCV-on-Microsemi-FPGA/SoftConsole). 

@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Tue Apr 04 11:39:53 2017
+// Created by SmartDesign Thu Jun 15 09:45:52 2017
 // Version: v11.8 11.8.0.26
 //////////////////////////////////////////////////////////////////////
 
@@ -326,23 +326,23 @@ wire   [1:1]  CoreAHBLite_0_AHBmslave16_HRESP_0_1to1;
 wire   [0:0]  CoreAHBLite_0_AHBmslave16_HRESP_0_0to0;
 wire   [1:0]  CoreAHBLite_0_AHBmslave16_HRESP_0;
 wire          CoreAHBLite_0_AHBmslave16_HRESP;
-wire   [2:0]  CoreAHBLite_0_AHBmslave16_HSIZE;
 wire   [1:0]  CoreAHBLite_0_AHBmslave16_HSIZE_0_1to0;
 wire   [1:0]  CoreAHBLite_0_AHBmslave16_HSIZE_0;
-wire   [15:2] CORECONFIGP_0_MDDR_APBmslave_PADDR;
+wire   [2:0]  CoreAHBLite_0_AHBmslave16_HSIZE;
 wire   [10:2] CORECONFIGP_0_MDDR_APBmslave_PADDR_0_10to2;
 wire   [10:2] CORECONFIGP_0_MDDR_APBmslave_PADDR_0;
+wire   [15:2] CORECONFIGP_0_MDDR_APBmslave_PADDR;
+wire   [15:0] CORECONFIGP_0_MDDR_APBmslave_PRDATA;
 wire   [31:16]CORECONFIGP_0_MDDR_APBmslave_PRDATA_0_31to16;
 wire   [15:0] CORECONFIGP_0_MDDR_APBmslave_PRDATA_0_15to0;
 wire   [31:0] CORECONFIGP_0_MDDR_APBmslave_PRDATA_0;
-wire   [15:0] CORECONFIGP_0_MDDR_APBmslave_PRDATA;
-wire   [31:0] CORECONFIGP_0_MDDR_APBmslave_PWDATA;
 wire   [15:0] CORECONFIGP_0_MDDR_APBmslave_PWDATA_0_15to0;
 wire   [15:0] CORECONFIGP_0_MDDR_APBmslave_PWDATA_0;
+wire   [31:0] CORECONFIGP_0_MDDR_APBmslave_PWDATA;
+wire   [15:2] HPMS_0_sb_HPMS_TMP_0_FIC_2_APB_MASTER_PADDR;
 wire   [16:16]HPMS_0_sb_HPMS_TMP_0_FIC_2_APB_MASTER_PADDR_0_16to16;
 wire   [15:2] HPMS_0_sb_HPMS_TMP_0_FIC_2_APB_MASTER_PADDR_0_15to2;
 wire   [16:2] HPMS_0_sb_HPMS_TMP_0_FIC_2_APB_MASTER_PADDR_0;
-wire   [15:2] HPMS_0_sb_HPMS_TMP_0_FIC_2_APB_MASTER_PADDR;
 //--------------------------------------------------------------------
 // Constant assignments
 //--------------------------------------------------------------------
@@ -1041,16 +1041,12 @@ CORERESETP_0(
         .SDIF3_PERST_N                  ( VCC_net ), // tied to 1'b1 from definition
         .SDIF0_PSEL                     ( GND_net ), // tied to 1'b0 from definition
         .SDIF0_PWRITE                   ( VCC_net ), // tied to 1'b1 from definition
-        .SDIF0_PRDATA                   ( SDIF0_PRDATA_const_net_1 ), // tied to 32'h00000000 from definition
         .SDIF1_PSEL                     ( GND_net ), // tied to 1'b0 from definition
         .SDIF1_PWRITE                   ( VCC_net ), // tied to 1'b1 from definition
-        .SDIF1_PRDATA                   ( SDIF1_PRDATA_const_net_1 ), // tied to 32'h00000000 from definition
         .SDIF2_PSEL                     ( GND_net ), // tied to 1'b0 from definition
         .SDIF2_PWRITE                   ( VCC_net ), // tied to 1'b1 from definition
-        .SDIF2_PRDATA                   ( SDIF2_PRDATA_const_net_1 ), // tied to 32'h00000000 from definition
         .SDIF3_PSEL                     ( GND_net ), // tied to 1'b0 from definition
         .SDIF3_PWRITE                   ( VCC_net ), // tied to 1'b1 from definition
-        .SDIF3_PRDATA                   ( SDIF3_PRDATA_const_net_1 ), // tied to 32'h00000000 from definition
         .SOFT_EXT_RESET_OUT             ( CORECONFIGP_0_SOFT_EXT_RESET_OUT ),
         .SOFT_RESET_F2M                 ( CORECONFIGP_0_SOFT_RESET_F2M ),
         .SOFT_M3_RESET                  ( CORECONFIGP_0_SOFT_M3_RESET ),
@@ -1066,6 +1062,10 @@ CORERESETP_0(
         .SOFT_SDIF2_CORE_RESET          ( GND_net ), // tied to 1'b0 from definition
         .SOFT_SDIF3_PHY_RESET           ( GND_net ), // tied to 1'b0 from definition
         .SOFT_SDIF3_CORE_RESET          ( GND_net ), // tied to 1'b0 from definition
+        .SDIF0_PRDATA                   ( SDIF0_PRDATA_const_net_1 ), // tied to 32'h00000000 from definition
+        .SDIF1_PRDATA                   ( SDIF1_PRDATA_const_net_1 ), // tied to 32'h00000000 from definition
+        .SDIF2_PRDATA                   ( SDIF2_PRDATA_const_net_1 ), // tied to 32'h00000000 from definition
+        .SDIF3_PRDATA                   ( SDIF3_PRDATA_const_net_1 ), // tied to 32'h00000000 from definition
         // Outputs
         .MSS_HPMS_READY                 ( HPMS_READY_net_0 ),
         .DDR_READY                      ( DDR_READY_net_0 ),

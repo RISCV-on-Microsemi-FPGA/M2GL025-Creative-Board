@@ -1,33 +1,33 @@
 Microsemi Corporation - Microsemi Libero Software Release v11.8 (Version 11.8.0.26)
 
-Date      :  Tue Apr 04 11:39:55 2017
-Project   :  C:\Users\ciaran.lappin\Desktop\RISCV_UPDATE\M2GL025\11_8\CoreRISCV_AXI4_BaseDesign
+Date      :  Thu Jun 15 09:45:59 2017
+Project   :  C:\Users\ciaran.lappin\Desktop\Github\IGL2_M2GL025_Creative_Development_Kit\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign
 Component :  HPMS_0_sb
 Family    :  IGLOO2
 
 
 HDL source files for all Synthesis and Simulation tools:
-    C:/Users/ciaran.lappin/Desktop/RISCV_UPDATE/M2GL025/11_8/CoreRISCV_AXI4_BaseDesign/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vlog/core/coreahblite.v
-    C:/Users/ciaran.lappin/Desktop/RISCV_UPDATE/M2GL025/11_8/CoreRISCV_AXI4_BaseDesign/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vlog/core/coreahblite_addrdec.v
-    C:/Users/ciaran.lappin/Desktop/RISCV_UPDATE/M2GL025/11_8/CoreRISCV_AXI4_BaseDesign/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vlog/core/coreahblite_defaultslavesm.v
-    C:/Users/ciaran.lappin/Desktop/RISCV_UPDATE/M2GL025/11_8/CoreRISCV_AXI4_BaseDesign/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vlog/core/coreahblite_masterstage.v
-    C:/Users/ciaran.lappin/Desktop/RISCV_UPDATE/M2GL025/11_8/CoreRISCV_AXI4_BaseDesign/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vlog/core/coreahblite_matrix4x16.v
-    C:/Users/ciaran.lappin/Desktop/RISCV_UPDATE/M2GL025/11_8/CoreRISCV_AXI4_BaseDesign/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vlog/core/coreahblite_slavearbiter.v
-    C:/Users/ciaran.lappin/Desktop/RISCV_UPDATE/M2GL025/11_8/CoreRISCV_AXI4_BaseDesign/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vlog/core/coreahblite_slavestage.v
-    C:/Users/ciaran.lappin/Desktop/RISCV_UPDATE/M2GL025/11_8/CoreRISCV_AXI4_BaseDesign/component/Actel/DirectCore/CoreConfigMaster/2.1.102/rtl/vlog/core/coreconfigmaster.v
-    C:/Users/ciaran.lappin/Desktop/RISCV_UPDATE/M2GL025/11_8/CoreRISCV_AXI4_BaseDesign/component/Actel/DirectCore/CoreConfigP/7.1.100/rtl/vlog/core/coreconfigp.v
-    C:/Users/ciaran.lappin/Desktop/RISCV_UPDATE/M2GL025/11_8/CoreRISCV_AXI4_BaseDesign/component/Actel/DirectCore/CoreResetP/8.0.102/rtl/vlog/core/coreresetp.v
-    C:/Users/ciaran.lappin/Desktop/RISCV_UPDATE/M2GL025/11_8/CoreRISCV_AXI4_BaseDesign/component/Actel/DirectCore/CoreResetP/8.0.102/rtl/vlog/core/coreresetp_pcie_hotreset.v
-    C:/Users/ciaran.lappin/Desktop/RISCV_UPDATE/M2GL025/11_8/CoreRISCV_AXI4_BaseDesign/component/work/HPMS_0_sb/CCC_0/HPMS_0_sb_CCC_0_FCCC.v
-    C:/Users/ciaran.lappin/Desktop/RISCV_UPDATE/M2GL025/11_8/CoreRISCV_AXI4_BaseDesign/component/work/HPMS_0_sb/FABOSC_0/HPMS_0_sb_FABOSC_0_OSC.v
-    C:/Users/ciaran.lappin/Desktop/RISCV_UPDATE/M2GL025/11_8/CoreRISCV_AXI4_BaseDesign/component/work/HPMS_0_sb/HPMS_0_sb.v
+    C:/Users/ciaran.lappin/Desktop/Github/IGL2_M2GL025_Creative_Development_Kit/Modify_The_FPGA_Design/CoreRISCV_AXI4_BaseDesign/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vlog/core/coreahblite.v
+    C:/Users/ciaran.lappin/Desktop/Github/IGL2_M2GL025_Creative_Development_Kit/Modify_The_FPGA_Design/CoreRISCV_AXI4_BaseDesign/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vlog/core/coreahblite_addrdec.v
+    C:/Users/ciaran.lappin/Desktop/Github/IGL2_M2GL025_Creative_Development_Kit/Modify_The_FPGA_Design/CoreRISCV_AXI4_BaseDesign/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vlog/core/coreahblite_defaultslavesm.v
+    C:/Users/ciaran.lappin/Desktop/Github/IGL2_M2GL025_Creative_Development_Kit/Modify_The_FPGA_Design/CoreRISCV_AXI4_BaseDesign/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vlog/core/coreahblite_masterstage.v
+    C:/Users/ciaran.lappin/Desktop/Github/IGL2_M2GL025_Creative_Development_Kit/Modify_The_FPGA_Design/CoreRISCV_AXI4_BaseDesign/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vlog/core/coreahblite_matrix4x16.v
+    C:/Users/ciaran.lappin/Desktop/Github/IGL2_M2GL025_Creative_Development_Kit/Modify_The_FPGA_Design/CoreRISCV_AXI4_BaseDesign/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vlog/core/coreahblite_slavearbiter.v
+    C:/Users/ciaran.lappin/Desktop/Github/IGL2_M2GL025_Creative_Development_Kit/Modify_The_FPGA_Design/CoreRISCV_AXI4_BaseDesign/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vlog/core/coreahblite_slavestage.v
+    C:/Users/ciaran.lappin/Desktop/Github/IGL2_M2GL025_Creative_Development_Kit/Modify_The_FPGA_Design/CoreRISCV_AXI4_BaseDesign/component/Actel/DirectCore/CoreConfigMaster/2.1.102/rtl/vlog/core/coreconfigmaster.v
+    C:/Users/ciaran.lappin/Desktop/Github/IGL2_M2GL025_Creative_Development_Kit/Modify_The_FPGA_Design/CoreRISCV_AXI4_BaseDesign/component/Actel/DirectCore/CoreConfigP/7.1.100/rtl/vlog/core/coreconfigp.v
+    C:/Users/ciaran.lappin/Desktop/Github/IGL2_M2GL025_Creative_Development_Kit/Modify_The_FPGA_Design/CoreRISCV_AXI4_BaseDesign/component/Actel/DirectCore/CoreResetP/8.0.102/rtl/vlog/core/coreresetp.v
+    C:/Users/ciaran.lappin/Desktop/Github/IGL2_M2GL025_Creative_Development_Kit/Modify_The_FPGA_Design/CoreRISCV_AXI4_BaseDesign/component/Actel/DirectCore/CoreResetP/8.0.102/rtl/vlog/core/coreresetp_pcie_hotreset.v
+    C:/Users/ciaran.lappin/Desktop/Github/IGL2_M2GL025_Creative_Development_Kit/Modify_The_FPGA_Design/CoreRISCV_AXI4_BaseDesign/component/work/HPMS_0_sb/CCC_0/HPMS_0_sb_CCC_0_FCCC.v
+    C:/Users/ciaran.lappin/Desktop/Github/IGL2_M2GL025_Creative_Development_Kit/Modify_The_FPGA_Design/CoreRISCV_AXI4_BaseDesign/component/work/HPMS_0_sb/FABOSC_0/HPMS_0_sb_FABOSC_0_OSC.v
+    C:/Users/ciaran.lappin/Desktop/Github/IGL2_M2GL025_Creative_Development_Kit/Modify_The_FPGA_Design/CoreRISCV_AXI4_BaseDesign/component/work/HPMS_0_sb/HPMS_0_sb.v
 
 HDL source files for Synopsys SynplifyPro Synthesis tool:
-    C:/Users/ciaran.lappin/Desktop/RISCV_UPDATE/M2GL025/11_8/CoreRISCV_AXI4_BaseDesign/component/Actel/SgCore/OSC/2.0.101/osc_comps.v
+    C:/Users/ciaran.lappin/Desktop/Github/IGL2_M2GL025_Creative_Development_Kit/Modify_The_FPGA_Design/CoreRISCV_AXI4_BaseDesign/component/Actel/SgCore/OSC/2.0.101/osc_comps.v
 
 HDL source files for Mentor Precision Synthesis tool:
-    C:/Users/ciaran.lappin/Desktop/RISCV_UPDATE/M2GL025/11_8/CoreRISCV_AXI4_BaseDesign/component/Actel/SgCore/OSC/2.0.101/osc_comps_pre.v
+    C:/Users/ciaran.lappin/Desktop/Github/IGL2_M2GL025_Creative_Development_Kit/Modify_The_FPGA_Design/CoreRISCV_AXI4_BaseDesign/component/Actel/SgCore/OSC/2.0.101/osc_comps_pre.v
 
 Stimulus files for all Simulation tools:
-    C:/Users/ciaran.lappin/Desktop/RISCV_UPDATE/M2GL025/11_8/CoreRISCV_AXI4_BaseDesign/component/work/HPMS_0_sb/subsystem.bfm
+    C:/Users/ciaran.lappin/Desktop/Github/IGL2_M2GL025_Creative_Development_Kit/Modify_The_FPGA_Design/CoreRISCV_AXI4_BaseDesign/component/work/HPMS_0_sb/subsystem.bfm
 

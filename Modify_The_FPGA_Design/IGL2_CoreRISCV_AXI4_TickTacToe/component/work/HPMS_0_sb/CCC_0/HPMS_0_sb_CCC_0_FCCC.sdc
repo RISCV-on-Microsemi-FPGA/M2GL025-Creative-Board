@@ -1,6 +1,6 @@
 set_component HPMS_0_sb_CCC_0_FCCC
 # Microsemi Corp.
-# Date: 2017-Apr-04 10:20:21
+# Date: 2017-Jun-15 09:47:26
 #
 
 create_clock -period 20 [ get_pins { CCC_INST/CLK0_PAD } ]

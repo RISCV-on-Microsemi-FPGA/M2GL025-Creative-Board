@@ -1,8 +1,0 @@
-11:41:13 **** Incremental Build of configuration Debug for project TickTackToe ****
-make all 
-Invoking: RISC-V GCC/Newlib Print Size
-riscv64-unknown-elf-size --format=berkeley "TickTackToe.elf"
-   text	   data	    bss	    dec	    hex	filename
-  22080	   1216	   4352	  27648	   6c00	TickTackToe.elf
-Finished building: TickTackToe.siz
- 
