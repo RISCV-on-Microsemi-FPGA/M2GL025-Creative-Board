@@ -1,0 +1,96 @@
+# Microsemi Physical design constraints file
+
+# Version: v11.8 11.8.0.26
+
+# Design Name:  
+
+# Input Netlist Format: EDIF 
+
+# Family: IGLOO2 , Die: M2GL025 , Package: 256 VF , Speed grade: STD 
+
+# Date generated: Tue Sep 05 16:42:34 2017 
+
+
+#
+# IO banks setting
+#
+
+set_iobank Bank0 -vcci 1.80 -vref 1.00 -fixed no
+
+#
+# Local clock constraints
+#
+
+
+#
+# Region constraints
+#
+
+
+#
+# I/O constraints
+#
+
+set_io DEVRST_N -DIRECTION INPUT -pinname M11
+set_io MDDR_ADDR\[0\] -DIRECTION OUTPUT -pinname C14 -fixed yes
+set_io MDDR_ADDR\[1\] -DIRECTION OUTPUT -pinname E11 -fixed yes
+set_io MDDR_ADDR\[2\] -DIRECTION OUTPUT -pinname E12 -fixed yes
+set_io MDDR_ADDR\[3\] -DIRECTION OUTPUT -pinname B16 -fixed yes
+set_io MDDR_ADDR\[4\] -DIRECTION OUTPUT -pinname C16 -fixed yes
+set_io MDDR_ADDR\[5\] -DIRECTION OUTPUT -pinname D16 -fixed yes
+set_io MDDR_ADDR\[6\] -DIRECTION OUTPUT -pinname E16 -fixed yes
+set_io MDDR_ADDR\[7\] -DIRECTION OUTPUT -pinname F15 -fixed yes
+set_io MDDR_ADDR\[8\] -DIRECTION OUTPUT -pinname F14 -fixed yes
+set_io MDDR_ADDR\[9\] -DIRECTION OUTPUT -pinname E15 -fixed yes
+set_io MDDR_ADDR\[10\] -DIRECTION OUTPUT -pinname E14 -fixed yes
+set_io MDDR_ADDR\[11\] -DIRECTION OUTPUT -pinname F13 -fixed yes
+set_io MDDR_ADDR\[12\] -DIRECTION OUTPUT -pinname D14 -fixed yes
+set_io MDDR_ADDR\[13\] -DIRECTION OUTPUT -pinname D13 -fixed yes
+set_io MDDR_ADDR\[14\] -DIRECTION OUTPUT -pinname C15 -fixed yes
+set_io MDDR_ADDR\[15\] -DIRECTION OUTPUT -pinname B15 -fixed yes
+set_io MDDR_BA\[0\] -DIRECTION OUTPUT -pinname C12 -fixed yes
+set_io MDDR_BA\[1\] -DIRECTION OUTPUT -pinname D12 -fixed yes
+set_io MDDR_BA\[2\] -DIRECTION OUTPUT -pinname B13 -fixed yes
+set_io MDDR_CAS_N -DIRECTION OUTPUT -pinname A12 -fixed yes
+set_io MDDR_CKE -DIRECTION OUTPUT -pinname E10 -fixed yes
+set_io MDDR_CLK -DIRECTION OUTPUT -pinname A14 -fixed yes
+set_io MDDR_CLK_N -DIRECTION OUTPUT -pinname A15 -fixed yes
+set_io MDDR_CS_N -DIRECTION OUTPUT -pinname D11 -fixed yes
+set_io MDDR_DM_RDQS\[0\] -DIRECTION INOUT -pinname A3 -fixed yes
+set_io MDDR_DM_RDQS\[1\] -DIRECTION INOUT -pinname C10 -fixed yes
+set_io MDDR_DQS\[0\] -DIRECTION INOUT -pinname A5 -fixed yes
+set_io MDDR_DQS\[1\] -DIRECTION INOUT -pinname A9 -fixed yes
+set_io MDDR_DQS_N\[0\] -DIRECTION INOUT -pinname A4 -fixed yes
+set_io MDDR_DQS_N\[1\] -DIRECTION INOUT -pinname A10 -fixed yes
+set_io MDDR_DQS_TMATCH_0_IN -DIRECTION INPUT -pinname B8 -fixed yes
+set_io MDDR_DQS_TMATCH_0_OUT -DIRECTION OUTPUT -pinname A8 -fixed yes
+set_io MDDR_DQ\[0\] -DIRECTION INOUT -pinname B2 -fixed yes
+set_io MDDR_DQ\[1\] -DIRECTION INOUT -pinname A2 -fixed yes
+set_io MDDR_DQ\[2\] -DIRECTION INOUT -pinname B6 -fixed yes
+set_io MDDR_DQ\[3\] -DIRECTION INOUT -pinname B5 -fixed yes
+set_io MDDR_DQ\[4\] -DIRECTION INOUT -pinname B3 -fixed yes
+set_io MDDR_DQ\[5\] -DIRECTION INOUT -pinname B7 -fixed yes
+set_io MDDR_DQ\[6\] -DIRECTION INOUT -pinname C6 -fixed yes
+set_io MDDR_DQ\[7\] -DIRECTION INOUT -pinname A7 -fixed yes
+set_io MDDR_DQ\[8\] -DIRECTION INOUT -pinname C8 -fixed yes
+set_io MDDR_DQ\[9\] -DIRECTION INOUT -pinname C9 -fixed yes
+set_io MDDR_DQ\[10\] -DIRECTION INOUT -pinname D7 -fixed yes
+set_io MDDR_DQ\[11\] -DIRECTION INOUT -pinname D8 -fixed yes
+set_io MDDR_DQ\[12\] -DIRECTION INOUT -pinname B11 -fixed yes
+set_io MDDR_DQ\[13\] -DIRECTION INOUT -pinname B10 -fixed yes
+set_io MDDR_DQ\[14\] -DIRECTION INOUT -pinname D9 -fixed yes
+set_io MDDR_DQ\[15\] -DIRECTION INOUT -pinname E8 -fixed yes
+set_io MDDR_ODT -DIRECTION OUTPUT -pinname F16 -fixed yes
+set_io MDDR_RAS_N -DIRECTION OUTPUT -pinname B12 -fixed yes
+set_io MDDR_RESET_N -DIRECTION OUTPUT -pinname A13 -fixed yes
+set_io MDDR_WE_N -DIRECTION OUTPUT -pinname C11 -fixed yes
+set_io TCK -DIRECTION INPUT -pinname R14
+set_io TDI -DIRECTION INPUT -pinname P16
+set_io TDO -DIRECTION OUTPUT -pinname P14
+set_io TMS -DIRECTION INPUT -pinname N11
+set_io TRSTB -DIRECTION INPUT -pinname N13
+
+#
+# Core cell constraints
+#
+

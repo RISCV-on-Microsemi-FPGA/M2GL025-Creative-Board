@@ -1,0 +1,38 @@
+
+===============================================================================.
+
+Info: Global design data: 
+      Total globals:                       12 
+      Globals that cannot be demoted:      1 
+      Globals considered for demotion:     11 
+
+
+Info: List of globals that cannot be demoted: 
+    CLK    ASYN   DATA   Instance Name 
+    ---    ----   ----   ------------- 
+    9683   0      0      'HPMS_0_sb_0/CCC_0/GL0_INST' 
+
+Info: List of globals considered for demotion: 
+    CLK    ASYN   DATA   Instance Name 
+    ---    ----   ----   ------------- 
+    192    0      0      'COREJTAGDEBUG_0/tck_clkint' 
+    76     0      0      'HPMS_0_sb_0/HPMS_0_sb_HPMS_0/MSS_ADLIB_INST_RNIIQEF' 
+    22     0      0      'HPMS_0_sb_0/FABOSC_0/I_RCOSC_25_50MHZ_FAB_CLKINT' 
+    16     0      1      'COREJTAGDEBUG_0/genblk1.udrck_clkint' 
+    0      1392   673    'HPMS_0_sb_0/CORERESETP_0/INIT_DONE_int_RNIKRPF' 
+    0      491    1      'HPMS_0_sb_0/CORERESETP_0/MSS_HPMS_READY_int_RNIPQ52' 
+    0      87     0      'COREJTAGDEBUG_0/genblk1.UJTAG_0_RNIFG38' 
+    0      78     0      'HPMS_0_sb_0/HPMS_0_sb_HPMS_0/MSS_ADLIB_INST_RNIIQEF_0' 
+    0      26     0      'HPMS_0_sb_0/CORERESETP_0/sm0_areset_n_q2_RNIJ7JE' 
+    0      17     0      'HPMS_0_sb_0/CORERESETP_0/sm0_areset_n_rcosc_q2_RNIC9U9' 
+    0      14     0      'CORERISCV_AXI4_0/debugBusReqFifo/rd_reset_RNI5HA5' 
+
+Info: Demotion information: 
+      Disconnected 1 data pins from global 'COREJTAGDEBUG_0/genblk1.udrck_clkint'. 
+      Disconnected 673 data pins from global 'HPMS_0_sb_0/CORERESETP_0/INIT_DONE_int_RNIKRPF'. 
+      Disconnected 1 data pins from global 'HPMS_0_sb_0/CORERESETP_0/MSS_HPMS_READY_int_RNIPQ52'. 
+Info: CMPG4-302: Added 0 row global instances.
+Info: CMPG4-303: Deleted 0 global instances.
+
+===============================================================================.
+

@@ -1,0 +1,16 @@
+C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin64\m_generic.exe  -prodtype  synplify_pro  -encrypt  -pro  -rundir  D:\Work\Libero\IGL2_RISCV_Systick_Blinky\synthesis   -part M2GL025  -package VF256  -grade STD    -maxfan 10000 -clock_globalthreshold 2 -async_globalthreshold 12 -globalthreshold 5000 -low_power_ram_decomp 0 -seqshift_to_uram 0 -opcond COMTC -report_path 4000 -RWCheckOnRam 0 -summaryfile D:\Work\Libero\IGL2_RISCV_Systick_Blinky\synthesis\synlog\report\PROC_SUBSYSTEM_fpga_mapper.xml  -top_level_module  PROC_SUBSYSTEM  -licensetype  synplifypro_actel  -flow mapping  -mp  4  -prjfile  D:\Work\Libero\IGL2_RISCV_Systick_Blinky\synthesis\scratchproject.prs  -implementation  synthesis  -multisrs  -oedif  D:\Work\Libero\IGL2_RISCV_Systick_Blinky\synthesis\PROC_SUBSYSTEM.edn   -freq 100.000   -tcl  D:\Work\Libero\IGL2_RISCV_Systick_Blinky\designer\PROC_SUBSYSTEM\synthesis.fdc  D:\Work\Libero\IGL2_RISCV_Systick_Blinky\synthesis\synwork\PROC_SUBSYSTEM_prem.srd  -sap  D:\Work\Libero\IGL2_RISCV_Systick_Blinky\synthesis\PROC_SUBSYSTEM.sap  -otap  D:\Work\Libero\IGL2_RISCV_Systick_Blinky\synthesis\PROC_SUBSYSTEM.tap  -omap  D:\Work\Libero\IGL2_RISCV_Systick_Blinky\synthesis\PROC_SUBSYSTEM.map  -devicelib  C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\generic\igloo2.v  -sap  D:\Work\Libero\IGL2_RISCV_Systick_Blinky\synthesis\PROC_SUBSYSTEM.sap  -ologparam  D:\Work\Libero\IGL2_RISCV_Systick_Blinky\synthesis\syntmp\PROC_SUBSYSTEM.plg  -osyn  D:\Work\Libero\IGL2_RISCV_Systick_Blinky\synthesis\PROC_SUBSYSTEM.srm  -prjdir  D:\Work\Libero\IGL2_RISCV_Systick_Blinky\synthesis\  -prjname  PROC_SUBSYSTEM_syn  -log  D:\Work\Libero\IGL2_RISCV_Systick_Blinky\synthesis\synlog\PROC_SUBSYSTEM_fpga_mapper.srr 
+rc:1 success:1 runtime:104
+file:D:\Work\Libero\IGL2_RISCV_Systick_Blinky\synthesis\scratchproject.prs|io:o|time:1504643760|size:24248|exec:0
+file:D:\Work\Libero\IGL2_RISCV_Systick_Blinky\synthesis\PROC_SUBSYSTEM.edn|io:o|time:1504644124|size:24548345|exec:0
+file:D:\Work\Libero\IGL2_RISCV_Systick_Blinky\designer\PROC_SUBSYSTEM\synthesis.fdc|io:i|time:1504644013|size:2980|exec:0
+file:D:\Work\Libero\IGL2_RISCV_Systick_Blinky\synthesis\synwork\PROC_SUBSYSTEM_prem.srd|io:i|time:1504644019|size:1487841|exec:0
+file:D:\Work\Libero\IGL2_RISCV_Systick_Blinky\synthesis\PROC_SUBSYSTEM.sap|io:o|time:1504644023|size:24367|exec:0
+file:D:\Work\Libero\IGL2_RISCV_Systick_Blinky\synthesis\PROC_SUBSYSTEM.tap|io:o|time:0|size:0|exec:0
+file:D:\Work\Libero\IGL2_RISCV_Systick_Blinky\synthesis\PROC_SUBSYSTEM.map|io:o|time:1504644126|size:28|exec:0
+file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\generic\igloo2.v|io:i|time:1487959628|size:16387|exec:0
+file:D:\Work\Libero\IGL2_RISCV_Systick_Blinky\synthesis\PROC_SUBSYSTEM.sap|io:o|time:1504644023|size:24367|exec:0
+file:D:\Work\Libero\IGL2_RISCV_Systick_Blinky\synthesis\syntmp\PROC_SUBSYSTEM.plg|io:o|time:1504644126|size:2659|exec:0
+file:D:\Work\Libero\IGL2_RISCV_Systick_Blinky\synthesis\PROC_SUBSYSTEM.srm|io:o|time:1504644120|size:70292|exec:0
+file:D:\Work\Libero\IGL2_RISCV_Systick_Blinky\synthesis\synlog\PROC_SUBSYSTEM_fpga_mapper.srr|io:o|time:1504644126|size:328052|exec:0
+file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin\m_generic.exe|io:i|time:1485322562|size:17958400|exec:1
+file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin64\m_generic.exe|io:i|time:1485324114|size:32495616|exec:1

@@ -1,0 +1,13 @@
+KEY IDE_DES_TOOL "Ide"
+KEY IDE_DES_ADB_PATH "D:\Work\Libero\IGL2_RISCV_Systick_Blinky\designer\impl1\PROC_SUBSYSTEM.adb"
+LIST SOURCE_FILES
+VALUE "D:\Work\Libero\IGL2_RISCV_Systick_Blinky\constraint\io\user.pdc;pdc"
+VALUE "D:\Work\Libero\IGL2_RISCV_Systick_Blinky\constraint\PROC_SUBSYSTEM_derived_constraints.sdc;sdc"
+VALUE "D:\Work\Libero\IGL2_RISCV_Systick_Blinky\constraint\user.sdc;sdc"
+VALUE "D:\Work\Libero\IGL2_RISCV_Systick_Blinky\constraint\fp\PROC_SUBSYSTEM_derived_constraints.pdc;pdc"
+ENDLIST
+LIST OPTIONAL_FILES
+VALUE "D:\Work\Libero\IGL2_RISCV_Systick_Blinky\synthesis\PROC_SUBSYSTEM_sdc.sdc;Skipped"
+ENDLIST
+LIST VCD_FILES
+ENDLIST

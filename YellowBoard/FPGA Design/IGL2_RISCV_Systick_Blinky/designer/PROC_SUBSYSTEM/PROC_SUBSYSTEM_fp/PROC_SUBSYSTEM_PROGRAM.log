@@ -1,0 +1,42 @@
+Software Version: 11.8.0.26
+Embedded FlashPro5 programmer detected.
+programmer 'E200IJYZG' : FlashPro5
+Opened 'D:\Work\Libero\IGL2_RISCV_Systick_Blinky\designer\PROC_SUBSYSTEM\PROC_SUBSYSTEM_fp\PROC_SUBSYSTEM.pro'
+The 'open_project' command succeeded.
+IPD file 'D:/Work/Libero/IGL2_RISCV_Systick_Blinky/designer/PROC_SUBSYSTEM/PROC_SUBSYSTEM.ipd' has been loaded successfully.
+DESIGN : PROC_SUBSYSTEM;  CHECKSUM : 4AB8;  PDB_VERSION : 1.9
+The 'set_programming_file' command succeeded.
+Warning: Programming is already enabled for device 'M2GL025'.
+The 'enable_device' command succeeded.
+The 'set_programming_action' command succeeded.
+programmer 'E200IJYZG' : Scan Chain...
+Warning: programmer 'E200IJYZG' : Vpump has been selected on programmer AND an externally provided Vpump has also been detected. Using externally provided Vpump voltage source.
+programmer 'E200IJYZG' : Check Chain...
+programmer 'E200IJYZG' : Scan and Check Chain PASSED.
+programmer 'E200IJYZG' : device 'M2GL025' : Executing action PROGRAM
+programmer 'E200IJYZG' : device 'M2GL025' : Family: Igloo2
+programmer 'E200IJYZG' : device 'M2GL025' : Product:      M2GL025
+programmer 'E200IJYZG' : device 'M2GL025' : EXPORT ISC_ENABLE_RESULT[32] = 007f6944
+programmer 'E200IJYZG' : device 'M2GL025' : EXPORT CRCERR[1] = 0
+programmer 'E200IJYZG' : device 'M2GL025' : EXPORT EDCERR[1] = 0
+programmer 'E200IJYZG' : device 'M2GL025' : TEMPGRADE: ROOM
+programmer 'E200IJYZG' : device 'M2GL025' : EXPORT VPPRANGE[3] = 2
+programmer 'E200IJYZG' : device 'M2GL025' : VPPRANGE: HIGH
+programmer 'E200IJYZG' : device 'M2GL025' : EXPORT TEMP[8] = 69
+programmer 'E200IJYZG' : device 'M2GL025' : EXPORT VPP[8] = 7f
+programmer 'E200IJYZG' : device 'M2GL025' : Programming FPGA Array and eNVM...
+programmer 'E200IJYZG' : device 'M2GL025' : ===================================================================================
+programmer 'E200IJYZG' : device 'M2GL025' : EXPORT DSN[128] = 5ce6b5d808f69a473cd78a196d07ce69
+programmer 'E200IJYZG' : device 'M2GL025' : ===================================================================================
+programmer 'E200IJYZG' : device 'M2GL025' : Finished: Tue Sep 05 17:02:14 2017 (Elapsed time 00:00:34)
+programmer 'E200IJYZG' : device 'M2GL025' : Executing action PROGRAM PASSED.
+programmer 'E200IJYZG' : Chain programming PASSED.
+Chain Programming Finished: Tue Sep 05 17:02:14 2017 (Elapsed time 00:00:34)
+
+                        o - o - o - o - o - o
+
+The 'run_selected_actions' command succeeded.
+The 'set_programming_file' command succeeded.
+Project saved.
+The 'save_project' command succeeded.
+Project closed.

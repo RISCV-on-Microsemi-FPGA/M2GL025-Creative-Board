@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SynplifyOutput>
+	<result>Success</result>
+	<design>PROC_SUBSYSTEM</design>
+	<target_edif>D:\Work\Libero\IGL2_RISCV_Systick_Blinky\synthesis\PROC_SUBSYSTEM.edn</target_edif>
+</SynplifyOutput>

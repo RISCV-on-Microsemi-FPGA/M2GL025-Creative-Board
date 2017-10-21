@@ -1,0 +1,48 @@
+@P:  Worst Slack : -1.220
+@P:  CLK0_PAD - Estimated Frequency : NA
+@P:  CLK0_PAD - Requested Frequency : 50.0 MHz
+@P:  CLK0_PAD - Estimated Period : NA
+@P:  CLK0_PAD - Requested Period : 20.000
+@P:  CLK0_PAD - Slack : NA
+@P:  COREJTAGDEBUG_85_1s|iUDRCK_inferred_clock - Estimated Frequency : 123.5 MHz
+@P:  COREJTAGDEBUG_85_1s|iUDRCK_inferred_clock - Requested Frequency : 100.0 MHz
+@P:  COREJTAGDEBUG_85_1s|iUDRCK_inferred_clock - Estimated Period : 8.100
+@P:  COREJTAGDEBUG_85_1s|iUDRCK_inferred_clock - Requested Period : 10.000
+@P:  COREJTAGDEBUG_85_1s|iUDRCK_inferred_clock - Slack : 0.950
+@P:  HPMS_0_sb_0/CCC_0/GL0 - Estimated Frequency : 66.2 MHz
+@P:  HPMS_0_sb_0/CCC_0/GL0 - Requested Frequency : 66.0 MHz
+@P:  HPMS_0_sb_0/CCC_0/GL0 - Estimated Period : 15.101
+@P:  HPMS_0_sb_0/CCC_0/GL0 - Requested Period : 15.152
+@P:  HPMS_0_sb_0/CCC_0/GL0 - Slack : 0.051
+@P:  HPMS_0_sb_0/FABOSC_0/I_RCOSC_25_50MHZ/CLKOUT - Estimated Frequency : 372.7 MHz
+@P:  HPMS_0_sb_0/FABOSC_0/I_RCOSC_25_50MHZ/CLKOUT - Requested Frequency : 50.0 MHz
+@P:  HPMS_0_sb_0/FABOSC_0/I_RCOSC_25_50MHZ/CLKOUT - Estimated Period : 2.683
+@P:  HPMS_0_sb_0/FABOSC_0/I_RCOSC_25_50MHZ/CLKOUT - Requested Period : 20.000
+@P:  HPMS_0_sb_0/FABOSC_0/I_RCOSC_25_50MHZ/CLKOUT - Slack : 17.317
+@P:  HPMS_0_sb_0/HPMS_0_sb_HPMS_0/CLK_CONFIG_APB - Estimated Frequency : 86.7 MHz
+@P:  HPMS_0_sb_0/HPMS_0_sb_HPMS_0/CLK_CONFIG_APB - Requested Frequency : 16.5 MHz
+@P:  HPMS_0_sb_0/HPMS_0_sb_HPMS_0/CLK_CONFIG_APB - Estimated Period : 11.538
+@P:  HPMS_0_sb_0/HPMS_0_sb_HPMS_0/CLK_CONFIG_APB - Requested Period : 60.606
+@P:  HPMS_0_sb_0/HPMS_0_sb_HPMS_0/CLK_CONFIG_APB - Slack : 24.534
+@P:  TCK - Estimated Frequency : NA
+@P:  TCK - Requested Frequency : 6.0 MHz
+@P:  TCK - Estimated Period : NA
+@P:  TCK - Requested Period : 166.670
+@P:  TCK - Slack : NA
+@P:  uj_jtag_85|un1_duttck_inferred_clock - Estimated Frequency : 80.4 MHz
+@P:  uj_jtag_85|un1_duttck_inferred_clock - Requested Frequency : 100.0 MHz
+@P:  uj_jtag_85|un1_duttck_inferred_clock - Estimated Period : 12.441
+@P:  uj_jtag_85|un1_duttck_inferred_clock - Requested Period : 10.000
+@P:  uj_jtag_85|un1_duttck_inferred_clock - Slack : -1.220
+@P:  System - Estimated Frequency : 163.9 MHz
+@P:  System - Requested Frequency : 100.0 MHz
+@P:  System - Estimated Period : 6.102
+@P:  System - Requested Period : 10.000
+@P:  System - Slack : 3.898
+@P: PROC_SUBSYSTEM Part : m2gl025vf256std
+@P: PROC_SUBSYSTEM Register bits  : 9944 
+@P: PROC_SUBSYSTEM DSP Blocks  : 2
+@P: PROC_SUBSYSTEM I/O primitives : 58
+@P: PROC_SUBSYSTEM RAM1K18 :  8
+@P: PROC_SUBSYSTEM RAM64x18 :  17
+@P:  CPU Time : 0h:01m:41s

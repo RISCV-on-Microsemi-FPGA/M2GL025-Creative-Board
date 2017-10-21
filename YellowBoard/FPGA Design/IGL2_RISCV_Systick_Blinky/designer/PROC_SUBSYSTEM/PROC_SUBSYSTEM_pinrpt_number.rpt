@@ -1,0 +1,269 @@
+*****************************************************************
+Pin Report - Date: Tue Sep 05 16:56:09 2017 Pinchecksum: NOT-AVAILABLE
+Product: Designer
+Release: v11.8
+Version: 11.8.0.26
+Design Name: PROC_SUBSYSTEM
+Family: IGLOO2
+Die: M2GL025
+Package: 256 VF
+*****************************************************************
+
+Number |Port                  |Function                                |State      |I/O Std  |Direction |I/O state in Flash*Freeze mode |Resistor Pull |I/O available in Flash*Freeze mode |Schmitt Trigger |Odt_Static |Odt Imp (Ohm) |Low Power Exit |Input Delay |Slew |Pre-Emphasis |Output Drive (mA) |Output Load (pF) |
+-------|----------------------|----------------------------------------|-----------|---------|----------|-------------------------------|--------------|-----------------------------------|----------------|-----------|--------------|---------------|------------|-----|-------------|------------------|-----------------|
+A1                             VDDI0                                    Reserved    
+A2      MDDR_DQ[1]             DDRIO60NB0/MDDR_DQ1                      Fixed       SSTL18II  Inout      TRISTATE                        None           No                                  Off              Off         50             Off             Off          ---   ---           ---                5                 
+A3      MDDR_DM_RDQS[0]        DDRIO57PB0/MDDR_DM_RDQS0                 Fixed       SSTL18II  Inout      TRISTATE                        None           No                                  Off              Off         50             Off             Off          ---   ---           ---                5                 
+A4      MDDR_DQS_N[0]          DDRIO58NB0/MDDR_DQS0_N                   Fixed       SSTL18II  Inout      TRISTATE                        None           No                                  Off              Off         50             Off             Off          ---   ---           ---                5                 
+A5      MDDR_DQS[0]            DDRIO58PB0/MDDR_DQS0                     Fixed       SSTL18II  Inout      TRISTATE                        None           No                                  Off              Off         50             Off             Off          ---   ---           ---                5                 
+A6                             VSS                                      Reserved    
+A7      MDDR_DQ[7]             DDRIO55PB0/MDDR_DQ7                      Fixed       SSTL18II  Inout      TRISTATE                        None           No                                  Off              Off         50             Off             Off          ---   ---           ---                5                 
+A8      MDDR_DQS_TMATCH_0_OUT  DDRIO55NB0/MDDR_TMATCH_0_OUT             Fixed       SSTL18II  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           ---                5                 
+A9      MDDR_DQS[1]            DDRIO52PB0/MDDR_DQS1/GB8/CCC_NE0_CLKI3   Special     SSTL18II  Inout      TRISTATE                        None           No                                  Off              Off         50             Off             Off          ---   ---           ---                5                 
+A10     MDDR_DQS_N[1]          DDRIO52NB0/MDDR_DQS1_N                   Fixed       SSTL18II  Inout      TRISTATE                        None           No                                  Off              Off         50             Off             Off          ---   ---           ---                5                 
+A11                            VDDI0                                    Reserved    
+A12     MDDR_CAS_N             DDRIO46NB0/MDDR_CAS_N                    Fixed       SSTL18II  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           ---                5                 
+A13     MDDR_RESET_N           DDRIO46PB0/MDDR_RESET_N                  Fixed       SSTL18II  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           ---                5                 
+A14     MDDR_CLK               DDRIO45PB0/MDDR_CLK                      Fixed       SSTL18II  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           ---                5                 
+A15     MDDR_CLK_N             DDRIO45NB0/MDDR_CLK_N                    Fixed       SSTL18II  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           ---                5                 
+A16                            VSS                                      Reserved    
+B1                             DDRIO64NB0/MDDR_DQS_ECC_N                Unassigned  
+B2      MDDR_DQ[0]             DDRIO60PB0/MDDR_DQ0                      Fixed       SSTL18II  Inout      TRISTATE                        None           No                                  Off              Off         50             Off             Off          ---   ---           ---                5                 
+B3      MDDR_DQ[4]             DDRIO57NB0/MDDR_DQ4                      Fixed       SSTL18II  Inout      TRISTATE                        None           No                                  Off              Off         50             Off             Off          ---   ---           ---                5                 
+B4                             VDDI0                                    Reserved    
+B5      MDDR_DQ[3]             DDRIO59NB0/MDDR_DQ3                      Fixed       SSTL18II  Inout      TRISTATE                        None           No                                  Off              Off         50             Off             Off          ---   ---           ---                5                 
+B6      MDDR_DQ[2]             DDRIO59PB0/MDDR_DQ2                      Fixed       SSTL18II  Inout      TRISTATE                        None           No                                  Off              Off         50             Off             Off          ---   ---           ---                5                 
+B7      MDDR_DQ[5]             DDRIO56PB0/MDDR_DQ5                      Fixed       SSTL18II  Inout      TRISTATE                        None           No                                  Off              Off         50             Off             Off          ---   ---           ---                5                 
+B8      MDDR_DQS_TMATCH_0_IN   DDRIO51PB0/MDDR_TMATCH_0_IN              Fixed       SSTL18II  Input      TRISTATE                        None           No                                  Off              Off         50             Off             Off          ---   ---           ---                ---               
+B9                             VSS                                      Reserved    
+B10     MDDR_DQ[13]            DDRIO50NB0/MDDR_DQ13                     Fixed       SSTL18II  Inout      TRISTATE                        None           No                                  Off              Off         50             Off             Off          ---   ---           ---                5                 
+B11     MDDR_DQ[12]            DDRIO50PB0/MDDR_DQ12/GB12/CCC_NE1_CLKI2  Special     SSTL18II  Inout      TRISTATE                        None           No                                  Off              Off         50             Off             Off          ---   ---           ---                5                 
+B12     MDDR_RAS_N             DDRIO48PB0/MDDR_RAS_N                    Fixed       SSTL18II  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           ---                5                 
+B13     MDDR_BA[2]             DDRIO43PB0/MDDR_BA2                      Fixed       SSTL18II  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           ---                5                 
+B14                            VDDI0                                    Reserved    
+B15     MDDR_ADDR[15]          DDRIO35NB0/MDDR_ADDR15                   Fixed       SSTL18II  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           ---                5                 
+B16     MDDR_ADDR[3]           DDRIO41PB0/MDDR_ADDR3                    Fixed       SSTL18II  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           ---                5                 
+C1                             DDRIO64PB0/MDDR_DQS_ECC                  Unassigned  
+C2                             VSS                                      Reserved    
+C3                             DDRIO63NB0/MDDR_DM_RDQS_ECC              Unassigned  
+C4                             DDRIO63PB0/MDDR_TMATCH_ECC_IN            Unassigned  
+C5                             DDRIO62PB0/MDDR_DQ_ECC3                  Unassigned  
+C6      MDDR_DQ[6]             DDRIO56NB0/MDDR_DQ6                      Fixed       SSTL18II  Inout      TRISTATE                        None           No                                  Off              Off         50             Off             Off          ---   ---           ---                5                 
+C7                             VDDI0                                    Reserved    
+C8      MDDR_DQ[8]             DDRIO54PB0/MDDR_DQ8                      Fixed       SSTL18II  Inout      TRISTATE                        None           No                                  Off              Off         50             Off             Off          ---   ---           ---                5                 
+C9      MDDR_DQ[9]             DDRIO54NB0/MDDR_DQ9                      Fixed       SSTL18II  Inout      TRISTATE                        None           No                                  Off              Off         50             Off             Off          ---   ---           ---                5                 
+C10     MDDR_DM_RDQS[1]        DDRIO51NB0/MDDR_DM_RDQS1                 Fixed       SSTL18II  Inout      TRISTATE                        None           No                                  Off              Off         50             Off             Off          ---   ---           ---                5                 
+C11     MDDR_WE_N              DDRIO48NB0/MDDR_WE_N                     Fixed       SSTL18II  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           ---                5                 
+C12     MDDR_BA[0]             DDRIO44PB0/MDDR_BA0                      Fixed       SSTL18II  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           ---                5                 
+C13                            VSS                                      Reserved    
+C14     MDDR_ADDR[0]           DDRIO43NB0/MDDR_ADDR0                    Fixed       SSTL18II  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           ---                5                 
+C15     MDDR_ADDR[14]          DDRIO35PB0/MDDR_ADDR14                   Fixed       SSTL18II  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           ---                5                 
+C16     MDDR_ADDR[4]           DDRIO41NB0/MDDR_ADDR4                    Fixed       SSTL18II  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           ---                5                 
+D1                             DDRIO61PB0/CCC_NW1_CLKI3                 Special     
+D2                             DDRIO61NB0                               Unassigned  
+D3                             DDRIO66PB0/MDDR_TMATCH_ECC_OUT           Unassigned  
+D4                             DDRIO65PB0/GB0/CCC_NW0_CLKI3             Special     
+D5                             VSS                                      Reserved    
+D6                             DDRIO62NB0/MDDR_DQ_ECC2                  Unassigned  
+D7      MDDR_DQ[10]            DDRIO53PB0/MDDR_DQ10/CCC_NE0_CLKI2       Special     SSTL18II  Inout      TRISTATE                        None           No                                  Off              Off         50             Off             Off          ---   ---           ---                5                 
+D8      MDDR_DQ[11]            DDRIO53NB0/MDDR_DQ11                     Fixed       SSTL18II  Inout      TRISTATE                        None           No                                  Off              Off         50             Off             Off          ---   ---           ---                5                 
+D9      MDDR_DQ[14]            DDRIO49PB0/MDDR_DQ14/CCC_NE1_CLKI3       Special     SSTL18II  Inout      TRISTATE                        None           No                                  Off              Off         50             Off             Off          ---   ---           ---                5                 
+D10                            VDDI0                                    Reserved    
+D11     MDDR_CS_N              DDRIO47NB0/MDDR_CS_N                     Fixed       SSTL18II  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           ---                5                 
+D12     MDDR_BA[1]             DDRIO44NB0/MDDR_BA1                      Fixed       SSTL18II  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           ---                5                 
+D13     MDDR_ADDR[13]          DDRIO36NB0/MDDR_ADDR13                   Fixed       SSTL18II  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           ---                5                 
+D14     MDDR_ADDR[12]          DDRIO36PB0/MDDR_ADDR12                   Fixed       SSTL18II  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           ---                5                 
+D15                            VSS                                      Reserved    
+D16     MDDR_ADDR[5]           DDRIO40PB0/MDDR_ADDR5                    Fixed       SSTL18II  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           ---                5                 
+E1                             MDDR_IMP_CALIB                           Reserved    
+E2                             DDRIO66NB0/CCC_NW0_CLKI2                 Special     
+E3                             VDDI0                                    Reserved    
+E4                             DDRIO65NB0/GB4/CCC_NW1_CLKI2             Special     
+E5                             CCC_NW0_NW1_PLL_VSSA                     Reserved    
+E6                             CCC_NW0_NW1_PLL_VDDA                     Reserved    
+E7                             VREF0                                    Reserved    
+E8      MDDR_DQ[15]            DDRIO49NB0/MDDR_DQ15                     Fixed       SSTL18II  Inout      TRISTATE                        None           No                                  Off              Off         50             Off             Off          ---   ---           ---                5                 
+E9                             VREF0                                    Reserved    
+E10     MDDR_CKE               DDRIO47PB0/MDDR_CKE                      Fixed       SSTL18II  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           ---                5                 
+E11     MDDR_ADDR[1]           DDRIO42PB0/MDDR_ADDR1                    Fixed       SSTL18II  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           ---                5                 
+E12     MDDR_ADDR[2]           DDRIO42NB0/MDDR_ADDR2                    Fixed       SSTL18II  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           ---                5                 
+E13                            VDDI0                                    Reserved    
+E14     MDDR_ADDR[10]          DDRIO37PB0/MDDR_ADDR10                   Fixed       SSTL18II  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           ---                5                 
+E15     MDDR_ADDR[9]           DDRIO38NB0/MDDR_ADDR9                    Fixed       SSTL18II  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           ---                5                 
+E16     MDDR_ADDR[6]           DDRIO40NB0/MDDR_ADDR6                    Fixed       SSTL18II  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           ---                5                 
+F1                             VSS                                      Reserved    
+F2                             MSIO97NB7                                Unassigned  
+F3                             MSIO96NB7                                Unassigned  
+F4                             MSIO96PB7/GB6/CCC_NW1_CLKI1              Special     
+F5                             MSIO95NB7                                Unassigned  
+F6                             VDDI7                                    Reserved    
+F7                             VSS                                      Reserved    
+F8                             VDDI0                                    Reserved    
+F9                             VSS                                      Reserved    
+F10                            VDDI0                                    Reserved    
+F11                            CCC_NE0_NE1_HPMS_MDDR_PLL_VDDA           Reserved    
+F12                            CCC_NE0_NE1_HPMS_MDDR_PLL_VSSA           Reserved    
+F13     MDDR_ADDR[11]          DDRIO37NB0/MDDR_ADDR11                   Fixed       SSTL18II  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           ---                5                 
+F14     MDDR_ADDR[8]           DDRIO38PB0/MDDR_ADDR8                    Fixed       SSTL18II  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           ---                5                 
+F15     MDDR_ADDR[7]           DDRIO39NB0/MDDR_ADDR7                    Fixed       SSTL18II  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           ---                5                 
+F16     MDDR_ODT               DDRIO39PB0/MDDR_ODT                      Fixed       SSTL18II  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           ---                5                 
+G1                             MSIO97PB7/GB2/CCC_NW0_CLKI1              Special     
+G2                             MSIO98NB7                                Unassigned  
+G3      TX                     MSIO98PB7/CCC_NW1_CLKI0                  Special     LVCMOS25  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          SLOW  ---           4                  5                 
+G4                             VSS                                      Reserved    
+G5                             MSIO95PB7                                Unassigned  
+G6                             VSS                                      Reserved    
+G7                             VDD                                      Reserved    
+G8                             VSS                                      Reserved    
+G9                             VDD                                      Reserved    
+G10                            VSS                                      Reserved    
+G11                            VDDI1                                    Reserved    
+G12                            MSIO32NB1                                Unassigned  
+G13                            MSIO33PB1                                Unassigned  
+G14                            MSIO15NB2                                Unassigned  
+G15                            VSS                                      Reserved    
+G16                            MSIO14NB2                                Unassigned  
+H1                             MSIOD103PB6/CCC_SW0_CLKI0                Special     
+H2                             VDDI7                                    Reserved    
+H3      RX                     MSIO99PB7/CCC_NW0_CLKI0                  Special     LVCMOS25  Input      TRISTATE                        None           No                                  Off              ---         ---            Off             Off          ---   ---           ---                ---               
+H4                             MSIO99NB7                                Unassigned  
+H5                             MSIOD100PB6/GB5/CCC_SW1_CLKI1            Special     
+H6                             VDDI6                                    Reserved    
+H7                             VSS                                      Reserved    
+H8                             VDD                                      Reserved    
+H9                             VSS                                      Reserved    
+H10                            VPP                                      Reserved    
+H11                            FLASH_GOLDEN_N                           Reserved    
+H12     GPIO_IN[0]             MSI27NB1                                 Fixed       LVCMOS25  Input      TRISTATE                        None           No                                  Off              ---         ---            Off             Off          ---   ---           ---                ---               
+H13     GPIO_IN[1]             MSIO28NB1                                Fixed       LVCMOS25  Input      TRISTATE                        None           No                                  Off              ---         ---            Off             Off          ---   ---           ---                ---               
+H14                            MSIO15PB2                                Unassigned  
+H15                            MSIO14PB2                                Unassigned  
+H16     CLK0_PAD               MSIO11NB2/CCC_NE1_CLKI0                  Special     LVCMOS25  Input      TRISTATE                        None           No                                  Off              ---         ---            Off             Off          ---   ---           ---                ---               
+J1                             MSIOD118PB5                              Unassigned  
+J2                             MSIOD118NB5                              Unassigned  
+J3                             MSIOD102PB6/CCC_SW1_CLKI0                Special     
+J4                             VSS                                      Reserved    
+J5                             MSIOD101PB6/GB1/CCC_SW0_CLKI1            Special     
+J6                             VSS                                      Reserved    
+J7                             VDD                                      Reserved    
+J8                             VSS                                      Reserved    
+J9                             VDD                                      Reserved    
+J10                            VSS                                      Reserved    
+J11                            VDDI2                                    Reserved    
+J12                            MSIO13NB2/SPI_0_SS0                      Unassigned  
+J13                            MSIO12NB2/SPI_0_SDI                      Unassigned  
+J14                            MSIO12PB2/SPI_0_CLK                      Unassigned  
+J15                            VDDI2                                    Reserved    
+J16     GPIO_OUT[2]            MSIO11PB2//CCC_NE0_CLKI0                 Special     LVCMOS25  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          SLOW  ---           4                  5                 
+K1                             MSIOD119NB5                              Unassigned  
+K2                             VDDI5                                    Reserved    
+K3                             DNC                                      Reserved    
+K4                             VSS                                      Reserved    
+K5                             VPP                                      Reserved    
+K6                             CCC_SW0_SW1_PLL_VSSA                     Reserved    
+K7                             VSS                                      Reserved    
+K8                             VDD                                      Reserved    
+K9                             VSS                                      Reserved    
+K10                            VDD                                      Reserved    
+K11                            VPPNVM                                   Reserved    
+K12                            MSIO13PB2/SPI_0_SDO                      Unassigned  
+K13                            VSS                                      Reserved    
+K14                            MSIO6PB2                                 Unassigned  
+K15                            MSIO6NB2                                 Unassigned  
+K16     GPIO_OUT[0]            MSIO4PB2                                 Fixed       LVCMOS25  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          SLOW  ---           4                  5                 
+L1                             MSIOD119PB5                              Unassigned  
+L2                             DNC                                      Reserved    
+L3                             VDD                                      Reserved    
+L4                             VSS                                      Reserved    
+L5                             CCC_SW0_SW1_PLL_VDDA                     Reserved    
+L6                             VSS                                      Reserved    
+L7                             VDD                                      Reserved    
+L8                             VSS                                      Reserved    
+L9                             VPP                                      Reserved    
+L10                            VSSNVM                                   Reserved    
+L11                            MSIO3PB2                                 Unassigned  
+L12                            MSIO3NB2                                 Unassigned  
+L13                            MSIO5NB2                                 Unassigned  
+L14                            MSIO5PB2                                 Unassigned  
+L15                            MSIO4NB2                                 Unassigned  
+L16                            VSS                                      Reserved    
+M1                             VSS                                      Reserved    
+M2                             VSS                                      Reserved    
+M3                             VSS                                      Reserved    
+M4                             VDD                                      Reserved    
+M5                             VDD                                      Reserved    
+M6                             VDD                                      Reserved    
+M7                             MSIO125PB4/GB3/CCC_SW0_CLKI3             Special     
+M8                             MSIO129NB4                               Unassigned  
+M9                             MSIO132PB4                               Unassigned  
+M10                            MSIO132NB4                               Unassigned  
+M11     DEVRST_N               DEVRST_N                                 Dedicated   
+M12                            JTAGSEL                                  Reserved    
+M13                            MSIO2NB2                                 Unassigned  
+M14                            VDDI2                                    Reserved    
+M15                            MSIO0PB2                                 Unassigned  
+M16     GPIO_OUT[1]            MSIO1NB2                                 Fixed       LVCMOS25  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          SLOW  ---           4                  5                 
+N1                             VSS                                      Reserved    
+N2                             VSS                                      Reserved    
+N3                             VSS                                      Reserved    
+N4                             VSS                                      Reserved    
+N5                             VDD                                      Reserved    
+N6                             VSS                                      Reserved    
+N7                             MSIO125NB4/GB7/CCC_SW1_CLKI2             Special     
+N8                             MSIO129PB4/CCC_SW1_CLKI3                 Special     
+N9                             VSS                                      Reserved    
+N10                            MSIO133NB4                               Unassigned  
+N11     TMS                    JTAG_TMS                                 Dedicated   
+N12                            VDDI3                                    Reserved    
+N13     TRSTB                  JTAG_TRSTB                               Dedicated   
+N14                            MSIO2PB2                                 Unassigned  
+N15                            MSIO0NB2                                 Unassigned  
+N16     GPIO_OUT[3]            MSIO1PB2                                 Fixed       LVCMOS25  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          SLOW  ---           4                  5                 
+P1                             VSS                                      Reserved    
+P2                             VSS                                      Reserved    
+P3                             VSS                                      Reserved    
+P4                             VSS                                      Reserved    
+P5                             VSS                                      Reserved    
+P6                             User Reserved                            Unassigned  
+P7                             User Reserved                            Unassigned  
+P8                             MSIO126NB4                               Unassigned  
+P9                             MSIO131PB4/GB11/VCCC_SE0_CLKI            Special     
+P10                            MSIO133PB4/GB15/VCCC_SE1_CLKI            Special     
+P11                            VDDI4                                    Reserved    
+P12                            MSIO143PB4                               Unassigned  
+P13                            MSIO143NB4                               Unassigned  
+P14     TDO                    JTAG_TDO                                 Dedicated   
+P15                            VSS                                      Reserved    
+P16     TDI                    JTAG_TDI                                 Dedicated   
+R1                             VSS                                      Reserved    
+R2                             DNC                                      Reserved    
+R3                             VSS                                      Reserved    
+R4                             DNC                                      Reserved    
+R5                             VSS                                      Reserved    
+R6                             MSIO120PB4                               Unassigned  
+R7                             VDDI4                                    Reserved    
+R8                             MSIO126PB4                               Unassigned  
+R9                             MSIO130NB4                               Unassigned  
+R10                            MSIO131NB4                               Unassigned  
+R11                            MSIO134NB4                               Unassigned  
+R12                            MSIO138NB4                               Unassigned  
+R13                            MSIO145NB4                               Unassigned  
+R14     TCK                    JTAG_TCK                                 Dedicated   
+R15                            XTLOSC_MAIN_EXTAL                        Reserved    
+R16                            XTLOSC_MAIN_XTAL                         Reserved    
+T1                             VSS                                      Reserved    
+T2                             DNC                                      Reserved    
+T3                             VSS                                      Reserved    
+T4                             DNC                                      Reserved    
+T5                             VSS                                      Reserved    
+T6                             MSIO120NB4/CCC_SW0_CLKI2                 Special     
+T7                             MSIO122PB4                               Unassigned  
+T8                             MSIO122NB4                               Unassigned  
+T9                             MSIO130PB4/VCCC_SE0_CLKI                 Special     
+T10                            VSS                                      Reserved    
+T11                            MSIO134PB4/VCCC_SE1_CLKI                 Special     
+T12                            MSIO138PB4                               Unassigned  
+T13                            MSIO145PB4                               Unassigned  
+T14                            VSS                                      Reserved    
+T15                            VPP                                      Reserved    
+T16                            VPP                                      Reserved    

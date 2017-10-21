@@ -1,0 +1,67 @@
+INFO: Reading User SDC file D:\Work\Libero\IGL2_RISCV_Systick_Blinky\constraint\PROC_SUBSYSTEM_derived_constraints.sdc.
+INFO: Reading User SDC file D:\Work\Libero\IGL2_RISCV_Systick_Blinky\constraint\user.sdc.
+4 warnings found.
+Check logfile D:\Work\Libero\IGL2_RISCV_Systick_Blinky\constraint\placer_sdc_errors.log for details.
+
+***** Place and Route Configurations *****
+Timing-driven            : ON
+Power-driven             : OFF
+High-effort              : OFF
+Repair min-delay         : ON
+Incremental              : OFF
+Inter-clock optimization : ON
+TDPR scenario            : place_and_route
+
+INFO: Reading User PDC file D:\Work\Libero\IGL2_RISCV_Systick_Blinky\constraint\io\user.pdc. 0 error(s) and 0 warning(s)
+INFO: Reading User PDC file D:\Work\Libero\IGL2_RISCV_Systick_Blinky\constraint\fp\PROC_SUBSYSTEM_derived_constraints.pdc. 0 error(s) and 0 warning(s)
+
+Running the I/O Bank and Globals Assigner.
+Info:  I/O Bank and Globals Assigner identified 58 fixed I/O macros, 0 unfixed I/O macros
+
+I/O Bank and Globals Assigner completed successfully.
+Total time spent in I/O Bank and Globals Assigner: 1 seconds
+
+Placer V4.0 - 11.8.0 
+Design: PROC_SUBSYSTEM                  Started: Tue Sep 05 16:43:19 2017
+
+Initializing Timing-Driven Placement ...
+Placing design...
+End of placement.
+Pre-Placement Runtime        : 53 seconds
+Placement Runtime            : 472 seconds
+
+Placer completed successfully.
+
+Design: PROC_SUBSYSTEM                  
+Finished: Tue Sep 05 16:52:43 2017
+Total CPU Time:     00:09:19            Total Elapsed Time: 00:09:24
+Total Memory Usage: 897.6 Mbytes
+                        o - o - o - o - o - o
+
+
+Router 
+Design: D:\Work\Libero\IGL2_RISCV_Systick_Blinky\designer\PROC_SUBSYSTEM\PROC_SUBSYSTEMStarted: Tue Sep 05 16:53:08 2017
+
+Final stats: search run time 107.972937
+
+Router completed successfully.
+
+Design: D:\Work\Libero\IGL2_RISCV_Systick_Blinky\designer\PROC_SUBSYSTEM\PROC_SUBSYSTEM
+Finished: Tue Sep 05 16:55:11 2017
+Total CPU Time:     00:02:02            Total Elapsed Time: 00:02:03
+Total Memory Usage: 1111.0 Mbytes
+                        o - o - o - o - o - o
+
+Info: Iteration 1:
+  Total violating paths eligible for improvement: 0
+  Worst minimum delay slack: 
+Resource Usage
++---------------+-------+-------+------------+
+| Type          | Used  | Total | Percentage |
++---------------+-------+-------+------------+
+| 4LUT          | 15489 | 27696 | 55.93      |
+| DFF           | 10916 | 27696 | 39.41      |
+| I/O Register  | 0     | 408   | 0.00       |
+| Logic Element | 18629 | 27696 | 67.26      |
++---------------+-------+-------+------------+
+

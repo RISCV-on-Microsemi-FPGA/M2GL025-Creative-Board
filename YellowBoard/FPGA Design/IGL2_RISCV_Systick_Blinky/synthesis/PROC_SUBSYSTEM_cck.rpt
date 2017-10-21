@@ -1,0 +1,176 @@
+# Synopsys Constraint Checker, version map201609actrcp1, Build 005R, built Jan 25 2017
+# Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+# Written on Tue Sep 05 16:40:23 2017
+
+
+##### DESIGN INFO #######################################################
+
+Top View:                "PROC_SUBSYSTEM"
+Constraint File(s):      "D:\Work\Libero\IGL2_RISCV_Systick_Blinky\designer\PROC_SUBSYSTEM\synthesis.fdc"
+
+
+
+
+##### SUMMARY ############################################################
+
+Found 5 issues in 3 out of 14 constraints
+
+
+##### DETAILS ############################################################
+
+
+
+Clock Relationships
+*******************
+
+Starting                                         Ending                                           |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                           uj_jtag_85|un1_duttck_inferred_clock             |     10.000           |     No paths         |     10.000           |     No paths                         
+System                                           COREJTAGDEBUG_85_1s|iUDRCK_inferred_clock        |     10.000           |     No paths         |     10.000           |     No paths                         
+System                                           HPMS_0_sb_0/CCC_0/GL0                            |     15.152           |     No paths         |     No paths         |     No paths                         
+HPMS_0_sb_0/FABOSC_0/I_RCOSC_25_50MHZ/CLKOUT     HPMS_0_sb_0/FABOSC_0/I_RCOSC_25_50MHZ/CLKOUT     |     20.000           |     No paths         |     No paths         |     No paths                         
+HPMS_0_sb_0/FABOSC_0/I_RCOSC_25_50MHZ/CLKOUT     HPMS_0_sb_0/CCC_0/GL0                            |     0.690            |     No paths         |     No paths         |     No paths                         
+HPMS_0_sb_0/HPMS_0_sb_HPMS_0/CLK_CONFIG_APB      HPMS_0_sb_0/HPMS_0_sb_HPMS_0/CLK_CONFIG_APB      |     60.606           |     No paths         |     30.303           |     30.303                           
+HPMS_0_sb_0/HPMS_0_sb_HPMS_0/CLK_CONFIG_APB      HPMS_0_sb_0/CCC_0/GL0                            |     15.152           |     No paths         |     No paths         |     No paths                         
+uj_jtag_85|un1_duttck_inferred_clock             uj_jtag_85|un1_duttck_inferred_clock             |     10.000           |     10.000           |     5.000            |     5.000                            
+uj_jtag_85|un1_duttck_inferred_clock             COREJTAGDEBUG_85_1s|iUDRCK_inferred_clock        |     Diff grp         |     No paths         |     No paths         |     No paths                         
+uj_jtag_85|un1_duttck_inferred_clock             HPMS_0_sb_0/CCC_0/GL0                            |     Diff grp         |     No paths         |     No paths         |     Diff grp                         
+COREJTAGDEBUG_85_1s|iUDRCK_inferred_clock        System                                           |     10.000           |     No paths         |     No paths         |     No paths                         
+COREJTAGDEBUG_85_1s|iUDRCK_inferred_clock        uj_jtag_85|un1_duttck_inferred_clock             |     No paths         |     Diff grp         |     No paths         |     No paths                         
+COREJTAGDEBUG_85_1s|iUDRCK_inferred_clock        COREJTAGDEBUG_85_1s|iUDRCK_inferred_clock        |     10.000           |     No paths         |     5.000            |     No paths                         
+HPMS_0_sb_0/CCC_0/GL0                            HPMS_0_sb_0/FABOSC_0/I_RCOSC_25_50MHZ/CLKOUT     |     0.690            |     No paths         |     No paths         |     No paths                         
+HPMS_0_sb_0/CCC_0/GL0                            HPMS_0_sb_0/HPMS_0_sb_HPMS_0/CLK_CONFIG_APB      |     15.152           |     No paths         |     No paths         |     No paths                         
+HPMS_0_sb_0/CCC_0/GL0                            uj_jtag_85|un1_duttck_inferred_clock             |     Diff grp         |     No paths         |     Diff grp         |     No paths                         
+HPMS_0_sb_0/CCC_0/GL0                            HPMS_0_sb_0/CCC_0/GL0                            |     15.152           |     No paths         |     No paths         |     No paths                         
+=============================================================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+@W|Paths from clock (HPMS_0_sb_0/FABOSC_0/I_RCOSC_25_50MHZ/CLKOUT:r) to clock (HPMS_0_sb_0/CCC_0/GL0:r) are overconstrained because the required time of 0.69 ns is too small.  
+@W|Paths from clock (HPMS_0_sb_0/CCC_0/GL0:r) to clock (HPMS_0_sb_0/FABOSC_0/I_RCOSC_25_50MHZ/CLKOUT:r) are overconstrained because the required time of 0.69 ns is too small.  
+
+
+Unconstrained Start/End Points
+******************************
+
+p:DEVRST_N
+p:GPIO_IN[0]
+p:GPIO_IN[1]
+p:GPIO_OUT[0]
+p:GPIO_OUT[1]
+p:GPIO_OUT[2]
+p:GPIO_OUT[3]
+p:MDDR_ADDR[0]
+p:MDDR_ADDR[1]
+p:MDDR_ADDR[2]
+p:MDDR_ADDR[3]
+p:MDDR_ADDR[4]
+p:MDDR_ADDR[5]
+p:MDDR_ADDR[6]
+p:MDDR_ADDR[7]
+p:MDDR_ADDR[8]
+p:MDDR_ADDR[9]
+p:MDDR_ADDR[10]
+p:MDDR_ADDR[11]
+p:MDDR_ADDR[12]
+p:MDDR_ADDR[13]
+p:MDDR_ADDR[14]
+p:MDDR_ADDR[15]
+p:MDDR_BA[0]
+p:MDDR_BA[1]
+p:MDDR_BA[2]
+p:MDDR_CAS_N
+p:MDDR_CKE
+p:MDDR_CLK
+p:MDDR_CLK_N
+p:MDDR_CS_N
+p:MDDR_DM_RDQS[0] (bidir end point)
+p:MDDR_DM_RDQS[0] (bidir start point)
+p:MDDR_DM_RDQS[1] (bidir end point)
+p:MDDR_DM_RDQS[1] (bidir start point)
+p:MDDR_DQS[0] (bidir end point)
+p:MDDR_DQS[0] (bidir start point)
+p:MDDR_DQS[1] (bidir end point)
+p:MDDR_DQS[1] (bidir start point)
+p:MDDR_DQS_N[0] (bidir end point)
+p:MDDR_DQS_N[0] (bidir start point)
+p:MDDR_DQS_N[1] (bidir end point)
+p:MDDR_DQS_N[1] (bidir start point)
+p:MDDR_DQS_TMATCH_0_IN
+p:MDDR_DQS_TMATCH_0_OUT
+p:MDDR_DQ[0] (bidir end point)
+p:MDDR_DQ[0] (bidir start point)
+p:MDDR_DQ[1] (bidir end point)
+p:MDDR_DQ[1] (bidir start point)
+p:MDDR_DQ[2] (bidir end point)
+p:MDDR_DQ[2] (bidir start point)
+p:MDDR_DQ[3] (bidir end point)
+p:MDDR_DQ[3] (bidir start point)
+p:MDDR_DQ[4] (bidir end point)
+p:MDDR_DQ[4] (bidir start point)
+p:MDDR_DQ[5] (bidir end point)
+p:MDDR_DQ[5] (bidir start point)
+p:MDDR_DQ[6] (bidir end point)
+p:MDDR_DQ[6] (bidir start point)
+p:MDDR_DQ[7] (bidir end point)
+p:MDDR_DQ[7] (bidir start point)
+p:MDDR_DQ[8] (bidir end point)
+p:MDDR_DQ[8] (bidir start point)
+p:MDDR_DQ[9] (bidir end point)
+p:MDDR_DQ[9] (bidir start point)
+p:MDDR_DQ[10] (bidir end point)
+p:MDDR_DQ[10] (bidir start point)
+p:MDDR_DQ[11] (bidir end point)
+p:MDDR_DQ[11] (bidir start point)
+p:MDDR_DQ[12] (bidir end point)
+p:MDDR_DQ[12] (bidir start point)
+p:MDDR_DQ[13] (bidir end point)
+p:MDDR_DQ[13] (bidir start point)
+p:MDDR_DQ[14] (bidir end point)
+p:MDDR_DQ[14] (bidir start point)
+p:MDDR_DQ[15] (bidir end point)
+p:MDDR_DQ[15] (bidir start point)
+p:MDDR_ODT
+p:MDDR_RAS_N
+p:MDDR_RESET_N
+p:MDDR_WE_N
+p:RX
+p:TDI
+p:TDO
+p:TMS
+p:TRSTB
+p:TX
+
+
+Inapplicable constraints
+************************
+
+set_false_path -from { get_clocks { HPMS_0_sb_0.CCC_0.GL0 } } -to { get_clocks { TCK } }
+	@E:"d:/work/libero/igl2_riscv_systick_blinky/designer/proc_subsystem/synthesis.fdc":19:0:19:0|Timing constraint (from [get_clocks { HPMS_0_sb_0.CCC_0.GL0 }] to [get_clocks { TCK }]) (false path) was not applied to the design because none of the '-from' objects specified by the constraint exist in the design
+
+	@E:"d:/work/libero/igl2_riscv_systick_blinky/designer/proc_subsystem/synthesis.fdc":19:0:19:0|collection "[get_clocks { HPMS_0_sb_0.CCC_0.GL0 }]" is empty
+set_false_path -from { get_clocks { TCK } } -to { get_clocks { HPMS_0_sb_0.CCC_0.GL0 } }
+	@E:"d:/work/libero/igl2_riscv_systick_blinky/designer/proc_subsystem/synthesis.fdc":18:0:18:0|Timing constraint (from [get_clocks { TCK }] to [get_clocks { HPMS_0_sb_0.CCC_0.GL0 }]) (false path) was not applied to the design because none of the '-to' objects specified by the constraint exist in the design
+
+	@E:"d:/work/libero/igl2_riscv_systick_blinky/designer/proc_subsystem/synthesis.fdc":18:0:18:0|collection "[get_clocks { HPMS_0_sb_0.CCC_0.GL0 }]" is empty
+
+Applicable constraints with issues
+**********************************
+
+set_max_delay { 0 } -through { get_nets { HPMS_0_sb_0.CORECONFIGP_0.FIC_2_APB_M_PSEL HPMS_0_sb_0.CORECONFIGP_0.FIC_2_APB_M_PENABLE } } -to { get_cells { HPMS_0_sb_0.CORECONFIGP_0.FIC_2_APB_M_PREADY* HPMS_0_sb_0.CORECONFIGP_0.state[0] } }
+	@W:"d:/work/libero/igl2_riscv_systick_blinky/designer/proc_subsystem/synthesis.fdc":20:0:20:0|Timing constraint (through [get_nets { HPMS_0_sb_0.CORECONFIGP_0.FIC_2_APB_M_PSEL HPMS_0_sb_0.CORECONFIGP_0.FIC_2_APB_M_PENABLE }] to [get_cells { HPMS_0_sb_0.CORECONFIGP_0.FIC_2_APB_M_PREADY* HPMS_0_sb_0.CORECONFIGP_0.state[0] }]) (max delay 0.000000) was not applied to the design because none of the paths specified by the constraint exist in the design
+
+
+Constraints with matching wildcard expressions
+**********************************************
+
+(none)
+
+
+Library Report
+**************
+
+
+# End of Constraint Checker Report
