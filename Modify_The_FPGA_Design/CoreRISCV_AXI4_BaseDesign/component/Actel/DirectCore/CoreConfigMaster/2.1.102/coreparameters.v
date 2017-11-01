@@ -1,5 +1,5 @@
 //--------------------------------------------------------------------
-// Created by Microsemi SmartDesign Thu Jun 15 09:45:48 2017
+// Created by Microsemi SmartDesign Wed Nov 01 09:25:49 2017
 // Parameters for CoreConfigMaster
 //--------------------------------------------------------------------
 
