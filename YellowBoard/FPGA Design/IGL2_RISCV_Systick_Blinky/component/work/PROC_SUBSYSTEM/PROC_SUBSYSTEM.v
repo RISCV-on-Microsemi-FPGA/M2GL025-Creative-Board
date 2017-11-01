@@ -1,6 +1,6 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Tue Sep 05 16:34:36 2017
-// Version: v11.8 11.8.0.26
+// Created by SmartDesign Wed Nov 01 09:46:49 2017
+// Version: v11.8 SP1 11.8.1.12
 //////////////////////////////////////////////////////////////////////
 
 `timescale 1ns / 100ps
@@ -522,19 +522,22 @@ wire   [3:0]  AXI_GLUE_LOGIC_0_UNCORE_MEMORY_ARLEN_0;
 wire   [7:0]  AXI_GLUE_LOGIC_0_UNCORE_MEMORY_AWLEN;
 wire   [3:0]  AXI_GLUE_LOGIC_0_UNCORE_MEMORY_AWLEN_0_3to0;
 wire   [3:0]  AXI_GLUE_LOGIC_0_UNCORE_MEMORY_AWLEN_0;
+wire   [7:0]  AXI_GLUE_LOGIC_0_UNCORE_MMIO_ARLEN;
 wire   [3:0]  AXI_GLUE_LOGIC_0_UNCORE_MMIO_ARLEN_0_3to0;
 wire   [3:0]  AXI_GLUE_LOGIC_0_UNCORE_MMIO_ARLEN_0;
-wire   [7:0]  AXI_GLUE_LOGIC_0_UNCORE_MMIO_ARLEN;
+wire   [7:0]  AXI_GLUE_LOGIC_0_UNCORE_MMIO_AWLEN;
 wire   [3:0]  AXI_GLUE_LOGIC_0_UNCORE_MMIO_AWLEN_0_3to0;
 wire   [3:0]  AXI_GLUE_LOGIC_0_UNCORE_MMIO_AWLEN_0;
-wire   [7:0]  AXI_GLUE_LOGIC_0_UNCORE_MMIO_AWLEN;
-wire          CoreAHBLite_1_AHBmslave16_HRESP;
 wire   [1:1]  CoreAHBLite_1_AHBmslave16_HRESP_0_1to1;
 wire   [0:0]  CoreAHBLite_1_AHBmslave16_HRESP_0_0to0;
 wire   [1:0]  CoreAHBLite_1_AHBmslave16_HRESP_0;
+wire          CoreAHBLite_1_AHBmslave16_HRESP;
 wire   [1:0]  CoreAHBLite_1_AHBmslave16_HSIZE_0_1to0;
 wire   [1:0]  CoreAHBLite_1_AHBmslave16_HSIZE_0;
 wire   [2:0]  CoreAHBLite_1_AHBmslave16_HSIZE;
+wire   [31:0] CoreAPB3_0_APBmslave1_PADDR;
+wire   [7:0]  CoreAPB3_0_APBmslave1_PADDR_1_7to0;
+wire   [7:0]  CoreAPB3_0_APBmslave1_PADDR_1;
 wire   [7:0]  CoreAPB3_0_APBmslave1_PADDR_4_7to0;
 wire   [7:0]  CoreAPB3_0_APBmslave1_PADDR_4;
 wire   [4:2]  CoreAPB3_0_APBmslave1_PADDR_2_4to2;
@@ -543,13 +546,10 @@ wire   [4:2]  CoreAPB3_0_APBmslave1_PADDR_3_4to2;
 wire   [4:2]  CoreAPB3_0_APBmslave1_PADDR_3;
 wire   [4:0]  CoreAPB3_0_APBmslave1_PADDR_0_4to0;
 wire   [4:0]  CoreAPB3_0_APBmslave1_PADDR_0;
-wire   [7:0]  CoreAPB3_0_APBmslave1_PADDR_1_7to0;
-wire   [7:0]  CoreAPB3_0_APBmslave1_PADDR_1;
-wire   [31:0] CoreAPB3_0_APBmslave1_PADDR;
-wire   [7:0]  CoreAPB3_0_APBmslave1_PRDATA;
 wire   [31:8] CoreAPB3_0_APBmslave1_PRDATA_0_31to8;
 wire   [7:0]  CoreAPB3_0_APBmslave1_PRDATA_0_7to0;
 wire   [31:0] CoreAPB3_0_APBmslave1_PRDATA_0;
+wire   [7:0]  CoreAPB3_0_APBmslave1_PRDATA;
 wire   [31:0] CoreAPB3_0_APBmslave1_PWDATA;
 wire   [7:0]  CoreAPB3_0_APBmslave1_PWDATA_0_7to0;
 wire   [7:0]  CoreAPB3_0_APBmslave1_PWDATA_0;
@@ -748,6 +748,8 @@ assign CoreAHBLite_1_AHBmslave16_HRESP_0 = { CoreAHBLite_1_AHBmslave16_HRESP_0_1
 assign CoreAHBLite_1_AHBmslave16_HSIZE_0_1to0 = CoreAHBLite_1_AHBmslave16_HSIZE[1:0];
 assign CoreAHBLite_1_AHBmslave16_HSIZE_0 = { CoreAHBLite_1_AHBmslave16_HSIZE_0_1to0 };
 
+assign CoreAPB3_0_APBmslave1_PADDR_1_7to0 = CoreAPB3_0_APBmslave1_PADDR[7:0];
+assign CoreAPB3_0_APBmslave1_PADDR_1 = { CoreAPB3_0_APBmslave1_PADDR_1_7to0 };
 assign CoreAPB3_0_APBmslave1_PADDR_4_7to0 = CoreAPB3_0_APBmslave1_PADDR[7:0];
 assign CoreAPB3_0_APBmslave1_PADDR_4 = { CoreAPB3_0_APBmslave1_PADDR_4_7to0 };
 assign CoreAPB3_0_APBmslave1_PADDR_2_4to2 = CoreAPB3_0_APBmslave1_PADDR[4:2];
@@ -756,8 +758,6 @@ assign CoreAPB3_0_APBmslave1_PADDR_3_4to2 = CoreAPB3_0_APBmslave1_PADDR[4:2];
 assign CoreAPB3_0_APBmslave1_PADDR_3 = { CoreAPB3_0_APBmslave1_PADDR_3_4to2 };
 assign CoreAPB3_0_APBmslave1_PADDR_0_4to0 = CoreAPB3_0_APBmslave1_PADDR[4:0];
 assign CoreAPB3_0_APBmslave1_PADDR_0 = { CoreAPB3_0_APBmslave1_PADDR_0_4to0 };
-assign CoreAPB3_0_APBmslave1_PADDR_1_7to0 = CoreAPB3_0_APBmslave1_PADDR[7:0];
-assign CoreAPB3_0_APBmslave1_PADDR_1 = { CoreAPB3_0_APBmslave1_PADDR_1_7to0 };
 
 assign CoreAPB3_0_APBmslave1_PRDATA_0_31to8 = 24'h0;
 assign CoreAPB3_0_APBmslave1_PRDATA_0_7to0 = CoreAPB3_0_APBmslave1_PRDATA[7:0];
@@ -2088,9 +2088,9 @@ CoreGPIO_IN(
         // Outputs
         .PSLVERR  ( CoreAPB3_0_APBmslave2_PSLVERR ),
         .PREADY   ( CoreAPB3_0_APBmslave2_PREADY ),
+        .INT_OR   (  ),
         .PRDATA   ( CoreAPB3_0_APBmslave2_PRDATA ),
         .INT      (  ),
-        .INT_OR   (  ),
         .GPIO_OUT (  ),
         .GPIO_OE  (  ) 
         );
@@ -2242,9 +2242,9 @@ CoreGPIO_OUT(
         // Outputs
         .PSLVERR  ( CoreAPB3_0_APBmslave5_PSLVERR ),
         .PREADY   ( CoreAPB3_0_APBmslave5_PREADY ),
+        .INT_OR   (  ),
         .PRDATA   ( CoreAPB3_0_APBmslave5_PRDATA ),
         .INT      (  ),
-        .INT_OR   (  ),
         .GPIO_OUT ( GPIO_OUT_net_0 ),
         .GPIO_OE  (  ) 
         );

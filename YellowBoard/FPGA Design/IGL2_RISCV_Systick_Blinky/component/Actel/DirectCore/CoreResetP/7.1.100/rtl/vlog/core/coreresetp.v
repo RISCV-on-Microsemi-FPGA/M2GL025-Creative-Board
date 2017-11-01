@@ -13,8 +13,8 @@
 //
 //
 // SVN Revision Information:
-// SVN $Revision: 26416 $
-// SVN $Date: 2016-04-11 17:24:04 +0100 (Mon, 11 Apr 2016) $
+// SVN $Revision: 22245 $
+// SVN $Date: 2014-03-28 16:55:59 +0000 (Fri, 28 Mar 2014) $
 //
 // Notes:
 //
@@ -52,17 +52,6 @@ module CoreResetP (
     output  wire    INIT_DONE,
     // Reset input from fabric.
     input           FAB_RESET_N,
-    // Flash freeze done indication. When exiting flash freeze, FF_DONE is
-    // asserted (high) before fabric registers are restored from their
-    // corresponding suspend latches, and goes low after this restoration
-    // has occurred. FF_DONE is used in this block to gate any signals
-    // that are used as asynchronous resets or presets. This is to prevent
-    // any spurious resets as we exit flash freeze.
-    // (FF_DONE gates any signals that are used as asynchronous inputs to
-    //  any flip-flops in this block, and also gates reset outputs from
-    //  this are block that are intended for use as inputs to ASIC blocks
-    //  on the device.)
-    input           FF_DONE,
     // FDDR signals
     input           FPLL_LOCK,
     output  reg     FDDR_CORE_RESET_N,
@@ -70,9 +59,9 @@ module CoreResetP (
     input           SDIF0_SPLL_LOCK,
     output  reg     SDIF0_PHY_RESET_N,
     output  reg     SDIF0_CORE_RESET_N,
-    // The following two signals are used when targeting an 090 or 060
-    // device which has two PCIe controllers within a single SERDES
-    // interface block.
+    // The following two signals are used when targeting an 090 or 060 device
+    // which has two PCIe controllers within a single SERDES interface
+    // block.
     output  reg     SDIF0_0_CORE_RESET_N,
     output  reg     SDIF0_1_CORE_RESET_N,
     // SERDESIF_1 signals
@@ -128,9 +117,9 @@ module CoreResetP (
     input           SOFT_SDIF2_CORE_RESET,
     input           SOFT_SDIF3_PHY_RESET,
     input           SOFT_SDIF3_CORE_RESET,
-    // The following two signals are used when targeting an 090 or 060
-    // device which has two PCIe controllers within a single SERDES
-    // interface block.
+    // The following two signals are used when targeting an 090 or 060 device
+    // which has two PCIe controllers within a single SERDES interface
+    // block.
     input           SOFT_SDIF0_0_CORE_RESET,
     input           SOFT_SDIF0_1_CORE_RESET
     );
@@ -148,7 +137,7 @@ module CoreResetP (
     //        (POWER_ON_RESET_N) or MSS_HPMS_READY not is asserted.
     parameter EXT_RESET_CFG = 3;
 
-    // DEVICE_VOLTAGE is set according to the supply voltage to the
+    // DEVICE_VOLTAGE is set to according to the supply voltage to the
     // device. The supply voltage determines the RC oscillator frequency.
     // This can be 25 or 50 MHz.
     //    1 = 1.0 V (RC osc freq = 25 MHz)
@@ -191,12 +180,6 @@ module CoreResetP (
     // Set the following parameter to 1 to enable the SOFT_XXX inputs that
     // can be used to directly control the various reset outputs.
     parameter ENABLE_SOFT_RESETS = 0;
-
-    // Set the following parameter to 1 to include Flash*Freeze support.
-    // When INCL_FF_SUPPORT = 1, the FF_DONE input is used to gate off
-    // internal asynchronous set/reset signals and reset outputs from this
-    // core to inactive levels.
-    parameter INCL_FF_SUPPORT = 0;
 
     // Set the DEVICE_090 parameter to 1 when an 090 or 060 device is being
     // targeted, otherwise set to 0.
@@ -339,42 +322,30 @@ module CoreResetP (
     reg             SDIF3_PERST_N_re;
 
     reg             sm0_areset_n_q1;
-    reg             sm0_areset_n_q2;
-    wire            sm0_areset_n_clk_base;
+    reg             sm0_areset_n_clk_base;
     reg             sm1_areset_n_q1;
-    reg             sm1_areset_n_q2;
-    wire            sm1_areset_n_clk_base;
+    reg             sm1_areset_n_clk_base;
     reg             sm2_areset_n_q1;
-    reg             sm2_areset_n_q2;
-    wire            sm2_areset_n_clk_base;
+    reg             sm2_areset_n_clk_base;
     reg             sdif0_areset_n_q1;
-    reg             sdif0_areset_n_q2;
-    wire            sdif0_areset_n_clk_base;
+    reg             sdif0_areset_n_clk_base;
     reg             sdif1_areset_n_q1;
-    reg             sdif1_areset_n_q2;
-    wire            sdif1_areset_n_clk_base;
+    reg             sdif1_areset_n_clk_base;
     reg             sdif2_areset_n_q1;
-    reg             sdif2_areset_n_q2;
-    wire            sdif2_areset_n_clk_base;
+    reg             sdif2_areset_n_clk_base;
     reg             sdif3_areset_n_q1;
-    reg             sdif3_areset_n_q2;
-    wire            sdif3_areset_n_clk_base;
+    reg             sdif3_areset_n_clk_base;
 
     reg             sm0_areset_n_rcosc_q1;
-    reg             sm0_areset_n_rcosc_q2;
-    wire            sm0_areset_n_rcosc;
+    reg             sm0_areset_n_rcosc;
     reg             sdif0_areset_n_rcosc_q1;
-    reg             sdif0_areset_n_rcosc_q2;
-    wire            sdif0_areset_n_rcosc;
+    reg             sdif0_areset_n_rcosc;
     reg             sdif1_areset_n_rcosc_q1;
-    reg             sdif1_areset_n_rcosc_q2;
-    wire            sdif1_areset_n_rcosc;
+    reg             sdif1_areset_n_rcosc;
     reg             sdif2_areset_n_rcosc_q1;
-    reg             sdif2_areset_n_rcosc_q2;
-    wire            sdif2_areset_n_rcosc;
+    reg             sdif2_areset_n_rcosc;
     reg             sdif3_areset_n_rcosc_q1;
-    reg             sdif3_areset_n_rcosc_q2;
-    wire            sdif3_areset_n_rcosc;
+    reg             sdif3_areset_n_rcosc;
 
     reg             fpll_lock_q1;
     reg             fpll_lock_q2;
@@ -422,14 +393,11 @@ module CoreResetP (
     reg             CONFIG2_DONE_clk_base;
 
     reg             POWER_ON_RESET_N_q1;
-    reg             POWER_ON_RESET_N_q2;
-    wire            POWER_ON_RESET_N_clk_base;
+    reg             POWER_ON_RESET_N_clk_base;
     reg             RESET_N_M2F_q1;
-    reg             RESET_N_M2F_q2;
-    wire            RESET_N_M2F_clk_base;
+    reg             RESET_N_M2F_clk_base;
     reg             FIC_2_APB_M_PRESET_N_q1;
-    reg             FIC_2_APB_M_PRESET_N_q2;
-    wire            FIC_2_APB_M_PRESET_N_clk_base;
+    reg             FIC_2_APB_M_PRESET_N_clk_base;
     reg             mss_ready_state;
     reg             mss_ready_select;
     //reg             FAB_RESET_N_int;
@@ -474,11 +442,6 @@ module CoreResetP (
     reg             SDIF3_CORE_RESET_N_0;
     wire            SDIF3_CORE_RESET_N_int;
 
-    wire            FF_DONE_int;
-
-    // Create internal version of FF_DONE input. The INCL_FF_SUPPORT
-    // parameter must be set to 1 to allow FF_DONE to take effect.
-    assign FF_DONE_int = INCL_FF_SUPPORT ? FF_DONE : 1'b0;
 
     // When a SOFT_XXX input is asserted (high), the corresponding reset
     // output is asserted. (Reset outputs are mainly active low.)
@@ -486,28 +449,28 @@ module CoreResetP (
     // controlled by the logic contained within this core.
     always @(*)
     begin
-        if (ENABLE_SOFT_RESETS && SOFT_EXT_RESET_OUT            ) EXT_RESET_OUT               = !FF_DONE_int; else EXT_RESET_OUT               = !FF_DONE_int && EXT_RESET_OUT_int;
-        if (ENABLE_SOFT_RESETS && SOFT_RESET_F2M                ) RESET_N_F2M                 =  FF_DONE_int; else RESET_N_F2M                 =  FF_DONE_int || RESET_N_F2M_int;
-        if (ENABLE_SOFT_RESETS && SOFT_M3_RESET                 ) M3_RESET_N                  =  FF_DONE_int; else M3_RESET_N                  =  FF_DONE_int || M3_RESET_N_int;
-        if (ENABLE_SOFT_RESETS && SOFT_MDDR_DDR_AXI_S_CORE_RESET) MDDR_DDR_AXI_S_CORE_RESET_N =  FF_DONE_int; else MDDR_DDR_AXI_S_CORE_RESET_N =  FF_DONE_int || MDDR_DDR_AXI_S_CORE_RESET_N_int;
-      //if (ENABLE_SOFT_RESETS && SOFT_FAB_RESET                ) FAB_RESET_N                 =  FF_DONE_int; else FAB_RESET_N                 =  FF_DONE_int || FAB_RESET_N_int;
-      //if (ENABLE_SOFT_RESETS && SOFT_USER_FAB_RESET           ) USER_FAB_RESET_N            =  FF_DONE_int; else USER_FAB_RESET_N            =  FF_DONE_int || USER_FAB_RESET_N_int;
-        if (ENABLE_SOFT_RESETS && SOFT_FDDR_CORE_RESET          ) FDDR_CORE_RESET_N           =  FF_DONE_int; else FDDR_CORE_RESET_N           =  FF_DONE_int || FDDR_CORE_RESET_N_int;
-        if (ENABLE_SOFT_RESETS && SOFT_SDIF0_PHY_RESET          ) SDIF0_PHY_RESET_N           =  FF_DONE_int; else SDIF0_PHY_RESET_N           =  FF_DONE_int || SDIF0_PHY_RESET_N_int;
-        if (ENABLE_SOFT_RESETS && SOFT_SDIF0_CORE_RESET         ) SDIF0_CORE_RESET_N          =  FF_DONE_int; else SDIF0_CORE_RESET_N          =  FF_DONE_int || SDIF0_CORE_RESET_N_int;
-        if (ENABLE_SOFT_RESETS && SOFT_SDIF1_PHY_RESET          ) SDIF1_PHY_RESET_N           =  FF_DONE_int; else SDIF1_PHY_RESET_N           =  FF_DONE_int || SDIF1_PHY_RESET_N_int;
-        if (ENABLE_SOFT_RESETS && SOFT_SDIF1_CORE_RESET         ) SDIF1_CORE_RESET_N          =  FF_DONE_int; else SDIF1_CORE_RESET_N          =  FF_DONE_int || SDIF1_CORE_RESET_N_int;
-        if (ENABLE_SOFT_RESETS && SOFT_SDIF2_PHY_RESET          ) SDIF2_PHY_RESET_N           =  FF_DONE_int; else SDIF2_PHY_RESET_N           =  FF_DONE_int || SDIF2_PHY_RESET_N_int;
-        if (ENABLE_SOFT_RESETS && SOFT_SDIF2_CORE_RESET         ) SDIF2_CORE_RESET_N          =  FF_DONE_int; else SDIF2_CORE_RESET_N          =  FF_DONE_int || SDIF2_CORE_RESET_N_int;
-        if (ENABLE_SOFT_RESETS && SOFT_SDIF3_PHY_RESET          ) SDIF3_PHY_RESET_N           =  FF_DONE_int; else SDIF3_PHY_RESET_N           =  FF_DONE_int || SDIF3_PHY_RESET_N_int;
-        if (ENABLE_SOFT_RESETS && SOFT_SDIF3_CORE_RESET         ) SDIF3_CORE_RESET_N          =  FF_DONE_int; else SDIF3_CORE_RESET_N          =  FF_DONE_int || SDIF3_CORE_RESET_N_int;
+        if (ENABLE_SOFT_RESETS && SOFT_EXT_RESET_OUT            ) EXT_RESET_OUT               = 1'b1; else EXT_RESET_OUT               = EXT_RESET_OUT_int;
+        if (ENABLE_SOFT_RESETS && SOFT_RESET_F2M                ) RESET_N_F2M                 = 1'b0; else RESET_N_F2M                 = RESET_N_F2M_int;
+        if (ENABLE_SOFT_RESETS && SOFT_M3_RESET                 ) M3_RESET_N                  = 1'b0; else M3_RESET_N                  = M3_RESET_N_int;
+        if (ENABLE_SOFT_RESETS && SOFT_MDDR_DDR_AXI_S_CORE_RESET) MDDR_DDR_AXI_S_CORE_RESET_N = 1'b0; else MDDR_DDR_AXI_S_CORE_RESET_N = MDDR_DDR_AXI_S_CORE_RESET_N_int;
+        //if (ENABLE_SOFT_RESETS && SOFT_FAB_RESET                ) FAB_RESET_N                 = 1'b0; else FAB_RESET_N                 = FAB_RESET_N_int;
+        //if (ENABLE_SOFT_RESETS && SOFT_USER_FAB_RESET           ) USER_FAB_RESET_N            = 1'b0; else USER_FAB_RESET_N            = USER_FAB_RESET_N_int;
+        if (ENABLE_SOFT_RESETS && SOFT_FDDR_CORE_RESET          ) FDDR_CORE_RESET_N           = 1'b0; else FDDR_CORE_RESET_N           = FDDR_CORE_RESET_N_int;
+        if (ENABLE_SOFT_RESETS && SOFT_SDIF0_PHY_RESET          ) SDIF0_PHY_RESET_N           = 1'b0; else SDIF0_PHY_RESET_N           = SDIF0_PHY_RESET_N_int;
+        if (ENABLE_SOFT_RESETS && SOFT_SDIF0_CORE_RESET         ) SDIF0_CORE_RESET_N          = 1'b0; else SDIF0_CORE_RESET_N          = SDIF0_CORE_RESET_N_int;
+        if (ENABLE_SOFT_RESETS && SOFT_SDIF1_PHY_RESET          ) SDIF1_PHY_RESET_N           = 1'b0; else SDIF1_PHY_RESET_N           = SDIF1_PHY_RESET_N_int;
+        if (ENABLE_SOFT_RESETS && SOFT_SDIF1_CORE_RESET         ) SDIF1_CORE_RESET_N          = 1'b0; else SDIF1_CORE_RESET_N          = SDIF1_CORE_RESET_N_int;
+        if (ENABLE_SOFT_RESETS && SOFT_SDIF2_PHY_RESET          ) SDIF2_PHY_RESET_N           = 1'b0; else SDIF2_PHY_RESET_N           = SDIF2_PHY_RESET_N_int;
+        if (ENABLE_SOFT_RESETS && SOFT_SDIF2_CORE_RESET         ) SDIF2_CORE_RESET_N          = 1'b0; else SDIF2_CORE_RESET_N          = SDIF2_CORE_RESET_N_int;
+        if (ENABLE_SOFT_RESETS && SOFT_SDIF3_PHY_RESET          ) SDIF3_PHY_RESET_N           = 1'b0; else SDIF3_PHY_RESET_N           = SDIF3_PHY_RESET_N_int;
+        if (ENABLE_SOFT_RESETS && SOFT_SDIF3_CORE_RESET         ) SDIF3_CORE_RESET_N          = 1'b0; else SDIF3_CORE_RESET_N          = SDIF3_CORE_RESET_N_int;
         // SDIF0_0_CORE_RESET_N and SDIF0_1_CORE_RESET_N are intended for
         // use in an 090 or 060 device. This device has a single SERDES
         // interface with two separate PCIe controllers within it.
         // Separate CORE reset signals are provided for these two PCIe
         // cores.
-        if (ENABLE_SOFT_RESETS && SOFT_SDIF0_0_CORE_RESET       ) SDIF0_0_CORE_RESET_N        =  FF_DONE_int; else SDIF0_0_CORE_RESET_N        =  FF_DONE_int || SDIF0_CORE_RESET_N_int;
-        if (ENABLE_SOFT_RESETS && SOFT_SDIF0_1_CORE_RESET       ) SDIF0_1_CORE_RESET_N        =  FF_DONE_int; else SDIF0_1_CORE_RESET_N        =  FF_DONE_int || SDIF0_CORE_RESET_N_int;
+        if (ENABLE_SOFT_RESETS && SOFT_SDIF0_0_CORE_RESET       ) SDIF0_0_CORE_RESET_N        = 1'b0; else SDIF0_0_CORE_RESET_N        = SDIF0_CORE_RESET_N_int;
+        if (ENABLE_SOFT_RESETS && SOFT_SDIF0_1_CORE_RESET       ) SDIF0_1_CORE_RESET_N        = 1'b0; else SDIF0_1_CORE_RESET_N        = SDIF0_CORE_RESET_N_int;
     end
 
     // If a peripheral block is not in use, internally tie its PLL lock
@@ -534,54 +497,45 @@ module CoreResetP (
     begin
         if (!POWER_ON_RESET_N)
         begin
-            POWER_ON_RESET_N_q1 <= 1'b0;
-            POWER_ON_RESET_N_q2 <= 1'b0;
+            POWER_ON_RESET_N_q1         <= 1'b0;
+            POWER_ON_RESET_N_clk_base   <= 1'b0;
         end
         else
         begin
-            POWER_ON_RESET_N_q1 <= 1'b1;
-            POWER_ON_RESET_N_q2 <= POWER_ON_RESET_N_q1;
+            POWER_ON_RESET_N_q1         <= 1'b1;
+            POWER_ON_RESET_N_clk_base   <= POWER_ON_RESET_N_q1;
         end
     end
-
-    // Gate during flash freeze exit.
-    assign POWER_ON_RESET_N_clk_base = POWER_ON_RESET_N_q2 || FF_DONE_int;
 
     // Synchronize RESET_N_M2F to CLK_BASE domain.
     always @(posedge CLK_BASE or negedge RESET_N_M2F)
     begin
         if (!RESET_N_M2F)
         begin
-            RESET_N_M2F_q1 <= 1'b0;
-            RESET_N_M2F_q2 <= 1'b0;
+            RESET_N_M2F_q1          <= 1'b0;
+            RESET_N_M2F_clk_base    <= 1'b0;
         end
         else
         begin
-            RESET_N_M2F_q1 <= 1'b1;
-            RESET_N_M2F_q2 <= RESET_N_M2F_q1;
+            RESET_N_M2F_q1          <= 1'b1;
+            RESET_N_M2F_clk_base    <= RESET_N_M2F_q1;
         end
     end
-
-    // Gate during flash freeze exit.
-    assign RESET_N_M2F_clk_base = RESET_N_M2F_q2 || FF_DONE_int;
 
     // Synchronize FIC_2_APB_M_PRESET_N to CLK_BASE domain.
     always @(posedge CLK_BASE or negedge FIC_2_APB_M_PRESET_N)
     begin
         if (!FIC_2_APB_M_PRESET_N)
         begin
-            FIC_2_APB_M_PRESET_N_q1 <= 1'b0;
-            FIC_2_APB_M_PRESET_N_q2 <= 1'b0;
+            FIC_2_APB_M_PRESET_N_q1         <= 1'b0;
+            FIC_2_APB_M_PRESET_N_clk_base   <= 1'b0;
         end
         else
         begin
-            FIC_2_APB_M_PRESET_N_q1 <= 1'b1;
-            FIC_2_APB_M_PRESET_N_q2 <= FIC_2_APB_M_PRESET_N_q1;
+            FIC_2_APB_M_PRESET_N_q1         <= 1'b1;
+            FIC_2_APB_M_PRESET_N_clk_base   <= FIC_2_APB_M_PRESET_N_q1;
         end
     end
-
-    // Gate during flash freeze exit.
-    assign FIC_2_APB_M_PRESET_N_clk_base = FIC_2_APB_M_PRESET_N_q2 || FF_DONE_int;
 
     // At power on, state = '0' and select = '0'.
     // state will advance to '1' (and remain at '1') when RESET_N_M2F
@@ -802,120 +756,99 @@ endgenerate
     begin
         if (!sm0_areset_n)
         begin
-            sm0_areset_n_q1 <= 1'b0;
-            sm0_areset_n_q2 <= 1'b0;
+            sm0_areset_n_q1         <= 1'b0;
+            sm0_areset_n_clk_base   <= 1'b0;
         end
         else
         begin
-            sm0_areset_n_q1 <= 1'b1;
-            sm0_areset_n_q2 <= sm0_areset_n_q1;
+            sm0_areset_n_q1         <= 1'b1;
+            sm0_areset_n_clk_base   <= sm0_areset_n_q1;
         end
     end
-
-    // Gate during flash freeze exit.
-    assign sm0_areset_n_clk_base = sm0_areset_n_q2 || FF_DONE_int;
 
     always @(posedge CLK_BASE or negedge sm1_areset_n)
     begin
         if (!sm1_areset_n)
         begin
-            sm1_areset_n_q1 <= 1'b0;
-            sm1_areset_n_q2 <= 1'b0;
+            sm1_areset_n_q1         <= 1'b0;
+            sm1_areset_n_clk_base   <= 1'b0;
         end
         else
         begin
-            sm1_areset_n_q1 <= 1'b1;
-            sm1_areset_n_q2 <= sm1_areset_n_q1;
+            sm1_areset_n_q1         <= 1'b1;
+            sm1_areset_n_clk_base   <= sm1_areset_n_q1;
         end
     end
-
-    // Gate during flash freeze exit.
-    assign sm1_areset_n_clk_base = sm1_areset_n_q2 || FF_DONE_int;
 
     always @(posedge CLK_BASE or negedge sm2_areset_n)
     begin
         if (!sm2_areset_n)
         begin
-            sm2_areset_n_q1 <= 1'b0;
-            sm2_areset_n_q2 <= 1'b0;
+            sm2_areset_n_q1         <= 1'b0;
+            sm2_areset_n_clk_base   <= 1'b0;
         end
         else
         begin
-            sm2_areset_n_q1 <= 1'b1;
-            sm2_areset_n_q2 <= sm2_areset_n_q1;
+            sm2_areset_n_q1         <= 1'b1;
+            sm2_areset_n_clk_base   <= sm2_areset_n_q1;
         end
     end
-
-    // Gate during flash freeze exit.
-    assign sm2_areset_n_clk_base = sm2_areset_n_q2 || FF_DONE_int;
 
     always @(posedge CLK_BASE or negedge sdif0_areset_n)
     begin
         if (!sdif0_areset_n)
         begin
-            sdif0_areset_n_q1 <= 1'b0;
-            sdif0_areset_n_q2 <= 1'b0;
+            sdif0_areset_n_q1       <= 1'b0;
+            sdif0_areset_n_clk_base <= 1'b0;
         end
         else
         begin
-            sdif0_areset_n_q1 <= 1'b1;
-            sdif0_areset_n_q2 <= sdif0_areset_n_q1;
+            sdif0_areset_n_q1       <= 1'b1;
+            sdif0_areset_n_clk_base <= sdif0_areset_n_q1;
         end
     end
-
-    // Gate during flash freeze exit.
-    assign sdif0_areset_n_clk_base = sdif0_areset_n_q2 || FF_DONE_int;
 
     always @(posedge CLK_BASE or negedge sdif1_areset_n)
     begin
         if (!sdif1_areset_n)
         begin
-            sdif1_areset_n_q1 <= 1'b0;
-            sdif1_areset_n_q2 <= 1'b0;
+            sdif1_areset_n_q1       <= 1'b0;
+            sdif1_areset_n_clk_base <= 1'b0;
         end
         else
         begin
-            sdif1_areset_n_q1 <= 1'b1;
-            sdif1_areset_n_q2 <= sdif1_areset_n_q1;
+            sdif1_areset_n_q1       <= 1'b1;
+            sdif1_areset_n_clk_base <= sdif1_areset_n_q1;
         end
     end
-
-    // Gate during flash freeze exit.
-    assign sdif1_areset_n_clk_base = sdif1_areset_n_q2 || FF_DONE_int;
 
     always @(posedge CLK_BASE or negedge sdif2_areset_n)
     begin
         if (!sdif2_areset_n)
         begin
-            sdif2_areset_n_q1 <= 1'b0;
-            sdif2_areset_n_q2 <= 1'b0;
+            sdif2_areset_n_q1       <= 1'b0;
+            sdif2_areset_n_clk_base <= 1'b0;
         end
         else
         begin
-            sdif2_areset_n_q1 <= 1'b1;
-            sdif2_areset_n_q2 <= sdif2_areset_n_q1;
+            sdif2_areset_n_q1       <= 1'b1;
+            sdif2_areset_n_clk_base <= sdif2_areset_n_q1;
         end
     end
-
-    // Gate during flash freeze exit.
-    assign sdif2_areset_n_clk_base = sdif2_areset_n_q2 || FF_DONE_int;
 
     always @(posedge CLK_BASE or negedge sdif3_areset_n)
     begin
         if (!sdif3_areset_n)
         begin
-            sdif3_areset_n_q1 <= 1'b0;
-            sdif3_areset_n_q2 <= 1'b0;
+            sdif3_areset_n_q1       <= 1'b0;
+            sdif3_areset_n_clk_base <= 1'b0;
         end
         else
         begin
-            sdif3_areset_n_q1 <= 1'b1;
-            sdif3_areset_n_q2 <= sdif3_areset_n_q1;
+            sdif3_areset_n_q1       <= 1'b1;
+            sdif3_areset_n_clk_base <= sdif3_areset_n_q1;
         end
     end
-
-    // Gate during flash freeze exit.
-    assign sdif3_areset_n_clk_base = sdif3_areset_n_q2 || FF_DONE_int;
 
     //---------------------------------------------------------------------
     // Synchronize some resets to RCOSC_25_50MHZ domain.
@@ -925,85 +858,70 @@ endgenerate
         if (!sm0_areset_n)
         begin
             sm0_areset_n_rcosc_q1   <= 1'b0;
-            sm0_areset_n_rcosc_q2   <= 1'b0;
+            sm0_areset_n_rcosc      <= 1'b0;
         end
         else
         begin
             sm0_areset_n_rcosc_q1   <= 1'b1;
-            sm0_areset_n_rcosc_q2      <= sm0_areset_n_rcosc_q1;
+            sm0_areset_n_rcosc      <= sm0_areset_n_rcosc_q1;
         end
     end
-
-    // Gate during flash freeze exit.
-    assign sm0_areset_n_rcosc = sm0_areset_n_rcosc_q2 || FF_DONE_int;
 
     always @(posedge RCOSC_25_50MHZ or negedge sdif0_areset_n)
     begin
         if (!sdif0_areset_n)
         begin
             sdif0_areset_n_rcosc_q1 <= 1'b0;
-            sdif0_areset_n_rcosc_q2 <= 1'b0;
+            sdif0_areset_n_rcosc    <= 1'b0;
         end
         else
         begin
             sdif0_areset_n_rcosc_q1 <= 1'b1;
-            sdif0_areset_n_rcosc_q2 <= sdif0_areset_n_rcosc_q1;
+            sdif0_areset_n_rcosc    <= sdif0_areset_n_rcosc_q1;
         end
     end
-
-    // Gate during flash freeze exit.
-    assign sdif0_areset_n_rcosc = sdif0_areset_n_rcosc_q2 || FF_DONE_int;
 
     always @(posedge RCOSC_25_50MHZ or negedge sdif1_areset_n)
     begin
         if (!sdif1_areset_n)
         begin
             sdif1_areset_n_rcosc_q1 <= 1'b0;
-            sdif1_areset_n_rcosc_q2 <= 1'b0;
+            sdif1_areset_n_rcosc    <= 1'b0;
         end
         else
         begin
             sdif1_areset_n_rcosc_q1 <= 1'b1;
-            sdif1_areset_n_rcosc_q2 <= sdif1_areset_n_rcosc_q1;
+            sdif1_areset_n_rcosc    <= sdif1_areset_n_rcosc_q1;
         end
     end
-
-    // Gate during flash freeze exit.
-    assign sdif1_areset_n_rcosc = sdif1_areset_n_rcosc_q2 || FF_DONE_int;
 
     always @(posedge RCOSC_25_50MHZ or negedge sdif2_areset_n)
     begin
         if (!sdif2_areset_n)
         begin
             sdif2_areset_n_rcosc_q1 <= 1'b0;
-            sdif2_areset_n_rcosc_q2 <= 1'b0;
+            sdif2_areset_n_rcosc    <= 1'b0;
         end
         else
         begin
             sdif2_areset_n_rcosc_q1 <= 1'b1;
-            sdif2_areset_n_rcosc_q2 <= sdif2_areset_n_rcosc_q1;
+            sdif2_areset_n_rcosc    <= sdif2_areset_n_rcosc_q1;
         end
     end
-
-    // Gate during flash freeze exit.
-    assign sdif2_areset_n_rcosc = sdif2_areset_n_rcosc_q2 || FF_DONE_int;
 
     always @(posedge RCOSC_25_50MHZ or negedge sdif3_areset_n)
     begin
         if (!sdif3_areset_n)
         begin
             sdif3_areset_n_rcosc_q1 <= 1'b0;
-            sdif3_areset_n_rcosc_q2 <= 1'b0;
+            sdif3_areset_n_rcosc    <= 1'b0;
         end
         else
         begin
             sdif3_areset_n_rcosc_q1 <= 1'b1;
-            sdif3_areset_n_rcosc_q2 <= sdif3_areset_n_rcosc_q1;
+            sdif3_areset_n_rcosc    <= sdif3_areset_n_rcosc_q1;
         end
     end
-
-    // Gate during flash freeze exit.
-    assign sdif3_areset_n_rcosc = sdif3_areset_n_rcosc_q2 || FF_DONE_int;
 
     //---------------------------------------------------------------------
     // Synchronize CONFIG1_DONE input to CLK_BASE domain.
@@ -1769,7 +1687,6 @@ generate
         coreresetp_pcie_hotreset sdif0_phr (
             .CLK_BASE               (CLK_BASE),
             .CLK_LTSSM              (CLK_LTSSM),
-            .FF_DONE                (FF_DONE_int),
             .psel                   (SDIF0_PSEL),
             .pwrite                 (SDIF0_PWRITE),
             .prdata                 (SDIF0_PRDATA),
@@ -1793,7 +1710,6 @@ generate
         coreresetp_pcie_hotreset sdif1_phr (
             .CLK_BASE               (CLK_BASE),
             .CLK_LTSSM              (CLK_LTSSM),
-            .FF_DONE                (FF_DONE_int),
             .psel                   (SDIF1_PSEL),
             .pwrite                 (SDIF1_PWRITE),
             .prdata                 (SDIF1_PRDATA),
@@ -1817,7 +1733,6 @@ generate
         coreresetp_pcie_hotreset sdif2_phr (
             .CLK_BASE               (CLK_BASE),
             .CLK_LTSSM              (CLK_LTSSM),
-            .FF_DONE                (FF_DONE_int),
             .psel                   (SDIF2_PSEL),
             .pwrite                 (SDIF2_PWRITE),
             .prdata                 (SDIF2_PRDATA),
@@ -1841,7 +1756,6 @@ generate
         coreresetp_pcie_hotreset sdif3_phr (
             .CLK_BASE               (CLK_BASE),
             .CLK_LTSSM              (CLK_LTSSM),
-            .FF_DONE                (FF_DONE_int),
             .psel                   (SDIF3_PSEL),
             .pwrite                 (SDIF3_PWRITE),
             .prdata                 (SDIF3_PRDATA),

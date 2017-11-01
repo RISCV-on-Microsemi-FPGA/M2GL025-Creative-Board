@@ -21,8 +21,8 @@
 //
 //
 // SVN Revision Information:
-// SVN $Revision: 25667 $
-// SVN $Date: 2015-12-02 22:16:24 +0000 (Wed, 02 Dec 2015) $
+// SVN $Revision: 21127 $
+// SVN $Date: 2013-09-17 18:02:47 +0100 (Tue, 17 Sep 2013) $
 //
 // Notes:
 //
@@ -31,7 +31,6 @@
 module coreresetp_pcie_hotreset (
     input               CLK_BASE,
     input               CLK_LTSSM,
-    input               FF_DONE,
     input               psel,
     input               pwrite,
     input        [31:0] prdata,
@@ -70,8 +69,7 @@ module coreresetp_pcie_hotreset (
     reg                 LTSSM_Disabled_entry_p;
 
     reg                 reset_n_q1;
-    reg                 reset_n_q2;
-    wire                reset_n_clk_ltssm;
+    reg                 reset_n_clk_ltssm;
 
     reg          [4:0]  ltssm_q1;
     reg          [4:0]  ltssm_q2;
@@ -87,18 +85,15 @@ module coreresetp_pcie_hotreset (
     begin
         if (!sdif_core_reset_n_0)
         begin
-            reset_n_q1 <= 1'b0;
-            reset_n_q2 <= 1'b0;
+            reset_n_q1        <= 1'b0;
+            reset_n_clk_ltssm <= 1'b0;
         end
         else
         begin
-            reset_n_q1 <= 1'b1;
-            reset_n_q2 <= reset_n_q1;
+            reset_n_q1        <= 1'b1;
+            reset_n_clk_ltssm <= reset_n_q1;
         end
     end
-
-    // Gate during flash freeze exit.
-    assign reset_n_clk_ltssm = reset_n_q2 || FF_DONE;
 
     // Synchronize APB signals to CLK_LTSSM domain
     always @(posedge CLK_LTSSM or negedge reset_n_clk_ltssm)
@@ -251,10 +246,10 @@ module coreresetp_pcie_hotreset (
         end
     end
 
-    // Async core reset signal (gated during flash freeze)
+    // Async core reset signal
     always @(*)
     begin
-        core_areset_n = (hot_reset_n && sdif_core_reset_n_0) || FF_DONE;
+        core_areset_n = hot_reset_n && sdif_core_reset_n_0;
     end
 
     // Create reset signal to SDIF core.
