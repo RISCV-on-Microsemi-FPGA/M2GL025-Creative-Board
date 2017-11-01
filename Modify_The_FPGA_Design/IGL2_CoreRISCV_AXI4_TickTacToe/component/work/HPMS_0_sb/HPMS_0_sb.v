@@ -1,6 +1,6 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Thu Jun 15 09:47:30 2017
-// Version: v11.8 11.8.0.26
+// Created by SmartDesign Wed Nov 01 09:30:43 2017
+// Version: v11.8 SP1 11.8.1.12
 //////////////////////////////////////////////////////////////////////
 
 `timescale 1ns / 100ps
@@ -322,13 +322,13 @@ wire   [1:0]  HRESP_S15_const_net_0;
 //--------------------------------------------------------------------
 // Bus Interface Nets Declarations - Unequal Pin Widths
 //--------------------------------------------------------------------
+wire          CoreAHBLite_0_AHBmslave16_HRESP;
 wire   [1:1]  CoreAHBLite_0_AHBmslave16_HRESP_0_1to1;
 wire   [0:0]  CoreAHBLite_0_AHBmslave16_HRESP_0_0to0;
 wire   [1:0]  CoreAHBLite_0_AHBmslave16_HRESP_0;
-wire          CoreAHBLite_0_AHBmslave16_HRESP;
-wire   [2:0]  CoreAHBLite_0_AHBmslave16_HSIZE;
 wire   [1:0]  CoreAHBLite_0_AHBmslave16_HSIZE_0_1to0;
 wire   [1:0]  CoreAHBLite_0_AHBmslave16_HSIZE_0;
+wire   [2:0]  CoreAHBLite_0_AHBmslave16_HSIZE;
 wire   [15:2] CORECONFIGP_0_MDDR_APBmslave_PADDR;
 wire   [10:2] CORECONFIGP_0_MDDR_APBmslave_PADDR_0_10to2;
 wire   [10:2] CORECONFIGP_0_MDDR_APBmslave_PADDR_0;
@@ -339,10 +339,10 @@ wire   [15:0] CORECONFIGP_0_MDDR_APBmslave_PRDATA;
 wire   [31:0] CORECONFIGP_0_MDDR_APBmslave_PWDATA;
 wire   [15:0] CORECONFIGP_0_MDDR_APBmslave_PWDATA_0_15to0;
 wire   [15:0] CORECONFIGP_0_MDDR_APBmslave_PWDATA_0;
-wire   [15:2] HPMS_0_sb_HPMS_TMP_0_FIC_2_APB_MASTER_PADDR;
 wire   [16:16]HPMS_0_sb_HPMS_TMP_0_FIC_2_APB_MASTER_PADDR_0_16to16;
 wire   [15:2] HPMS_0_sb_HPMS_TMP_0_FIC_2_APB_MASTER_PADDR_0_15to2;
 wire   [16:2] HPMS_0_sb_HPMS_TMP_0_FIC_2_APB_MASTER_PADDR_0;
+wire   [15:2] HPMS_0_sb_HPMS_TMP_0_FIC_2_APB_MASTER_PADDR;
 //--------------------------------------------------------------------
 // Constant assignments
 //--------------------------------------------------------------------
@@ -992,7 +992,7 @@ CORECONFIGP_0(
         .R_SDIF3_PRDATA                 (  ) 
         );
 
-//--------CoreResetP   -   Actel:DirectCore:CoreResetP:8.0.102
+//--------CoreResetP   -   Actel:DirectCore:CoreResetP:7.1.100
 CoreResetP #( 
         .DDR_WAIT            ( 200 ),
         .DEVICE_090          ( 0 ),
@@ -1000,7 +1000,6 @@ CoreResetP #(
         .ENABLE_SOFT_RESETS  ( 1 ),
         .EXT_RESET_CFG       ( 0 ),
         .FDDR_IN_USE         ( 0 ),
-        .INCL_FF_SUPPORT     ( 0 ),
         .MDDR_IN_USE         ( 1 ),
         .SDIF0_IN_USE        ( 0 ),
         .SDIF0_PCIE          ( 0 ),
@@ -1034,19 +1033,22 @@ CORERESETP_0(
         .SDIF3_SPLL_LOCK                ( VCC_net ), // tied to 1'b1 from definition
         .CONFIG1_DONE                   ( CORECONFIGP_0_CONFIG1_DONE ),
         .CONFIG2_DONE                   ( CORECONFIGP_0_CONFIG2_DONE ),
-        .FF_DONE                        ( GND_net ), // tied to 1'b0 from definition
         .SDIF0_PERST_N                  ( VCC_net ), // tied to 1'b1 from definition
         .SDIF1_PERST_N                  ( VCC_net ), // tied to 1'b1 from definition
         .SDIF2_PERST_N                  ( VCC_net ), // tied to 1'b1 from definition
         .SDIF3_PERST_N                  ( VCC_net ), // tied to 1'b1 from definition
         .SDIF0_PSEL                     ( GND_net ), // tied to 1'b0 from definition
         .SDIF0_PWRITE                   ( VCC_net ), // tied to 1'b1 from definition
+        .SDIF0_PRDATA                   ( SDIF0_PRDATA_const_net_1 ), // tied to 32'h00000000 from definition
         .SDIF1_PSEL                     ( GND_net ), // tied to 1'b0 from definition
         .SDIF1_PWRITE                   ( VCC_net ), // tied to 1'b1 from definition
+        .SDIF1_PRDATA                   ( SDIF1_PRDATA_const_net_1 ), // tied to 32'h00000000 from definition
         .SDIF2_PSEL                     ( GND_net ), // tied to 1'b0 from definition
         .SDIF2_PWRITE                   ( VCC_net ), // tied to 1'b1 from definition
+        .SDIF2_PRDATA                   ( SDIF2_PRDATA_const_net_1 ), // tied to 32'h00000000 from definition
         .SDIF3_PSEL                     ( GND_net ), // tied to 1'b0 from definition
         .SDIF3_PWRITE                   ( VCC_net ), // tied to 1'b1 from definition
+        .SDIF3_PRDATA                   ( SDIF3_PRDATA_const_net_1 ), // tied to 32'h00000000 from definition
         .SOFT_EXT_RESET_OUT             ( CORECONFIGP_0_SOFT_EXT_RESET_OUT ),
         .SOFT_RESET_F2M                 ( CORECONFIGP_0_SOFT_RESET_F2M ),
         .SOFT_M3_RESET                  ( CORECONFIGP_0_SOFT_M3_RESET ),
@@ -1062,10 +1064,6 @@ CORERESETP_0(
         .SOFT_SDIF2_CORE_RESET          ( GND_net ), // tied to 1'b0 from definition
         .SOFT_SDIF3_PHY_RESET           ( GND_net ), // tied to 1'b0 from definition
         .SOFT_SDIF3_CORE_RESET          ( GND_net ), // tied to 1'b0 from definition
-        .SDIF0_PRDATA                   ( SDIF0_PRDATA_const_net_1 ), // tied to 32'h00000000 from definition
-        .SDIF1_PRDATA                   ( SDIF1_PRDATA_const_net_1 ), // tied to 32'h00000000 from definition
-        .SDIF2_PRDATA                   ( SDIF2_PRDATA_const_net_1 ), // tied to 32'h00000000 from definition
-        .SDIF3_PRDATA                   ( SDIF3_PRDATA_const_net_1 ), // tied to 32'h00000000 from definition
         // Outputs
         .MSS_HPMS_READY                 ( HPMS_READY_net_0 ),
         .DDR_READY                      ( DDR_READY_net_0 ),
