@@ -1,0 +1,50 @@
+Software Version: 11.8.1.12
+creating folder: C:\Users\ciaran.lappin\Downloads\CreativeRes\M2GL025-Creative-Board-master\Programming_The_Target_Device\PROC_SUBSYSTEM_TickTackToe
+Embedded FlashPro5 programmer detected.
+programmer 'E200EHIP1' : FlashPro5
+Created new project 'C:\Users\ciaran.lappin\Downloads\CreativeRes\M2GL025-Creative-Board-master\Programming_The_Target_Device\PROC_SUBSYSTEM_TickTackToe\PROC_SUBSYSTEM_TickTackToe.pro'
+STAPL file 'C:\Users\ciaran.lappin\Downloads\CreativeRes\M2GL025-Creative-Board-master\Programming_The_Target_Device\PROC_SUBSYSTEM_TickTackToe\M2GL025_1.stp' has been loaded successfully.
+DESIGN : PROC_SUBSYSTEM;  CHECKSUM : 38A5;  ALG_VERSION : 2
+creating folder: C:\Users\ciaran.lappin\Downloads\CreativeRes\M2GL025-Creative-Board-master\Programming_The_Target_Device\PROC_SUBSYSTEM_TickTackToe\projectData
+Software Version: 11.8.1.12
+STAPL file 'C:\Users\ciaran.lappin\Downloads\CreativeRes\M2GL025-Creative-Board-master\Programming_The_Target_Device\PROC_SUBSYSTEM_TickTackToe\M2GL025_1.stp' has been loaded successfully.
+DESIGN : PROC_SUBSYSTEM;  CHECKSUM : 38A5;  ALG_VERSION : 2
+Embedded FlashPro5 programmer detected.
+programmer 'E200EHIP1' : FlashPro5
+
+Created FlashPro Express Job Project.
+programmer 'E200EHIP1' : Scan Chain...
+Error: programmer 'E200EHIP1' : FP5 SyncWithProgrammerAtPort: OpenSpecifiedHiSpeedDeviceBySerialNumber - PortA
+       FP5: Error code = 2 - Device not found.
+Error: programmer 'E200EHIP1' : Scan Chain FAILED.
+Error: Failed to run Action.
+Exported log file C:\Users\ciaran.lappin\Downloads\CreativeRes\M2GL025-Creative-Board-master\Programming_The_Target_Device\PROC_SUBSYSTEM_TickTackToe\PROC_SUBSYSTEM_TickTackToe.log.
+Rescanning for Programmers...
+Embedded FlashPro5 programmer detected.
+programmer 'E200108CTE' : FlashPro5
+Rescanning for Programmers DONE.
+programmer 'E200108CTE' : Scan Chain...
+Warning: programmer 'E200108CTE' : Vpump has been selected on programmer AND an externally provided Vpump has also been detected. Using externally provided Vpump voltage source.
+programmer 'E200108CTE' : Check Chain...
+programmer 'E200108CTE' : Scan and Check Chain PASSED.
+programmer 'E200108CTE' : device 'M2GL025' : Executing action PROGRAM
+programmer 'E200108CTE' : device 'M2GL025' : Family: Igloo2
+programmer 'E200108CTE' : device 'M2GL025' : Product:      M2GL005
+programmer 'E200108CTE' : device 'M2GL025' : EXPORT ISC_ENABLE_RESULT[32] = 007a6744
+programmer 'E200108CTE' : device 'M2GL025' : EXPORT CRCERR[1] = 0
+programmer 'E200108CTE' : device 'M2GL025' : EXPORT EDCERR[1] = 0
+programmer 'E200108CTE' : device 'M2GL025' : Programming FPGA Array and eNVM...
+programmer 'E200108CTE' : device 'M2GL025' : EXPORT Fabric component digest[256] = d24dc8241d844da54aa2ba62899124f4d14b177614d0e54c01a6a85edc706b63
+programmer 'E200108CTE' : device 'M2GL025' : EXPORT eNVM component digest[256] = 5ba47839c38de0f339850af077f7b562211ece5394c3c37007d92011b15d8825
+programmer 'E200108CTE' : device 'M2GL025' : ===================================================================================
+programmer 'E200108CTE' : device 'M2GL025' : EXPORT DSN[128] = 2c27c420d72f157cbf55aaf0c9c7b5ef
+programmer 'E200108CTE' : device 'M2GL025' : ===================================================================================
+programmer 'E200108CTE' : device 'M2GL025' : Finished: Thu Nov 02 11:56:26 2017 (Elapsed time 00:00:46)
+programmer 'E200108CTE' : device 'M2GL025' : Executing action PROGRAM PASSED.
+programmer 'E200108CTE' : Chain programming PASSED.
+Chain Programming Finished: Thu Nov 02 11:56:26 2017 (Elapsed time 00:00:46)
+
+                        o - o - o - o - o - o
+
+Project saved.
+Project closed.
