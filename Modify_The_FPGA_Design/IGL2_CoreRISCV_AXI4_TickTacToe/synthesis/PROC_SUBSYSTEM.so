@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SynplifyOutput>
+	<result>Success</result>
+	<design>PROC_SUBSYSTEM</design>
+	<target_edif>C:\Users\ciaran.lappin\Downloads\CreativeRes\M2GL025-Creative-Board-master\Modify_The_FPGA_Design\IGL2_CoreRISCV_AXI4_TickTacToe\synthesis\PROC_SUBSYSTEM.edn</target_edif>
+</SynplifyOutput>

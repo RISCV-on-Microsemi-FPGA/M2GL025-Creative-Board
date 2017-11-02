@@ -1,0 +1,29 @@
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+Clock optimization not enabled
+3 non-gated/non-generated clock tree(s) driving 114 clock pin(s) of sequential element(s)
+2 gated/generated clock tree(s) driving 9877 clock pin(s) of sequential element(s)
+0 instances converted, 9877 sequential instances remain driven by gated/generated clocks
+
+=============================================================== Non-Gated/Non-Generated Clocks ================================================================
+Clock Tree ID     Driving Element                                 Drive Element Type                     Fanout     Sample Instance                            
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0003       COREJTAGDEBUG_0.genblk1.UJTAG_0                 UJTAG                                  16         COREJTAGDEBUG_0.genblk1.UJ_JTAG_0.pauselow 
+@K:CKID0004       HPMS_0_sb_0.HPMS_0_sb_HPMS_0.MSS_ADLIB_INST     clock definition on MSS_025            76         HPMS_0_sb_0.HPMS_0_sb_HPMS_0.MSS_ADLIB_INST
+@K:CKID0005       HPMS_0_sb_0.FABOSC_0.I_RCOSC_25_50MHZ           clock definition on RCOSC_25_50MHZ     22         HPMS_0_sb_0.CORERESETP_0.count_ddr[13]     
+===============================================================================================================================================================
+================================================================================================== Gated/Generated Clocks ===================================================================================================
+Clock Tree ID     Driving Element                                  Drive Element Type     Fanout     Sample Instance                                              Explanation                                                
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       HPMS_0_sb_0.CCC_0.CCC_INST                       CCC                    9685       HPMS_0_sb_0.HPMS_0_sb_HPMS_0.MSS_ADLIB_INST                  No gated clock conversion method for cell cell:work.MSS_025
+@K:CKID0002       COREJTAGDEBUG_0.genblk1.UJ_JTAG_0.un1_duttck     CFG4                   192        CORERISCV_AXI4_0.debugBusRespFifo.genblk2.rdAddrReg_r[1]     No gated clock conversion method for cell cell:ACG4.SLE    
+=============================================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+

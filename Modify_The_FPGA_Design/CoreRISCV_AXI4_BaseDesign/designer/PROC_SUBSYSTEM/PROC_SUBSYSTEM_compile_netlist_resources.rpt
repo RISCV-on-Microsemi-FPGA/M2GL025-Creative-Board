@@ -1,0 +1,242 @@
+Resource Report
+Microsemi Corporation - Microsemi Libero Software Release Libero SoC v11.8 SP1 (Version 11.8.1.12)
+Date: Thu Nov 02 12:02:15 2017
+
+Device Selection
++--------------------------------+----------------+
+| Family                         | IGLOO2         |
+| Device                         | M2GL025        |
+| Package                        | 256 VF         |
+| Speed Grade                    | STD            |
+| Temp                           | 0:25:85        |
+| Voltage                        | 1.26:1.20:1.14 |
+| Core Voltage                   | 1.2V           |
+| Ramp Rate                      | 100ms Minimum  |
+| System Controller Suspend Mode | No             |
+| PLL Supply Voltage             | 2.5V           |
+| Default I/O technology         | LVCMOS 2.5V    |
+| Restrict Probe Pins            | Yes            |
+| Restrict SPI Pins              | No             |
++--------------------------------+----------------+
+
+Source Files
++---------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Topcell | PROC_SUBSYSTEM                                                                                                                                           |
+| Format  | EDIF                                                                                                                                                     |
+| Source  | C:\Users\ciaran.lappin\Downloads\CreativeRes\M2GL025-Creative-Board-master\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign\synthesis\PROC_SUBSYSTEM.edn |
++---------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Options
++----------------------------------------------------+-------+
+| Enable Single Event Transient mitigation           | false |
+| Enable Design Separation Methodology               | false |
+| Limit the number of high fanout nets to display to | 10    |
++----------------------------------------------------+-------+
+
+Resource Usage
++---------------------------+-------+-------+------------+
+| Type                      | Used  | Total | Percentage |
++---------------------------+-------+-------+------------+
+| 4LUT                      | 15530 | 27696 | 56.07      |
+| DFF                       | 10918 | 27696 | 39.42      |
+| I/O Register              | 0     | 414   | 0.00       |
+| User I/O                  | 61    | 138   | 44.20      |
+| -- Single-ended I/O       | 55    | 138   | 39.86      |
+| -- Differential I/O Pairs | 3     | 65    | 4.62       |
+| RAM64x18                  | 17    | 34    | 50.00      |
+| RAM1K18                   | 8     | 31    | 25.81      |
+| MACC                      | 2     | 34    | 5.88       |
+| Chip Globals              | 12    | 16    | 75.00      |
+| CCC                       | 1     | 6     | 16.67      |
+| RCOSC_25_50MHZ            | 1     | 1     | 100.00     |
+| RCOSC_1MHZ                | 0     | 1     | 0.00       |
+| XTLOSC                    | 0     | 1     | 0.00       |
+| HPMS                      | 1     | 1     | 100.00     |
++---------------------------+-------+-------+------------+
+
+Detailed Logic Resource Usage
++--------------------------+-------+-------+
+| Type                     | 4LUT  | DFF   |
++--------------------------+-------+-------+
+| Fabric Logic             | 14558 | 9946  |
+| RAM64x18 Interface Logic | 612   | 612   |
+| RAM1K18 Interface Logic  | 288   | 288   |
+| MACC Interface Logic     | 72    | 72    |
+| Total Used               | 15530 | 10918 |
++--------------------------+-------+-------+
+
+HPMS Resource Usage
++---------------+------+-------+
+| Type          | Used | Total |
++---------------+------+-------+
+| eNVM (256KB)* | 1    | 1     |
+| eSRAM*        | 2    | 2     |
+| SPI           | 0    | 1     |
+| MDDR          | 1    | 1     |
+| HPDMA         | 1    | 1     |
+| PDMA          | 1    | 1     |
++---------------+------+-------+
+
+* These resources are always marked as used when you are using the HPMS
+
+Detailed Carry Chains Resource Usage
++--------+------+
+| Length | Used |
+| 2      | 305  |
+| 5      | 1    |
+| 7      | 4    |
+| 8      | 5    |
+| 10     | 65   |
+| 11     | 4    |
+| 14     | 2    |
+| 16     | 1    |
+| 17     | 5    |
+| 22     | 84   |
+| 30     | 3    |
+| 32     | 6    |
+| 33     | 4    |
+| 49     | 1    |
+| 58     | 1    |
+| 59     | 1    |
+| 64     | 1    |
+| 65     | 1    |
+| Total  | 494  |
++--------+------+
+
+Detailed MACC Resource Usage
++--------+------+
+| Length | Used |
+| 2      | 1    |
+| Total  | 1    |
++--------+------+
+
+I/O Function
++--------------------------------------+--------------+-------------+-----------------+
+| Type                                 | w/o register | w/ register | w/ DDR register |
++--------------------------------------+--------------+-------------+-----------------+
+| Input I/O                            | 5            | 0           | 0               |
+| Output I/O                           | 32           | 0           | 0               |
+| Bidirectional I/O                    | 18           | 0           | 0               |
+| Differential Input I/O Pairs         | 0            | 0           | 0               |
+| Differential Output I/O Pairs        | 1            | 0           | 0               |
+| Differential Bidirectional I/O Pairs | 2            | 0           | 0               |
++--------------------------------------+--------------+-------------+-----------------+
+
+I/O Technology
++--------------------------------+--------+--------+-------+--------+---------------+
+| I/O Standard                   | Vddi   | Vref   | Input | Output | Bidirectional |
++--------------------------------+--------+--------+-------+--------+---------------+
+| LVCMOS25                       |  2.50v |  N/A   |  4    |  5     |  0            |
+| SSTL18II (Input/Bidirectional) |  1.80v |  1.00v |  1    |  0     |  22           |
+| SSTL18II (Output)              |  1.80v |  N/A   |  0    |  29    |  0            |
++--------------------------------+--------+--------+-------+--------+---------------+
+
+I/O Placement
++----------+-------+------------+
+| Type     | Count | Percentage |
++----------+-------+------------+
+| Locked   |  52   | 85.25%     |
+| Placed   |  0    | 0.00%      |
+| UnPlaced |  9    | 14.75%     |
++----------+-------+------------+
+
+Nets assigned to chip global resources
++--------+---------+------------------------------------------------------------------------+
+| Fanout | Type    | Name                                                                   |
++--------+---------+------------------------------------------------------------------------+
+| 9685   | INT_NET | Net   : HPMS_0_sb_0_FIC_0_CLK                                          |
+|        |         | Driver: HPMS_0_sb_0/CCC_0/GL0_INST/U0_RGB1                             |
+|        |         | Source: NETLIST                                                        |
+| 1402   | INT_NET | Net   : HPMS_0_sb_0_INIT_DONE                                          |
+|        |         | Driver: HPMS_0_sb_0/CORERESETP_0/INIT_DONE_int_RNIKRPF/U0_RGB1         |
+|        |         | Source: NETLIST                                                        |
+| 491    | INT_NET | Net   : HPMS_0_sb_0/MSS_HPMS_READY_int_RNIPQ52                         |
+|        |         | Driver: HPMS_0_sb_0/CORERESETP_0/MSS_HPMS_READY_int_RNIPQ52/U0_RGB1    |
+|        |         | Source: NETLIST                                                        |
+| 192    | INT_NET | Net   : COREJTAGDEBUG_0_TGT_TCK                                        |
+|        |         | Driver: COREJTAGDEBUG_0/tck_clkint/U0_RGB1                             |
+|        |         | Source: NETLIST                                                        |
+| 87     | INT_NET | Net   : COREJTAGDEBUG_0.TGT_TRSTB                                      |
+|        |         | Driver: COREJTAGDEBUG_0/genblk1_UJTAG_0_RNIFG38/U0_RGB1                |
+|        |         | Source: NETLIST                                                        |
+| 78     | INT_NET | Net   : HPMS_0_sb_0/CORECONFIGP_0_APB_S_PRESET_N                       |
+|        |         | Driver: HPMS_0_sb_0/HPMS_0_sb_HPMS_0/MSS_ADLIB_INST_RNIIQEF_0/U0_RGB1  |
+|        |         | Source: NETLIST                                                        |
+| 76     | INT_NET | Net   : HPMS_0_sb_0/CORECONFIGP_0_APB_S_PCLK                           |
+|        |         | Driver: HPMS_0_sb_0/HPMS_0_sb_HPMS_0/MSS_ADLIB_INST_RNIIQEF/U0_RGB1    |
+|        |         | Source: NETLIST                                                        |
+| 26     | INT_NET | Net   : HPMS_0_sb_0/CORERESETP_0/sm0_areset_n_clk_base                 |
+|        |         | Driver: HPMS_0_sb_0/CORERESETP_0/sm0_areset_n_clk_base_RNI4M4D/U0_RGB1 |
+|        |         | Source: NETLIST                                                        |
+| 22     | INT_NET | Net   : HPMS_0_sb_0/FABOSC_0_RCOSC_25_50MHZ_O2F                        |
+|        |         | Driver: HPMS_0_sb_0/FABOSC_0/I_RCOSC_25_50MHZ_FAB_CLKINT/U0_RGB1       |
+|        |         | Source: NETLIST                                                        |
+| 17     | INT_NET | Net   : HPMS_0_sb_0/CORERESETP_0/sm0_areset_n_rcosc                    |
+|        |         | Driver: HPMS_0_sb_0/CORERESETP_0/sm0_areset_n_rcosc_RNIAKQF/U0_RGB1    |
+|        |         | Source: NETLIST                                                        |
+| 16     | INT_NET | Net   : COREJTAGDEBUG_0/UDRCK_OUT                                      |
+|        |         | Driver: COREJTAGDEBUG_0/genblk1_udrck_clkint/U0_RGB1                   |
+|        |         | Source: NETLIST                                                        |
+| 14     | INT_NET | Net   : CORERISCV_AXI4_0/rd_reset_i                                    |
+|        |         | Driver: CORERISCV_AXI4_0/debugBusReqFifo/rd_reset_RNI5HA5/U0_RGB1      |
+|        |         | Source: NETLIST                                                        |
++--------+---------+------------------------------------------------------------------------+
+
+Nets assigned to row global resources
++--------+------+------+
+| Fanout | Type | Name |
++--------+------+------+
++--------+------+------+
+
+High fanout nets
++--------+---------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Fanout | Type    | Name                                                                                                                                                                               |
++--------+---------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 1344   | INT_NET | Net   : CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/meta/GEN_3[1]                                                                                                            |
+|        |         | Driver: CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/meta/GEN_3[1]                                                                                                            |
+| 673    | INT_NET | Net   : HPMS_0_sb_0/CORERESETP_0/INIT_DONE_int                                                                                                                                     |
+|        |         | Driver: HPMS_0_sb_0/CORERESETP_0/INIT_DONE_int                                                                                                                                     |
+| 672    | INT_NET | Net   : CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/meta/GEN_3_rep[0]                                                                                                        |
+|        |         | Driver: CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/meta/GEN_3_rep[0]                                                                                                        |
+| 509    | INT_NET | Net   : CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache_io_cpu_resp_bits_data_0[21]                                                                                                |
+|        |         | Driver: CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/fetch_data[21]                                                                                                             |
+| 502    | INT_NET | Net   : CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache_io_cpu_resp_bits_data_0[16]                                                                                                |
+|        |         | Driver: CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/fetch_data[16]                                                                                                             |
+| 336    | INT_NET | Net   : CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/meta/GEN_3[3]                                                                                                            |
+|        |         | Driver: CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/meta/GEN_3[3]                                                                                                            |
+| 274    | INT_NET | Net   : CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache_io_cpu_resp_bits_data_0[15]                                                                                                |
+|        |         | Driver: CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/fetch_data[15]                                                                                                             |
+| 274    | INT_NET | Net   : CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache_io_cpu_resp_bits_data_0[20]                                                                                                |
+|        |         | Driver: CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/fetch_data[20]                                                                                                             |
+| 258    | INT_NET | Net   : CORERISCV_AXI4_0/ChiselTop0/uncore/T_628                                                                                                                                   |
+|        |         | Driver: CORERISCV_AXI4_0/ChiselTop0/uncore/TileLinkRecursiveInterconnect_2/xbar/PROC_SUBSYSTEM_CORERISCV_AXI4_0_CORERISCV_AXI4_CLIENT_UNCACHED_TILE_LINK_IO_ROUTER_1/gnt_arb/T_628 |
+| 172    | INT_NET | Net   : CORERISCV_AXI4_0/ChiselTop0/uncore/outmemsys/N_481_i                                                                                                                       |
+|        |         | Driver: CORERISCV_AXI4_0/ChiselTop0/uncore/outmemsys/l1tol2net/acqNet/arb/un2_GEN_11_i                                                                                             |
++--------+---------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+High fanout nets (through buffer trees)
++--------+---------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Fanout | Type    | Name                                                                                                                                                                               |
++--------+---------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 1344   | INT_NET | Net   : CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/meta/GEN_3[1]                                                                                                            |
+|        |         | Driver: CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/meta/GEN_3[1]                                                                                                            |
+| 673    | INT_NET | Net   : HPMS_0_sb_0/CORERESETP_0/INIT_DONE_int                                                                                                                                     |
+|        |         | Driver: HPMS_0_sb_0/CORERESETP_0/INIT_DONE_int                                                                                                                                     |
+| 672    | INT_NET | Net   : CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/meta/GEN_3_rep[0]                                                                                                        |
+|        |         | Driver: CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/meta/GEN_3_rep[0]                                                                                                        |
+| 509    | INT_NET | Net   : CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache_io_cpu_resp_bits_data_0[21]                                                                                                |
+|        |         | Driver: CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/fetch_data[21]                                                                                                             |
+| 502    | INT_NET | Net   : CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache_io_cpu_resp_bits_data_0[16]                                                                                                |
+|        |         | Driver: CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/fetch_data[16]                                                                                                             |
+| 336    | INT_NET | Net   : CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/meta/GEN_3[3]                                                                                                            |
+|        |         | Driver: CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/meta/GEN_3[3]                                                                                                            |
+| 274    | INT_NET | Net   : CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache_io_cpu_resp_bits_data_0[15]                                                                                                |
+|        |         | Driver: CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/fetch_data[15]                                                                                                             |
+| 274    | INT_NET | Net   : CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache_io_cpu_resp_bits_data_0[20]                                                                                                |
+|        |         | Driver: CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/fetch_data[20]                                                                                                             |
+| 258    | INT_NET | Net   : CORERISCV_AXI4_0/ChiselTop0/uncore/T_628                                                                                                                                   |
+|        |         | Driver: CORERISCV_AXI4_0/ChiselTop0/uncore/TileLinkRecursiveInterconnect_2/xbar/PROC_SUBSYSTEM_CORERISCV_AXI4_0_CORERISCV_AXI4_CLIENT_UNCACHED_TILE_LINK_IO_ROUTER_1/gnt_arb/T_628 |
+| 172    | INT_NET | Net   : CORERISCV_AXI4_0/ChiselTop0/uncore/outmemsys/N_481_i                                                                                                                       |
+|        |         | Driver: CORERISCV_AXI4_0/ChiselTop0/uncore/outmemsys/l1tol2net/acqNet/arb/un2_GEN_11_i                                                                                             |
++--------+---------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+

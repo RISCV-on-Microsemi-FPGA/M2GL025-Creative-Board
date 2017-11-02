@@ -1,0 +1,16 @@
+Software Version: 11.8.1.12
+Opened 'C:\Users\ciaran.lappin\Downloads\CreativeRes\M2GL025-Creative-Board-master\Modify_The_FPGA_Design\IGL2_CoreRISCV_AXI4_TickTacToe\designer\PROC_SUBSYSTEM\PROC_SUBSYSTEM_fp\PROC_SUBSYSTEM.pro'
+The 'open_project' command succeeded.
+PDB file 'C:\Users\ciaran.lappin\Downloads\CreativeRes\M2GL025-Creative-Board-master\Modify_The_FPGA_Design\IGL2_CoreRISCV_AXI4_TickTacToe\designer\PROC_SUBSYSTEM\ec861375-9085-4caf-9085-4caf90854caf.pdb' has been loaded successfully.
+DESIGN : PROC_SUBSYSTEM;  CHECKSUM : 38A5;  PDB_VERSION : 1.9
+The 'load_programming_data' command succeeded.
+Successfully exported STAPL file: 'C:\Users\ciaran.lappin\Downloads\CreativeRes\M2GL025-Creative-Board-master\Modify_The_FPGA_Design\IGL2_CoreRISCV_AXI4_TickTacToe\designer\PROC_SUBSYSTEM\export\PROC_SUBSYSTEM_TickTackToe_M2GL025.stp'; file programs Fabric and eNVM.
+Fabric component digest: d24dc8241d844da54aa2ba62899124f4d14b177614d0e54c01a6a85edc706b63
+eNVM component digest: 5ba47839c38de0f339850af077f7b562211ece5394c3c37007d92011b15d8825
+Finished: Thu Nov 02 10:37:11 2017 (Elapsed time 00:00:19)
+
+The 'export_single_stapl' command succeeded.
+The 'set_programming_file' command succeeded.
+Project saved.
+The 'save_project' command succeeded.
+Project closed.
