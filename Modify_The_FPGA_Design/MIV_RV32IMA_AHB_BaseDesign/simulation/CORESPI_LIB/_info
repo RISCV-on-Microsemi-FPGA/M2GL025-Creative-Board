@@ -1,0 +1,172 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/MiV_Example_Designs/Igloo2/IGL2_MiV_RV32IMA_TIckTackToe/simulation
+vCORESPI
+Z1 !s110 1510246681
+!i10b 1
+!s100 =eI9Xh3YG^4H0P3ddWHFZ2
+IIRXaKKXRF^okhJZB6Om0E3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1491234032
+8C:/MiV_Example_Designs/Igloo2/IGL2_MiV_RV32IMA_TIckTackToe/component/Actel/DirectCore/CORESPI/5.1.104/rtl/vlog/core/corespi.v
+FC:/MiV_Example_Designs/Igloo2/IGL2_MiV_RV32IMA_TIckTackToe/component/Actel/DirectCore/CORESPI/5.1.104/rtl/vlog/core/corespi.v
+Z4 L0 25
+Z5 OW;L;10.5c;63
+r1
+!s85 0
+31
+Z6 !s108 1510246681.000000
+!s107 C:/MiV_Example_Designs/Igloo2/IGL2_MiV_RV32IMA_TIckTackToe/component/Actel/DirectCore/CORESPI/5.1.104/rtl/vlog/core/corespi.v|
+!s90 -reportprogress|300|+incdir+C:/MiV_Example_Designs/Igloo2/IGL2_MiV_RV32IMA_TIckTackToe/component/Microsemi/MiV/MIV_RV32IMA_L1_AHB/0.5.1/rtl/vlog/core|-vlog01compat|-work|CORESPI_LIB|C:/MiV_Example_Designs/Igloo2/IGL2_MiV_RV32IMA_TIckTackToe/component/Actel/DirectCore/CORESPI/5.1.104/rtl/vlog/core/corespi.v|
+!s101 -O0
+!i113 1
+Z7 o-vlog01compat -work CORESPI_LIB -O0
+Z8 !s92 +incdir+C:/MiV_Example_Designs/Igloo2/IGL2_MiV_RV32IMA_TIckTackToe/component/Microsemi/MiV/MIV_RV32IMA_L1_AHB/0.5.1/rtl/vlog/core -vlog01compat -work CORESPI_LIB -O0
+Z9 tCvgOpt 0
+n@c@o@r@e@s@p@i
+vspi
+R1
+!i10b 1
+!s100 0RlDXzW`AGO^XG2F[47hk0
+I<?PU>d1k^zN5HRaX:Z17l1
+R2
+R0
+R3
+8C:/MiV_Example_Designs/Igloo2/IGL2_MiV_RV32IMA_TIckTackToe/component/Actel/DirectCore/CORESPI/5.1.104/rtl/vlog/core/spi.v
+FC:/MiV_Example_Designs/Igloo2/IGL2_MiV_RV32IMA_TIckTackToe/component/Actel/DirectCore/CORESPI/5.1.104/rtl/vlog/core/spi.v
+L0 26
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/MiV_Example_Designs/Igloo2/IGL2_MiV_RV32IMA_TIckTackToe/component/Actel/DirectCore/CORESPI/5.1.104/rtl/vlog/core/spi.v|
+!s90 -reportprogress|300|+incdir+C:/MiV_Example_Designs/Igloo2/IGL2_MiV_RV32IMA_TIckTackToe/component/Microsemi/MiV/MIV_RV32IMA_L1_AHB/0.5.1/rtl/vlog/core|-vlog01compat|-work|CORESPI_LIB|C:/MiV_Example_Designs/Igloo2/IGL2_MiV_RV32IMA_TIckTackToe/component/Actel/DirectCore/CORESPI/5.1.104/rtl/vlog/core/spi.v|
+!s101 -O0
+!i113 1
+R7
+R8
+R9
+vspi_chanctrl
+R1
+!i10b 1
+!s100 ]Z5[hIeD6Yie7k3bIjURh0
+I8BGjW2T[:7Nc0zVic87zQ0
+R2
+R0
+R3
+8C:/MiV_Example_Designs/Igloo2/IGL2_MiV_RV32IMA_TIckTackToe/component/Actel/DirectCore/CORESPI/5.1.104/rtl/vlog/core/spi_chanctrl.v
+FC:/MiV_Example_Designs/Igloo2/IGL2_MiV_RV32IMA_TIckTackToe/component/Actel/DirectCore/CORESPI/5.1.104/rtl/vlog/core/spi_chanctrl.v
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/MiV_Example_Designs/Igloo2/IGL2_MiV_RV32IMA_TIckTackToe/component/Actel/DirectCore/CORESPI/5.1.104/rtl/vlog/core/spi_chanctrl.v|
+!s90 -reportprogress|300|+incdir+C:/MiV_Example_Designs/Igloo2/IGL2_MiV_RV32IMA_TIckTackToe/component/Microsemi/MiV/MIV_RV32IMA_L1_AHB/0.5.1/rtl/vlog/core|-vlog01compat|-work|CORESPI_LIB|C:/MiV_Example_Designs/Igloo2/IGL2_MiV_RV32IMA_TIckTackToe/component/Actel/DirectCore/CORESPI/5.1.104/rtl/vlog/core/spi_chanctrl.v|
+!s101 -O0
+!i113 1
+R7
+R8
+R9
+vspi_clockmux
+R1
+!i10b 1
+!s100 ijnN]`?7dEJiVV_QWNobI3
+ID8jz7WIlzW5I?eSi?6USV2
+R2
+R0
+R3
+8C:/MiV_Example_Designs/Igloo2/IGL2_MiV_RV32IMA_TIckTackToe/component/Actel/DirectCore/CORESPI/5.1.104/rtl/vlog/core/spi_clockmux.v
+FC:/MiV_Example_Designs/Igloo2/IGL2_MiV_RV32IMA_TIckTackToe/component/Actel/DirectCore/CORESPI/5.1.104/rtl/vlog/core/spi_clockmux.v
+Z10 L0 24
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/MiV_Example_Designs/Igloo2/IGL2_MiV_RV32IMA_TIckTackToe/component/Actel/DirectCore/CORESPI/5.1.104/rtl/vlog/core/spi_clockmux.v|
+!s90 -reportprogress|300|+incdir+C:/MiV_Example_Designs/Igloo2/IGL2_MiV_RV32IMA_TIckTackToe/component/Microsemi/MiV/MIV_RV32IMA_L1_AHB/0.5.1/rtl/vlog/core|-vlog01compat|-work|CORESPI_LIB|C:/MiV_Example_Designs/Igloo2/IGL2_MiV_RV32IMA_TIckTackToe/component/Actel/DirectCore/CORESPI/5.1.104/rtl/vlog/core/spi_clockmux.v|
+!s101 -O0
+!i113 1
+R7
+R8
+R9
+vspi_control
+R1
+!i10b 1
+!s100 IiXSQINSQa40:LVBL2Vjl0
+IQ]G8F:9zW_HBFW0IVc:OS3
+R2
+R0
+R3
+8C:/MiV_Example_Designs/Igloo2/IGL2_MiV_RV32IMA_TIckTackToe/component/Actel/DirectCore/CORESPI/5.1.104/rtl/vlog/core/spi_control.v
+FC:/MiV_Example_Designs/Igloo2/IGL2_MiV_RV32IMA_TIckTackToe/component/Actel/DirectCore/CORESPI/5.1.104/rtl/vlog/core/spi_control.v
+R10
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/MiV_Example_Designs/Igloo2/IGL2_MiV_RV32IMA_TIckTackToe/component/Actel/DirectCore/CORESPI/5.1.104/rtl/vlog/core/spi_control.v|
+!s90 -reportprogress|300|+incdir+C:/MiV_Example_Designs/Igloo2/IGL2_MiV_RV32IMA_TIckTackToe/component/Microsemi/MiV/MIV_RV32IMA_L1_AHB/0.5.1/rtl/vlog/core|-vlog01compat|-work|CORESPI_LIB|C:/MiV_Example_Designs/Igloo2/IGL2_MiV_RV32IMA_TIckTackToe/component/Actel/DirectCore/CORESPI/5.1.104/rtl/vlog/core/spi_control.v|
+!s101 -O0
+!i113 1
+R7
+R8
+R9
+vspi_fifo
+R1
+!i10b 1
+!s100 M6^1eCmFonBc9AM_G6;Ah2
+ID:9fUU1Al51HEOOmeY00O3
+R2
+R0
+R3
+8C:/MiV_Example_Designs/Igloo2/IGL2_MiV_RV32IMA_TIckTackToe/component/Actel/DirectCore/CORESPI/5.1.104/rtl/vlog/core/spi_fifo.v
+FC:/MiV_Example_Designs/Igloo2/IGL2_MiV_RV32IMA_TIckTackToe/component/Actel/DirectCore/CORESPI/5.1.104/rtl/vlog/core/spi_fifo.v
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/MiV_Example_Designs/Igloo2/IGL2_MiV_RV32IMA_TIckTackToe/component/Actel/DirectCore/CORESPI/5.1.104/rtl/vlog/core/spi_fifo.v|
+!s90 -reportprogress|300|+incdir+C:/MiV_Example_Designs/Igloo2/IGL2_MiV_RV32IMA_TIckTackToe/component/Microsemi/MiV/MIV_RV32IMA_L1_AHB/0.5.1/rtl/vlog/core|-vlog01compat|-work|CORESPI_LIB|C:/MiV_Example_Designs/Igloo2/IGL2_MiV_RV32IMA_TIckTackToe/component/Actel/DirectCore/CORESPI/5.1.104/rtl/vlog/core/spi_fifo.v|
+!s101 -O0
+!i113 1
+R7
+R8
+R9
+vspi_rf
+R1
+!i10b 1
+!s100 [B8b]2C4DS=HcK?g_K;VF2
+IkGIe06`oMdEC@;aHMH5@^2
+R2
+R0
+R3
+8C:/MiV_Example_Designs/Igloo2/IGL2_MiV_RV32IMA_TIckTackToe/component/Actel/DirectCore/CORESPI/5.1.104/rtl/vlog/core/spi_rf.v
+FC:/MiV_Example_Designs/Igloo2/IGL2_MiV_RV32IMA_TIckTackToe/component/Actel/DirectCore/CORESPI/5.1.104/rtl/vlog/core/spi_rf.v
+L0 29
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/MiV_Example_Designs/Igloo2/IGL2_MiV_RV32IMA_TIckTackToe/component/Actel/DirectCore/CORESPI/5.1.104/rtl/vlog/core/spi_rf.v|
+!s90 -reportprogress|300|+incdir+C:/MiV_Example_Designs/Igloo2/IGL2_MiV_RV32IMA_TIckTackToe/component/Microsemi/MiV/MIV_RV32IMA_L1_AHB/0.5.1/rtl/vlog/core|-vlog01compat|-work|CORESPI_LIB|C:/MiV_Example_Designs/Igloo2/IGL2_MiV_RV32IMA_TIckTackToe/component/Actel/DirectCore/CORESPI/5.1.104/rtl/vlog/core/spi_rf.v|
+!s101 -O0
+!i113 1
+R7
+R8
+R9

@@ -1,0 +1,7 @@
+C:\Microsemi\synplify_L201609M-2_W\bin64\syn_nfilter.exe  -link  -top  PROC_SUBSYSTEM  -multisrs  C:\MiV_Example_Designs\Igloo2\IGL2_MiV_RV32IMA_TIckTackToe\synthesis\synwork\PROC_SUBSYSTEM_comp.srs  -osyn  C:\MiV_Example_Designs\Igloo2\IGL2_MiV_RV32IMA_TIckTackToe\synthesis\synwork\PROC_SUBSYSTEM_mult.srs  -log  C:\MiV_Example_Designs\Igloo2\IGL2_MiV_RV32IMA_TIckTackToe\synthesis\synlog\PROC_SUBSYSTEM_multi_srs_gen.srr 
+rc:0 success:1 runtime:3
+file:C:\MiV_Example_Designs\Igloo2\IGL2_MiV_RV32IMA_TIckTackToe\synthesis\synwork\PROC_SUBSYSTEM_comp.srs|io:i|time:1511349285|size:816899|exec:0
+file:C:\MiV_Example_Designs\Igloo2\IGL2_MiV_RV32IMA_TIckTackToe\synthesis\synwork\PROC_SUBSYSTEM_mult.srs|io:o|time:1511349290|size:49601|exec:0
+file:C:\MiV_Example_Designs\Igloo2\IGL2_MiV_RV32IMA_TIckTackToe\synthesis\synlog\PROC_SUBSYSTEM_multi_srs_gen.srr|io:o|time:1511349290|size:540|exec:0
+file:C:\Microsemi\synplify_L201609M-2_W\bin\syn_nfilter.exe|io:i|time:1479402458|size:3128320|exec:1
+file:C:\Microsemi\synplify_L201609M-2_W\bin64\syn_nfilter.exe|io:i|time:1479402724|size:4208128|exec:1

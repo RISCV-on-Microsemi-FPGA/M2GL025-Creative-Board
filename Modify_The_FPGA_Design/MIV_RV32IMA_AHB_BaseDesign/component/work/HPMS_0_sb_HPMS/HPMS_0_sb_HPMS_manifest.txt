@@ -1,0 +1,28 @@
+Microsemi Corporation - Microsemi Libero Software Release Libero SoC v11.8 SP1 (Version 11.8.1.12)
+
+Date      :  Thu Nov 30 10:16:09 2017
+Project   :  C:\MiV_Example_Designs\Igloo2\MIV_RV32IMA_AHB_BaseDesign
+Component :  HPMS_0_sb_HPMS
+Family    :  IGLOO2
+
+
+HDL source files for all Synthesis and Simulation tools:
+    C:/MiV_Example_Designs/Igloo2/MIV_RV32IMA_AHB_BaseDesign/component/work/HPMS_0_sb_HPMS/HPMS_0_sb_HPMS.v
+
+HDL source files for Synopsys SynplifyPro Synthesis tool:
+    C:/MiV_Example_Designs/Igloo2/MIV_RV32IMA_AHB_BaseDesign/component/work/HPMS_0_sb_HPMS/HPMS_0_sb_HPMS_syn.v
+
+HDL source files for Mentor Precision Synthesis tool:
+    C:/MiV_Example_Designs/Igloo2/MIV_RV32IMA_AHB_BaseDesign/component/work/HPMS_0_sb_HPMS/HPMS_0_sb_HPMS_pre.v
+
+Configuration files to be used for Programming:
+    C:/MiV_Example_Designs/Igloo2/MIV_RV32IMA_AHB_BaseDesign/component/work/HPMS_0_sb_HPMS/ENVM.cfg
+    C:/MiV_Example_Designs/Igloo2/MIV_RV32IMA_AHB_BaseDesign/component/work/HPMS_0_sb_HPMS/MDDR_init.reg
+
+Configuration files to be used for all Simulation tools:
+    C:/MiV_Example_Designs/Igloo2/MIV_RV32IMA_AHB_BaseDesign/component/work/HPMS_0_sb_HPMS/ENVM.cfg
+    C:/MiV_Example_Designs/Igloo2/MIV_RV32IMA_AHB_BaseDesign/component/work/HPMS_0_sb_HPMS/MDDR_init.reg
+
+Configuration files to be used for Power Analysis:
+    C:/MiV_Example_Designs/Igloo2/MIV_RV32IMA_AHB_BaseDesign/component/work/HPMS_0_sb_HPMS/MDDR_init.reg
+

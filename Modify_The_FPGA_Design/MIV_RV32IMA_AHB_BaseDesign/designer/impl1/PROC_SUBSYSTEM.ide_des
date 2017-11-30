@@ -1,0 +1,14 @@
+KEY IDE_DES_TOOL "Ide"
+KEY IDE_DES_ADB_PATH "C:\MiV_Example_Designs\Igloo2\IGL2_MiV_RV32IMA_TIckTackToe\designer\impl1\PROC_SUBSYSTEM.adb"
+LIST SOURCE_FILES
+VALUE "C:\MiV_Example_Designs\Igloo2\IGL2_MiV_RV32IMA_TIckTackToe\synthesis\PROC_SUBSYSTEM.edn;edn"
+VALUE "C:\MiV_Example_Designs\Igloo2\IGL2_MiV_RV32IMA_TIckTackToe\constraint\io\user.pdc;pdc"
+VALUE "C:\MiV_Example_Designs\Igloo2\IGL2_MiV_RV32IMA_TIckTackToe\constraint\PROC_SUBSYSTEM_derived_constraints.sdc;sdc"
+VALUE "C:\MiV_Example_Designs\Igloo2\IGL2_MiV_RV32IMA_TIckTackToe\constraint\user.sdc;sdc"
+VALUE "C:\MiV_Example_Designs\Igloo2\IGL2_MiV_RV32IMA_TIckTackToe\constraint\fp\PROC_SUBSYSTEM_derived_constraints.pdc;pdc"
+ENDLIST
+LIST OPTIONAL_FILES
+VALUE "C:\MiV_Example_Designs\Igloo2\IGL2_MiV_RV32IMA_TIckTackToe\synthesis\PROC_SUBSYSTEM_sdc.sdc;Skipped"
+ENDLIST
+LIST VCD_FILES
+ENDLIST

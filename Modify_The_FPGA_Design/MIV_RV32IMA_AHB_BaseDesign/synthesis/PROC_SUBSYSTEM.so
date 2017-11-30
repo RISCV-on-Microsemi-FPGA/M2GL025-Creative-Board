@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SynplifyOutput>
+	<result>Success</result>
+	<design>PROC_SUBSYSTEM</design>
+	<target_edif>C:\MiV_Example_Designs\Igloo2\IGL2_MiV_RV32IMA_TIckTackToe\synthesis\PROC_SUBSYSTEM.edn</target_edif>
+</SynplifyOutput>

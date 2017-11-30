@@ -1,0 +1,40 @@
+Software Version: 11.8.1.12
+creating folder: C:\MiV_Example_Designs\Igloo2\PROC_SUBSYSTEM_BaseDesign
+Embedded FlashPro5 programmer detected.
+programmer 'E200108CTE' : FlashPro5
+Created new project 'C:\MiV_Example_Designs\Igloo2\PROC_SUBSYSTEM_BaseDesign\PROC_SUBSYSTEM_BaseDesign.pro'
+STAPL file 'C:\MiV_Example_Designs\Igloo2\PROC_SUBSYSTEM_BaseDesign\M2GL025_1.stp' has been loaded successfully.
+DESIGN : PROC_SUBSYSTEM;  CHECKSUM : D958;  ALG_VERSION : 2
+creating folder: C:\MiV_Example_Designs\Igloo2\PROC_SUBSYSTEM_BaseDesign\projectData
+Software Version: 11.8.1.12
+STAPL file 'C:\MiV_Example_Designs\Igloo2\PROC_SUBSYSTEM_BaseDesign\M2GL025_1.stp' has been loaded successfully.
+DESIGN : PROC_SUBSYSTEM;  CHECKSUM : D958;  ALG_VERSION : 2
+Embedded FlashPro5 programmer detected.
+programmer 'E200108CTE' : FlashPro5
+
+Created FlashPro Express Job Project.
+programmer 'E200108CTE' : Scan Chain...
+Warning: programmer 'E200108CTE' : Vpump has been selected on programmer AND an externally provided Vpump has also been detected. Using externally provided Vpump voltage source.
+programmer 'E200108CTE' : Check Chain...
+programmer 'E200108CTE' : Scan and Check Chain PASSED.
+programmer 'E200108CTE' : device 'M2GL025' : Executing action PROGRAM
+programmer 'E200108CTE' : device 'M2GL025' : Family: Igloo2
+programmer 'E200108CTE' : device 'M2GL025' : Product:      M2GL005
+programmer 'E200108CTE' : device 'M2GL025' : EXPORT ISC_ENABLE_RESULT[32] = 00796544
+programmer 'E200108CTE' : device 'M2GL025' : EXPORT CRCERR[1] = 0
+programmer 'E200108CTE' : device 'M2GL025' : EXPORT EDCERR[1] = 0
+programmer 'E200108CTE' : device 'M2GL025' : Programming FPGA Array and eNVM...
+programmer 'E200108CTE' : device 'M2GL025' : EXPORT Fabric component digest[256] = c934744ac7049338405251afc5e6410adc835bc4af0c7dee96e9c4763f8c795a
+programmer 'E200108CTE' : device 'M2GL025' : EXPORT eNVM component digest[256] = 3b771db02ff4f7c27d1a450d48af97a2f2e35e57b94c3ad32dce857c7c1a9257
+programmer 'E200108CTE' : device 'M2GL025' : ===================================================================================
+programmer 'E200108CTE' : device 'M2GL025' : EXPORT DSN[128] = 21a32ad91b6038e77888288b5374987d
+programmer 'E200108CTE' : device 'M2GL025' : ===================================================================================
+programmer 'E200108CTE' : device 'M2GL025' : Finished: Thu Nov 30 10:07:59 2017 (Elapsed time 00:00:36)
+programmer 'E200108CTE' : device 'M2GL025' : Executing action PROGRAM PASSED.
+programmer 'E200108CTE' : Chain programming PASSED.
+Chain Programming Finished: Thu Nov 30 10:07:59 2017 (Elapsed time 00:00:36)
+
+                        o - o - o - o - o - o
+
+Project saved.
+Project closed.
