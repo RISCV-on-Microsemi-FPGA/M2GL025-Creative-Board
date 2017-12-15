@@ -1,0 +1,193 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/ciaran.lappin/Desktop/Github/IGL2_M2GL025_Creative_Development_Kit/Modify_The_FPGA_Design/CoreRISCV_AXI4_BaseDesign/simulation
+vCoreConfigMaster
+Z1 !s110 1508359256
+!i10b 1
+!s100 AGzI9_G[?n<k?TR_5]EgG1
+IUD:zWie9VV[0JFB>F>Lam2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1491296518
+8C:/Users/ciaran.lappin/Desktop/Github/IGL2_M2GL025_Creative_Development_Kit/Modify_The_FPGA_Design/CoreRISCV_AXI4_BaseDesign/component/Actel/DirectCore/CoreConfigMaster/2.1.102/rtl/vlog/core/coreconfigmaster.v
+FC:/Users/ciaran.lappin/Desktop/Github/IGL2_M2GL025_Creative_Development_Kit/Modify_The_FPGA_Design/CoreRISCV_AXI4_BaseDesign/component/Actel/DirectCore/CoreConfigMaster/2.1.102/rtl/vlog/core/coreconfigmaster.v
+L0 24
+Z3 OW;L;10.5c;63
+r1
+!s85 0
+31
+Z4 !s108 1508359256.000000
+!s107 C:/Users/ciaran.lappin/Desktop/Github/IGL2_M2GL025_Creative_Development_Kit/Modify_The_FPGA_Design/CoreRISCV_AXI4_BaseDesign/component/Actel/DirectCore/CoreConfigMaster/2.1.102/rtl/vlog/core/coreconfigmaster.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/ciaran.lappin/Desktop/Github/IGL2_M2GL025_Creative_Development_Kit/Modify_The_FPGA_Design/CoreRISCV_AXI4_BaseDesign/component/Actel/DirectCore/CoreConfigMaster/2.1.102/rtl/vlog/core/coreconfigmaster.v|
+!s101 -O0
+!i113 1
+Z5 o-vlog01compat -work presynth -O0
+Z6 tCvgOpt 0
+n@core@config@master
+vCoreConfigP
+R1
+!i10b 1
+!s100 NC@o4lVhJKc>5][eOzz[e1
+IB@Z[<`nJ2CDZajWzQCgT40
+R2
+R0
+Z7 w1490866483
+8C:/Users/ciaran.lappin/Desktop/Github/IGL2_M2GL025_Creative_Development_Kit/Modify_The_FPGA_Design/CoreRISCV_AXI4_BaseDesign/component/Actel/DirectCore/CoreConfigP/7.1.100/rtl/vlog/core/coreconfigp.v
+FC:/Users/ciaran.lappin/Desktop/Github/IGL2_M2GL025_Creative_Development_Kit/Modify_The_FPGA_Design/CoreRISCV_AXI4_BaseDesign/component/Actel/DirectCore/CoreConfigP/7.1.100/rtl/vlog/core/coreconfigp.v
+L0 22
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/ciaran.lappin/Desktop/Github/IGL2_M2GL025_Creative_Development_Kit/Modify_The_FPGA_Design/CoreRISCV_AXI4_BaseDesign/component/Actel/DirectCore/CoreConfigP/7.1.100/rtl/vlog/core/coreconfigp.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/ciaran.lappin/Desktop/Github/IGL2_M2GL025_Creative_Development_Kit/Modify_The_FPGA_Design/CoreRISCV_AXI4_BaseDesign/component/Actel/DirectCore/CoreConfigP/7.1.100/rtl/vlog/core/coreconfigp.v|
+!s101 -O0
+!i113 1
+R5
+R6
+n@core@config@p
+vCoreGPIO
+R1
+!i10b 1
+!s100 z:5M0d<^eURVDL6gmoW<_0
+IlHlPGP9ZDO1FfARSVe9`b2
+R2
+R0
+w1490115667
+8C:/Users/ciaran.lappin/Desktop/Github/IGL2_M2GL025_Creative_Development_Kit/Modify_The_FPGA_Design/CoreRISCV_AXI4_BaseDesign/component/Actel/DirectCore/CoreGPIO/3.1.101/rtl/vlog/core/coregpio.v
+FC:/Users/ciaran.lappin/Desktop/Github/IGL2_M2GL025_Creative_Development_Kit/Modify_The_FPGA_Design/CoreRISCV_AXI4_BaseDesign/component/Actel/DirectCore/CoreGPIO/3.1.101/rtl/vlog/core/coregpio.v
+Z8 L0 23
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/ciaran.lappin/Desktop/Github/IGL2_M2GL025_Creative_Development_Kit/Modify_The_FPGA_Design/CoreRISCV_AXI4_BaseDesign/component/Actel/DirectCore/CoreGPIO/3.1.101/rtl/vlog/core/coregpio.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/ciaran.lappin/Desktop/Github/IGL2_M2GL025_Creative_Development_Kit/Modify_The_FPGA_Design/CoreRISCV_AXI4_BaseDesign/component/Actel/DirectCore/CoreGPIO/3.1.101/rtl/vlog/core/coregpio.v|
+!s101 -O0
+!i113 1
+R5
+R6
+n@core@g@p@i@o
+vCoreResetP
+R1
+!i10b 1
+!s100 GNO^jQOff>hR9=b6B2heR1
+I2i<dkk7PT<5PRL7Tg`j9g1
+R2
+R0
+R7
+8C:/Users/ciaran.lappin/Desktop/Github/IGL2_M2GL025_Creative_Development_Kit/Modify_The_FPGA_Design/CoreRISCV_AXI4_BaseDesign/component/Actel/DirectCore/CoreResetP/7.1.100/rtl/vlog/core/coreresetp.v
+FC:/Users/ciaran.lappin/Desktop/Github/IGL2_M2GL025_Creative_Development_Kit/Modify_The_FPGA_Design/CoreRISCV_AXI4_BaseDesign/component/Actel/DirectCore/CoreResetP/7.1.100/rtl/vlog/core/coreresetp.v
+R8
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/ciaran.lappin/Desktop/Github/IGL2_M2GL025_Creative_Development_Kit/Modify_The_FPGA_Design/CoreRISCV_AXI4_BaseDesign/component/Actel/DirectCore/CoreResetP/7.1.100/rtl/vlog/core/coreresetp.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/ciaran.lappin/Desktop/Github/IGL2_M2GL025_Creative_Development_Kit/Modify_The_FPGA_Design/CoreRISCV_AXI4_BaseDesign/component/Actel/DirectCore/CoreResetP/7.1.100/rtl/vlog/core/coreresetp.v|
+!s101 -O0
+!i113 1
+R5
+R6
+n@core@reset@p
+vcoreresetp_pcie_hotreset
+R1
+!i10b 1
+!s100 Io@TN_8VJ[8aKmHaHh9@j1
+IG3Z3A3[DNXe292m_Wo;jL1
+R2
+R0
+R7
+8C:/Users/ciaran.lappin/Desktop/Github/IGL2_M2GL025_Creative_Development_Kit/Modify_The_FPGA_Design/CoreRISCV_AXI4_BaseDesign/component/Actel/DirectCore/CoreResetP/7.1.100/rtl/vlog/core/coreresetp_pcie_hotreset.v
+FC:/Users/ciaran.lappin/Desktop/Github/IGL2_M2GL025_Creative_Development_Kit/Modify_The_FPGA_Design/CoreRISCV_AXI4_BaseDesign/component/Actel/DirectCore/CoreResetP/7.1.100/rtl/vlog/core/coreresetp_pcie_hotreset.v
+L0 31
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/ciaran.lappin/Desktop/Github/IGL2_M2GL025_Creative_Development_Kit/Modify_The_FPGA_Design/CoreRISCV_AXI4_BaseDesign/component/Actel/DirectCore/CoreResetP/7.1.100/rtl/vlog/core/coreresetp_pcie_hotreset.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/ciaran.lappin/Desktop/Github/IGL2_M2GL025_Creative_Development_Kit/Modify_The_FPGA_Design/CoreRISCV_AXI4_BaseDesign/component/Actel/DirectCore/CoreResetP/7.1.100/rtl/vlog/core/coreresetp_pcie_hotreset.v|
+!s101 -O0
+!i113 1
+R5
+R6
+vHPMS_0_sb_CCC_0_FCCC
+R1
+!i10b 1
+!s100 UB[;[iX>f?1GG0A=iSXkh1
+ITTEW`G=hNzh]HQLmben201
+R2
+R0
+w1508358370
+8C:/Users/ciaran.lappin/Desktop/Github/IGL2_M2GL025_Creative_Development_Kit/Modify_The_FPGA_Design/CoreRISCV_AXI4_BaseDesign/component/work/HPMS_0_sb/CCC_0/HPMS_0_sb_CCC_0_FCCC.v
+FC:/Users/ciaran.lappin/Desktop/Github/IGL2_M2GL025_Creative_Development_Kit/Modify_The_FPGA_Design/CoreRISCV_AXI4_BaseDesign/component/work/HPMS_0_sb/CCC_0/HPMS_0_sb_CCC_0_FCCC.v
+L0 5
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/ciaran.lappin/Desktop/Github/IGL2_M2GL025_Creative_Development_Kit/Modify_The_FPGA_Design/CoreRISCV_AXI4_BaseDesign/component/work/HPMS_0_sb/CCC_0/HPMS_0_sb_CCC_0_FCCC.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/ciaran.lappin/Desktop/Github/IGL2_M2GL025_Creative_Development_Kit/Modify_The_FPGA_Design/CoreRISCV_AXI4_BaseDesign/component/work/HPMS_0_sb/CCC_0/HPMS_0_sb_CCC_0_FCCC.v|
+!s101 -O0
+!i113 1
+R5
+R6
+n@h@p@m@s_0_sb_@c@c@c_0_@f@c@c@c
+vHPMS_0_sb_FABOSC_0_OSC
+R1
+!i10b 1
+!s100 a9USdYdHC7TY9>lJo[M_82
+IdefAD1GAe7`oZEfKBNb;L1
+R2
+R0
+w1508358374
+8C:/Users/ciaran.lappin/Desktop/Github/IGL2_M2GL025_Creative_Development_Kit/Modify_The_FPGA_Design/CoreRISCV_AXI4_BaseDesign/component/work/HPMS_0_sb/FABOSC_0/HPMS_0_sb_FABOSC_0_OSC.v
+FC:/Users/ciaran.lappin/Desktop/Github/IGL2_M2GL025_Creative_Development_Kit/Modify_The_FPGA_Design/CoreRISCV_AXI4_BaseDesign/component/work/HPMS_0_sb/FABOSC_0/HPMS_0_sb_FABOSC_0_OSC.v
+L0 5
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/ciaran.lappin/Desktop/Github/IGL2_M2GL025_Creative_Development_Kit/Modify_The_FPGA_Design/CoreRISCV_AXI4_BaseDesign/component/work/HPMS_0_sb/FABOSC_0/HPMS_0_sb_FABOSC_0_OSC.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/ciaran.lappin/Desktop/Github/IGL2_M2GL025_Creative_Development_Kit/Modify_The_FPGA_Design/CoreRISCV_AXI4_BaseDesign/component/work/HPMS_0_sb/FABOSC_0/HPMS_0_sb_FABOSC_0_OSC.v|
+!s101 -O0
+!i113 1
+R5
+R6
+n@h@p@m@s_0_sb_@f@a@b@o@s@c_0_@o@s@c
+vHPMS_0_sb_HPMS
+!s110 1508359257
+!i10b 1
+!s100 gZ0PTUe@KL4g9<hbQ4S993
+I@K@?CYEjZ6RRY1h=@JBlS1
+R2
+R0
+w1497516299
+8C:/Users/ciaran.lappin/Desktop/Github/IGL2_M2GL025_Creative_Development_Kit/Modify_The_FPGA_Design/CoreRISCV_AXI4_BaseDesign/component/work/HPMS_0_sb_HPMS/HPMS_0_sb_HPMS.v
+FC:/Users/ciaran.lappin/Desktop/Github/IGL2_M2GL025_Creative_Development_Kit/Modify_The_FPGA_Design/CoreRISCV_AXI4_BaseDesign/component/work/HPMS_0_sb_HPMS/HPMS_0_sb_HPMS.v
+L0 9
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/ciaran.lappin/Desktop/Github/IGL2_M2GL025_Creative_Development_Kit/Modify_The_FPGA_Design/CoreRISCV_AXI4_BaseDesign/component/work/HPMS_0_sb_HPMS/HPMS_0_sb_HPMS.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/ciaran.lappin/Desktop/Github/IGL2_M2GL025_Creative_Development_Kit/Modify_The_FPGA_Design/CoreRISCV_AXI4_BaseDesign/component/work/HPMS_0_sb_HPMS/HPMS_0_sb_HPMS.v|
+!s101 -O0
+!i113 1
+R5
+R6
+n@h@p@m@s_0_sb_@h@p@m@s

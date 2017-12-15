@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml-stylesheet type="text/xsl" href="drcss.xsl"?>
+<drcreport>
+  <header>HPMS_0_sb</header>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v11.8\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output pin CORERESETP_0:MDDR_DDR_AXI_S_CORE_RESET_N</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/HPMS_0_sb/pins/CORERESETP_0:MDDR_DDR_AXI_S_CORE_RESET_N</crossprobe>
+  </drc>
+</drcreport>
