@@ -1,4 +1,0 @@
-Warning: SDC0061: C:\MiV_Example_Designs\Igloo2\IGL2_MiV_RV32IMA_TIckTackToe\constraint\user.sdc:5: Exception constraints using get_clocks command is not supported by placer; Please use get_pins instead 
-Warning: SDC0061: C:\MiV_Example_Designs\Igloo2\IGL2_MiV_RV32IMA_TIckTackToe\constraint\user.sdc:8: Exception constraints using get_clocks command is not supported by placer; Please use get_pins instead 
-Warning: SDC0062: C:\MiV_Example_Designs\Igloo2\IGL2_MiV_RV32IMA_TIckTackToe\constraint\PROC_SUBSYSTEM_derived_constraints.sdc:22: Exception constraints using get_nets command is not supported by placer; Please use get_pins instead 
-Warning: SDC0062: C:\MiV_Example_Designs\Igloo2\IGL2_MiV_RV32IMA_TIckTackToe\constraint\PROC_SUBSYSTEM_derived_constraints.sdc:23: Exception constraints using get_nets command is not supported by placer; Please use get_pins instead 
