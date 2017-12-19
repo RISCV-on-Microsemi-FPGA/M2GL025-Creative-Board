@@ -1,0 +1,28 @@
+Microsemi Corporation - Microsemi Libero Software Release Libero SoC v11.8 SP1 (Version 11.8.1.12)
+
+Date      :  Sun Dec 10 15:57:39 2017
+Project   :  C:\Users\ciaran.lappin\Desktop\Github\IGL2_M2GL025_Creative_Development_Kit\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign
+Component :  HPMS_0_sb_HPMS
+Family    :  IGLOO2
+
+
+HDL source files for all Synthesis and Simulation tools:
+    C:/Users/ciaran.lappin/Desktop/Github/IGL2_M2GL025_Creative_Development_Kit/Modify_The_FPGA_Design/CoreRISCV_AXI4_BaseDesign/component/work/HPMS_0_sb_HPMS/HPMS_0_sb_HPMS.v
+
+HDL source files for Synopsys SynplifyPro Synthesis tool:
+    C:/Users/ciaran.lappin/Desktop/Github/IGL2_M2GL025_Creative_Development_Kit/Modify_The_FPGA_Design/CoreRISCV_AXI4_BaseDesign/component/work/HPMS_0_sb_HPMS/HPMS_0_sb_HPMS_syn.v
+
+HDL source files for Mentor Precision Synthesis tool:
+    C:/Users/ciaran.lappin/Desktop/Github/IGL2_M2GL025_Creative_Development_Kit/Modify_The_FPGA_Design/CoreRISCV_AXI4_BaseDesign/component/work/HPMS_0_sb_HPMS/HPMS_0_sb_HPMS_pre.v
+
+Configuration files to be used for Programming:
+    C:/Users/ciaran.lappin/Desktop/Github/IGL2_M2GL025_Creative_Development_Kit/Modify_The_FPGA_Design/CoreRISCV_AXI4_BaseDesign/component/work/HPMS_0_sb_HPMS/ENVM.cfg
+    C:/Users/ciaran.lappin/Desktop/Github/IGL2_M2GL025_Creative_Development_Kit/Modify_The_FPGA_Design/CoreRISCV_AXI4_BaseDesign/component/work/HPMS_0_sb_HPMS/MDDR_init.reg
+
+Configuration files to be used for all Simulation tools:
+    C:/Users/ciaran.lappin/Desktop/Github/IGL2_M2GL025_Creative_Development_Kit/Modify_The_FPGA_Design/CoreRISCV_AXI4_BaseDesign/component/work/HPMS_0_sb_HPMS/ENVM.cfg
+    C:/Users/ciaran.lappin/Desktop/Github/IGL2_M2GL025_Creative_Development_Kit/Modify_The_FPGA_Design/CoreRISCV_AXI4_BaseDesign/component/work/HPMS_0_sb_HPMS/MDDR_init.reg
+
+Configuration files to be used for Power Analysis:
+    C:/Users/ciaran.lappin/Desktop/Github/IGL2_M2GL025_Creative_Development_Kit/Modify_The_FPGA_Design/CoreRISCV_AXI4_BaseDesign/component/work/HPMS_0_sb_HPMS/MDDR_init.reg
+

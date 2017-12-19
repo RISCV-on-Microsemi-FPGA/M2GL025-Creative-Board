@@ -1,0 +1,5 @@
+CKID0001:@|S:HPMS_0_sb_0.CCC_0.CCC_INST@|E:HPMS_0_sb_0.HPMS_0_sb_HPMS_0.MSS_ADLIB_INST@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001 
+CKID0002:@|S:COREJTAGDEBUG_0.genblk1.UJ_JTAG_0.un1_duttck@|E:MIV_RV32IMA_L1_AHB_1.ChiselTop0.dtm.skipOpReg@|F:@syn_sample_clock_path==CKID0002@|M:ClockId0002 
+CKID0003:@|S:COREJTAGDEBUG_0.genblk1.UJTAG_0@|E:COREJTAGDEBUG_0.genblk1.UJ_JTAG_0.pauselow@|F:@syn_sample_clock_path1==CKID0003@|M:ClockId0003 
+CKID0004:@|S:HPMS_0_sb_0.HPMS_0_sb_HPMS_0.MSS_ADLIB_INST@|E:HPMS_0_sb_0.HPMS_0_sb_HPMS_0.MSS_ADLIB_INST@|F:@syn_sample_clock_path1==CKID0004@|M:ClockId0004 
+CKID0005:@|S:HPMS_0_sb_0.FABOSC_0.I_RCOSC_25_50MHZ@|E:HPMS_0_sb_0.CORERESETP_0.count_ddr[13]@|F:@syn_sample_clock_path==CKID0005@|M:ClockId0005 

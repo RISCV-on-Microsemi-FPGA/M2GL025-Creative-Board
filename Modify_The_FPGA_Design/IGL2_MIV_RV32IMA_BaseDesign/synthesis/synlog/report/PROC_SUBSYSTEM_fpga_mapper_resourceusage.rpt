@@ -1,0 +1,52 @@
+Resource Usage Report for PROC_SUBSYSTEM 
+
+Mapping to part: m2gl025vf256std
+Cell usage:
+CCC             1 use
+CLKINT          12 uses
+MSS_025         1 use
+RCOSC_25_50MHZ  1 use
+RCOSC_25_50MHZ_FAB  1 use
+SYSRESET        1 use
+UJTAG           1 use
+CFG1           22 uses
+CFG2           1245 uses
+CFG3           4477 uses
+CFG4           5844 uses
+
+Carry cells:
+ARI1            1107 uses - used for arithmetic functions
+ARI1            98 uses - used for Wide-Mux implementation
+Total ARI1      1205 uses
+
+
+Sequential Cells: 
+SLE            6080 uses
+
+DSP Blocks:    2 of 34 (5%)
+ MACC:         1 MultAdd
+ MACC:         1 Mult
+
+I/O ports: 68
+I/O primitives: 59
+BIBUF          18 uses
+BIBUF_DIFF     2 uses
+INBUF          5 uses
+OUTBUF         33 uses
+OUTBUF_DIFF    1 use
+
+
+Global Clock Buffers: 12 of 8 (150%)
+
+
+Total LUTs:    12793
+
+Extra resources required for RAM and MACC interface logic during P&R:
+
+RAM64x18 Interface Logic : SLEs = 288; LUTs = 288;
+RAM1K18  Interface Logic : SLEs = 288; LUTs = 288;
+MACC     Interface Logic : SLEs = 72; LUTs = 72;
+
+Total number of SLEs after P&R:  6080 + 288 + 288 + 72 = 6728;
+Total number of LUTs after P&R:  12793 + 288 + 288 + 72 = 13441;
+
